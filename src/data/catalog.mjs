@@ -13,6 +13,8 @@ export const sources={
  payoneer:{name:'Payoneer · Retiros en Argentina',url:'https://pages.payoneer.com/es/withdrawal-of-funds/'},
  payoneerSteps:{name:'Payoneer · Cómo retirar al banco',url:'https://www.payoneer.com/es/resources/how-to-use-payoneer/como-retirar-fondos-de-payoneer-a-tu-cuenta-bancaria/'},
  wallbit:{name:'Wallbit · Exportación de servicios a Santander',url:'https://help.wallbit.io/es/articles/12632940-como-registrar-cobros-del-exterior-con-santander'},
+ wallbitStatement:{name:'Wallbit · Extractos mensuales y período en curso',url:'https://help.wallbit.io/es/articles/11198850-como-descargar-los-documentos-financieros-desde-wallbit'},
+ wallbitSupport:{name:'Wallbit · Contactar a soporte',url:'https://help.wallbit.io/es/articles/8062891-como-puedo-comunicarme-con-wallbit'},
  wallbitArs:{name:'Wallbit · Retiros locales y otras monedas',url:'https://help.wallbit.io/es/articles/8062980-como-retiro-dinero-de-mi-cuenta-de-wallbit'},
  deel:{name:'Deel · Métodos de retiro y SWIFT',url:'https://help.letsdeel.com/hc/en-gb/articles/7338494928913-How-Contractors-can-move-funds-from-Deel'},
  nexo:{name:'Nexo Argentina · Información del producto',url:'https://nexo.com/es-ar'},
@@ -22,8 +24,8 @@ export const sources={
  recategorizacion:{name:'ARCA · Recategorización',url:'https://serviciosweb.arca.gob.ar/genericos/guiasPasoPaso/VerGuia.aspx?id=515'}
 };
 export const banks=[
- {id:'santander',name:'Santander',status:'verified',swift:'BSCHARBAXXX',legalName:'Banco Santander Argentina S.A.',channel:'Solicitud de acreditación desde Online Banking.',detail:'Transacciones → Cobros del exterior. Seleccioná la orden de pago, el concepto, tu cuenta y adjuntá los respaldos.',sources:['santander','santanderCobro']},
- {id:'bbva',name:'BBVA',status:'partial',swift:'BFRPARBA',legalName:'Banco BBVA Argentina S.A.',channel:'Coordenadas verificadas; confirmar alta y canal de presentación con COMEX.',detail:'Publica CBU, beneficiario y SWIFT. Si te piden corresponsal en USD: Standard Chartered Bank, New York; SWIFT SCBLUS33; ABA 026002561.',sources:['bbva']},
+ {id:'santander',name:'Santander',status:'verified',swift:'BSCHARBAXXX',legalName:'Banco Santander Argentina S.A.',accountField:'Tu número de cuenta en USD o CBU, según el formulario y las instrucciones de Santander',channel:'Solicitud de acreditación desde Online Banking.',detail:'Transacciones → Cobros del exterior. Seleccioná la orden de pago, el concepto, tu cuenta y adjuntá los respaldos.',sources:['santander','santanderCobro']},
+ {id:'bbva',name:'BBVA',status:'partial',swift:'BFRPARBA',legalName:'Banco BBVA Argentina S.A.',accountField:'El CBU de 22 dígitos de tu cuenta en USD',correspondent:'Standard Chartered Bank · New York · SWIFT SCBLUS33 · ABA 026002561 (solo si se solicita corresponsal)',channel:'Coordenadas verificadas; confirmar alta y canal de presentación con COMEX.',detail:'Publica CBU, beneficiario y SWIFT. Si te piden corresponsal en USD: Standard Chartered Bank, New York; SWIFT SCBLUS33; ABA 026002561.',sources:['bbva']},
  {id:'galicia',name:'Galicia',status:'partial',swift:null,legalName:'Banco de Galicia y Buenos Aires',channel:'Requisitos documentales publicados; guía completa pendiente.',detail:'Para fondos desde cuenta propia en el exterior, su grilla contempla extracto de la cuenta recaudadora. Obtené las coordenadas actuales en COMEX.',sources:['galicia']},
  ...[['nacion','Banco Nación'],['icbc','ICBC'],['supervielle','Supervielle'],['provincia','Banco Provincia'],['macro','Banco Macro'],['otro','Otro banco']].map(([id,name])=>({id,name,status:'missing',swift:null,channel:'Sin información documentada todavía.',detail:'No tenemos un procedimiento actual verificado. Solicitá información o contanos cómo fue tu experiencia.',sources:[]}))
 ];

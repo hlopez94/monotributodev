@@ -1,0 +1,18 @@
+import React from 'react';
+import {FileText,Info} from '@phosphor-icons/react';
+import {payoutDocumentation} from '../lib/domain.mjs';
+import {Sources,Contribution} from './Shared.jsx';
+export function BankDocumentation({bank,platform,sender,onSenderChange,routeSources}){
+ const docs=payoutDocumentation(platform.id,sender);
+ return <>
+ <h3>Presentá los respaldos en {bank.name}</h3><p>{bank.detail}</p>
+ <fieldset className="sender-options"><legend>¿Quién figura como ordenante del SWIFT?</legend><p className="sender-help">Confirmalo en la orden de pago o con COMEX. La sugerencia por plataforma es orientativa: no reemplaza los datos de tu transferencia.</p>{[
+  ['own','Yo · cuenta propia o cuenta espejo'],['payer','Mi cliente · pagador del servicio'],['platform','La plataforma u otra empresa'],['unknown','Todavía no lo sé']
+ ].map(([value,label])=><label key={value}><input type="radio" name="swift-sender" value={value} checked={sender===value} onChange={()=>onSenderChange(value)}/>{label}</label>)}</fieldset>
+ {docs.needsStatement?<div className="notice"><FileText size={24}/><div><strong>Cuenta propia / cuenta espejo: conservá el recorrido completo</strong><p>Si el SWIFT llega a tu nombre, presentá la Factura E a tu cliente y el resumen de movimientos de {platform.name}. Debe mostrar tu titularidad, el ingreso del pago original y la salida hacia Argentina, con fechas e importes.</p></div></div>:sender==='payer'?<div className="notice"><FileText size={24}/><div><strong>El ordenante es tu cliente</strong><p>Prepará la Factura E a nombre de ese cliente por el servicio prestado. Si coincide con el ordenante, la factura permite vincular el cobro con el cliente. COMEX puede solicitar documentación adicional.</p></div></div>:<div className="notice"><Info size={24}/><div><strong>{sender==='platform'?'Identificá el vínculo entre plataforma y cliente':'Revisá la orden antes de presentar'}</strong><p>La Factura E corresponde a quien contrató tu servicio. Si el ordenante es una plataforma o procesador, no le factures automáticamente: verificá su vínculo con el cliente y pedí a COMEX qué respaldo presentar. Si esa empresa es también tu cliente, los datos coincidirán.</p></div></div>}
+ {docs.wallbitStatement&&<div className="notice"><FileText size={24}/><div><strong>Wallbit: pedí a soporte los movimientos del mes en curso</strong><p>Perfil → Mi cuenta → Documentos financieros → Extractos mensuales. El PDF del mes aparece una vez cerrado. Si necesitás acreditar un cobro antes del cierre, pedí a soporte el extracto del período en curso para presentar al banco; indicá las fechas del ingreso y del retiro. No esperes al cierre si eso afecta tu plazo.</p><Sources ids={['wallbitStatement','wallbitSupport']}/></div></div>}
+ <ul className="checklist"><li>Factura E por el importe del servicio original; no por el neto recibido en Argentina.</li>{docs.needsStatement&&<li>Extracto / historial de {platform.name} que permita vincular el cobro del cliente con el retiro hacia tu banco.</li>}<li>Comprobante de transferencia y detalle de gastos para conciliar diferencias.</li><li>Contrato u otros respaldos si COMEX los solicita según la operación.</li></ul>
+ <p>Elegí el concepto del servicio real y la cuenta en USD si querés conservar los dólares bajo el régimen aplicable. No declares ahorros propios para ocultar un cobro de servicios.</p>
+ <Sources ids={[...routeSources,...bank.sources,'arca','bcra']}/><button className="text-button" onClick={()=>window.print()}>Imprimir / guardar esta guía</button><Contribution entityId={bank.id} routeId={platform.id+'-'+bank.id}/>
+ </>;
+}

@@ -25,3 +25,18 @@ export function buildIssueUrl({kind='solicitar-info',entityId='',routeId='',topi
 }
 export function classifyIncome(kind){return kind==='exportacion'?'E':kind==='local'?'C':null;}
 export const money=(cents,currency='USD')=>new Intl.NumberFormat('es-AR',{style:'currency',currency,maximumFractionDigits:2}).format(cents/100);
+
+export function bankFields(bank){
+ return [
+  {label:'Moneda y país',value:'USD · Argentina'},
+  {label:'Beneficiario',value:'Tu nombre completo como figura en el banco'},
+  {label:'Banco receptor',value:bank?.legalName??null},
+  {label:'SWIFT / BIC',value:bank?.swift??null,copy:true},
+  {label:'Cuenta del beneficiario',value:bank?.accountField??null},
+  {label:'Banco corresponsal en USD',value:bank?.correspondent??null}
+ ];
+}
+export function payoutDocumentation(origin,sender){
+ const needsStatement=sender==='own';
+ return {needsStatement,wallbitStatement:origin==='wallbit',verifyRelationship:!['own','payer'].includes(sender)};
+}

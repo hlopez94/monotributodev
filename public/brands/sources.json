@@ -1,0 +1,84 @@
+{
+  "checkedAt": "2026-10-29",
+  "note": "Marcas de sus respectivos titulares. Íconos obtenidos de sitios oficiales; solo identificación de terceros, sin afiliación.",
+  "assets": [
+    {
+      "id": "wise",
+      "file": "wise.png",
+      "url": "https://wise.com/public-resources/assets/icons/wise-personal/apple_touch_icon.png",
+      "bytes": 1114
+    },
+    {
+      "id": "payoneer",
+      "file": "payoneer.png",
+      "url": "https://www.payoneer.com/wp-content/themes/payo/assets/img/favicons/apple-icon-180x180.png",
+      "bytes": 14146
+    },
+    {
+      "id": "wallbit",
+      "file": "wallbit.png",
+      "url": "https://cdn.prod.website-files.com/67aca5c7e0a415189908624c/67b6370e0b2efbe76d495579_256x256.png",
+      "bytes": 4635
+    },
+    {
+      "id": "deel",
+      "file": "deel.png",
+      "url": "https://www.deel.com/apple-icon.png?d2b410d8d6714d15",
+      "bytes": 4863
+    },
+    {
+      "id": "nexo",
+      "file": "nexo.png",
+      "url": "https://nexo.com/apple-icon.png?apple-icon.3ufid7tfm414i.png",
+      "bytes": 2000
+    },
+    {
+      "id": "galicia",
+      "file": "galicia.ico",
+      "url": "https://www.galicia.ar/etc.clientlibs/galicia/clientlibs/clientlib-react/resources/favicon.ico",
+      "bytes": 4286
+    },
+    {
+      "id": "nacion",
+      "file": "nacion.png",
+      "url": "https://www.bna.com.ar/Images/ico/apple-touch-icon-144.png",
+      "bytes": 2166
+    },
+    {
+      "id": "icbc",
+      "file": "icbc.ico",
+      "url": "https://www.icbc.com.ar/contenthandler/!ut/p/digest!96DKmEGpAsBWiSo_J7kMPg/dav/fs-type1/themes/icbc-institucional/images/favicon.ico",
+      "bytes": 1406
+    },
+    {
+      "id": "supervielle",
+      "file": "supervielle.png",
+      "url": "https://www.supervielle.com.ar/static/favicon.png",
+      "bytes": 2595
+    },
+    {
+      "id": "provincia",
+      "file": "provincia.ico",
+      "url": "https://www.bancoprovincia.com.ar/favicon.ico",
+      "bytes": 1150
+    },
+    {
+      "id": "macro",
+      "file": "macro.png",
+      "url": "https://www.macro.com.ar/imagen/favicon.ico",
+      "bytes": 14344
+    },
+    {
+      "id": "bbva",
+      "file": "bbva.ico",
+      "url": "https://www.bbva.com/wp-content/themes/coronita-bbvacom/assets/images/comun/favicon.ico",
+      "bytes": 15406
+    },
+    {
+      "id": "santander",
+      "file": "santander.png",
+      "url": "https://www.santander.com/content/dam/santander-com/resources/favicon/apple-touch-icon.png",
+      "bytes": 6501
+    }
+  ]
+}

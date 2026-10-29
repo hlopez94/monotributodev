@@ -18,3 +18,7 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Mantener tabla CUIT con la leyenda oficial, no inferir clase de sujeto por prefijo.
 - Los huecos se marcan SIN INFO · APORTÁ y enlazan a Issue Forms.
 - Repositorio público hlopez94/monotributodev; GitHub Pages como primer destino, dominio propio pendiente DNS.
+
+- Selectores de plataforma/banco con logos reales locales (public/brands/sources.json), lista con estilo propio y teclado. No usar marcas generadas ni dibujadas.
+- Guía SWIFT: coordenadas por banco incluso sin ruta documentada; pasos 2/3 comunes. Falta de coordenadas explícita con aporte.
+- Paso 4 según ordenante real: cuenta propia/espejo exige trazabilidad, cliente coincide con receptor fiscal cuando es quien contrató, procesador no determina a quién facturar. Wallbit: extracto mensual a mes cerrado; soporte para período en curso.

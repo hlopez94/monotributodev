@@ -22,3 +22,14 @@ Task 9: complete; lectura y escritura reales verificadas desde GitHub Pages, Tur
 Task 7: repo público y primer despliegue Pages exitoso. Dominio propio sin resolución DNS, se conserva URL Pages hasta configurar dominio.
 
 Cierre: 14 pruebas de lógica/API y 4 de empaquetado aprobadas; build y workflow Pages 40906030024 exitosos para 3b46acb. Captura publicada: docs/qa/public-site.png. Dominio propio pendiente de DNS. Reintentos y guías provinciales/casos sin evidencia conservan los límites indicados.
+
+## Selectores y SWIFT — actualización 29/10/2026
+Solicitud del usuario seguida con cambios acotados sobre el diseño existente. Plan: docs/superpowers/plans/2026-10-29-selectors-swift.md.
+- Tests RED→GREEN: banco independiente de ruta y documentación según ordenante; 16/16 suite lógica/API, 4/4 empaquetado, build correcto.
+- Logos reales de sitios oficiales guardados localmente y con procedencia. Selectores combobox/listbox con selección, teclado, cierre y fallback visual.
+- Cuatro pasos para combinaciones incompletas; no se interpreta presencia de guía como confirmación de compatibilidad. Coordenadas desconocidas no heredadas, aportes por campo.
+- Pasos 2/3 comunes; paso 4 con ordenante editable, cuenta espejo/trazabilidad, cliente, plataforma o desconocido. Fuente Wallbit confirma cierre mensual y soporte para mes en curso.
+- Revisión independiente selectors_review: sin Critical/Important. Revisión manual móvil y escritorio; evidencia en design-qa.md.
+Final: minor (deferred): typeahead del selector no recorre coincidencias al repetir letras ni permite búsqueda por palabras con espacios.
+Final: minor (deferred): combinación Cliente directo + cuenta propia menciona resumen de Cliente directo en vez de identificar el proveedor de cuenta externa; verificar con COMEX y usar cuenta real.
+Final: minor (deferred): teclado/foco/cierre del combobox comprobados manualmente, pendiente automatización del navegador.

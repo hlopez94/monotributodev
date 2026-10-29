@@ -38,3 +38,14 @@ final result: passed
 ## Pendientes menores
 
 No quedan hallazgos P0/P1/P2 de diseño. P3: el raster usa marcas en los selectores; se optó por nombres textuales para no distribuir logos generados como oficiales. Móvil conserva navegación horizontal explícita, no un menú adicional.
+
+## Actualización: selectores y SWIFT (29/10/2026)
+
+- Selectores propios con marcas reales guardadas localmente; procedencia en public/brands/sources.json. Iconos de biblioteca para conceptos sin marca (cliente directo, cripto genérica, otras entidades).
+- Capturas: docs/qa/selectors-platforms.png, selectors-banks.png y selectors-mobile.png. Bordes, verde, tamaños y superficies coherentes con el sitio; menú superpuesto con alto máximo y scroll interno.
+- Teclado comprobado manualmente: flechas + Enter seleccionan, Home/End mueven opción, Escape cierra. Opciones anuncian selección y foco permanece en el combobox. Se revisó selección por clic y carga de todas las marcas de bancos.
+- Móvil 390 × 844: clientWidth=scrollWidth=375 (descontada barra de scroll), menú con scroll local; override restablecido al terminar.
+- Payoneer → BBVA sin ficha de ruta sigue mostrando BFRPARBA/CBU/corresponsal de BBVA y los cuatro pasos, con advertencia de compatibilidad no confirmada. ICBC no hereda coordenadas de otro banco, muestra faltantes y aportes.
+- Paso 4 Wallbit → Santander: cuenta espejo muestra extracto + factura; cliente muestra factura al cliente; plataforma muestra conciliación y vínculo. Ayuda oficial de Wallbit sobre cierre mensual/solicitud a soporte enlazada.
+- Revisión independiente sin hallazgos Critical/Important. Mejoras menores diferidas: búsqueda por teclado con letras repetidas/espacios; redacción del caso poco común Cliente directo + cuenta propia; automatizar comprobaciones de foco/cierre que se validaron manualmente.
+- Pruebas: 16 de lógica/API + 4 de empaquetado aprobadas, build correcto.
