@@ -26,6 +26,7 @@ export function resolveAutomaticStage(raw,{quotes,basis='crypto',eligible=true,n
  }
  const quote=Object.hasOwn(overrides,'rate')?{rate:overrides.rate,kind:'manual',label:'Cotización manual'}:marketRate(stage.currencyIn,stage.currencyOut,quotes,basis);
  stage.rate=quote.rate;
+ stage.percentMinimum=overrides.percentMinimum??raw.percentMinimum??'0';
  stage.networkSeparate=overrides.networkSeparate??raw.networkSeparate??false;
  return {stage,quote,omissions,assumptions,partial:omissions.length>0};
 }

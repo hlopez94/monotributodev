@@ -53,3 +53,7 @@ test('redondea una sola vez en límites de centavo para conversión y porcentaje
  const fee=calculateJourney({amount:'0.01',currency:'USD',origin:'wise',stages:[stage({from:'wise',currencyIn:'USD',currencyOut:'USD',network:'0',percent:'49.99999'})]});
  assert.equal(fee.stages[0].percentFee,0n);assert.equal(fee.finalAmount,10000n);
 });
+test('mínimo porcentual reemplaza comisión menor, no se suma, y rechaza gastos excesivos',async()=>{
+ const {calculateJourney}=await load();const run=amount=>calculateJourney({amount,currency:'USD',origin:'wallbit',stages:[stage({from:'wallbit',to:'banco-usa',currencyIn:'USD',currencyOut:'USD',method:'ach',network:'0',percent:'1',percentMinimum:'5'})]});
+ assert.equal(run('100').finalAmount,95000000n);assert.equal(run('500').finalAmount,495000000n);assert.equal(run('1000').finalAmount,990000000n);assert.throws(()=>run('4'),/gastos superan/);
+});

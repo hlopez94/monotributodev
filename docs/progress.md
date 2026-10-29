@@ -60,3 +60,6 @@ Móvil390×844: ancho útil375 sin desborde, filas compactas; escritorio118px po
 
 ## Tarifas Wise — 29/10/2026
 Actualizados estimados SWIFT USD7,28 y conversión EUR→USD0,458%, USD→EUR0,289%; descartado27,12 por indicación del usuario. Agregados recepción SWIFT USD/EUR, enlaces oficiales y alcance. Se conserva cotización automática. Recepción visible también en tabla.38+4 pruebas y build pasan; navegador comprueba gastos y neto. Investigación: docs/research/wise-fees-2026-10-29.md.
+
+## Wallbit pricing — 29/10/2026
+Fuente aportada https://www.wallbit.io/es/pricing revisada. Depósitos propios0; ACH/Wire Classic1% mínimoUSD5/USD25. Pro/Max0,5% documentado sin asumir plan. ARS conserva parcialidad y referencia de mercado; FXbonificado y posible0,35 no aplicados sin certeza regional. Motor incorpora mínimo porcentual como máximo, sin sumarlo al porcentaje; campo opcional ajustable. RED→GREEN:100→95,500→495,1000→990, gastos superiores rechazados. Navegador ACH100 muestra comisión5 y parcial por receptor desconocido.39 pruebas+4 empaquetado y build pasan.

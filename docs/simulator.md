@@ -51,3 +51,5 @@ Cambiar topología elimina pasos siguientes dependientes; cambiar importes conse
 ## Validación
 
 Las pruebas cubren BigInt/encadenamiento, referencias compra/venta, precarga, ajustes, ausencia de ceros en gastos, tarifas faltantes explícitas, schema del proveedor, fallback por par, timeout, deduplicación/caché, antigüedad y continuidad al restaurar. Browser QA comprueba carga real de APIs, cantidad de campos visibles, tamaño de filas, móvil y estado al navegar.
+
+Wallbit: retiros ACH/Wire precargados para Classic,1% con mínimosUSD5/USD25 respectivamente. `fees.percentMinimum` es el piso de la comisión porcentual: se aplica el mayor, no se suma. Puede ajustarse en el detalle; no incluye suscripción ni cargos desconocidos del banco destino. Pro/Max se documentan en notas, sin aplicar sus beneficios automáticamente. Depósitos Wallbit sin cargo propio; FX local pendiente de cotización real. Fuente: https://www.wallbit.io/es/pricing.

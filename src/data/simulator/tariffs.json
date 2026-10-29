@@ -23,6 +23,10 @@
       {
         "name": "Wallbit · Redes y depósitos cripto",
         "url": "https://help.wallbit.io/es/articles/11328049-enviar-y-recibir-usdc-y-usdt-con-tu-cuenta-wallbit"
+      },
+      {
+        "name": "Wallbit · Tarifas por plan y método",
+        "url": "https://www.wallbit.io/es/pricing"
       }
     ]
   },
@@ -50,6 +54,10 @@
       {
         "name": "Wallbit · Redes y depósitos cripto",
         "url": "https://help.wallbit.io/es/articles/11328049-enviar-y-recibir-usdc-y-usdt-con-tu-cuenta-wallbit"
+      },
+      {
+        "name": "Wallbit · Tarifas por plan y método",
+        "url": "https://www.wallbit.io/es/pricing"
       }
     ]
   },
@@ -77,6 +85,10 @@
       {
         "name": "Wallbit · Redes y depósitos cripto",
         "url": "https://help.wallbit.io/es/articles/11328049-enviar-y-recibir-usdc-y-usdt-con-tu-cuenta-wallbit"
+      },
+      {
+        "name": "Wallbit · Tarifas por plan y método",
+        "url": "https://www.wallbit.io/es/pricing"
       }
     ]
   },
@@ -104,6 +116,10 @@
       {
         "name": "Wallbit · Redes y depósitos cripto",
         "url": "https://help.wallbit.io/es/articles/11328049-enviar-y-recibir-usdc-y-usdt-con-tu-cuenta-wallbit"
+      },
+      {
+        "name": "Wallbit · Tarifas por plan y método",
+        "url": "https://www.wallbit.io/es/pricing"
       }
     ]
   },
@@ -131,6 +147,10 @@
       {
         "name": "Wallbit · Redes y depósitos cripto",
         "url": "https://help.wallbit.io/es/articles/11328049-enviar-y-recibir-usdc-y-usdt-con-tu-cuenta-wallbit"
+      },
+      {
+        "name": "Wallbit · Tarifas por plan y método",
+        "url": "https://www.wallbit.io/es/pricing"
       }
     ]
   },
@@ -153,11 +173,15 @@
     "rate": null,
     "status": "partial",
     "reviewedAt": "2026-10-29",
-    "note": "El cambio automático usa referencia de mercado Cripto o MEP, no el precio neto de Wallbit. Los cargos sin referencia se marcan como no incluidos. La salida local en ARS no confirma ingreso por MLC ni cumplimiento cambiario.",
+    "note": "El cambio automático usa referencia de mercado Cripto o MEP, no el precio neto de Wallbit. Los cargos sin referencia se marcan como no incluidos. La salida local en ARS no confirma ingreso por MLC ni cumplimiento cambiario. Pricing publica FX estándar en Classic y bonificado en Pro/Max, sin precio final ARS; menciona USD0,35 adicional en algunos países sin identificar Argentina. No asumimos que aplique aquí.",
     "sources": [
       {
         "name": "Wallbit · Métodos de retiro",
         "url": "https://help.wallbit.io/es/articles/8062980-como-retiro-dinero-de-mi-cuenta-de-wallbit"
+      },
+      {
+        "name": "Wallbit · Tarifas por plan y método",
+        "url": "https://www.wallbit.io/es/pricing"
       }
     ]
   },
@@ -309,6 +333,10 @@
       {
         "name": "Wallbit · Circuito exportador con Santander",
         "url": "https://help.wallbit.io/es/articles/12632940-como-registrar-cobros-del-exterior-con-santander"
+      },
+      {
+        "name": "Wallbit · Tarifas por plan y método",
+        "url": "https://www.wallbit.io/es/pricing"
       }
     ]
   },
@@ -326,7 +354,7 @@
       "percent": "0",
       "network": "0",
       "other": "0",
-      "receiving": null
+      "receiving": "0"
     },
     "rate": "1",
     "status": "partial",
@@ -340,6 +368,10 @@
       {
         "name": "Wise · Precio USD fuera de EE.UU.",
         "url": "https://wise.com/help/articles/2946451/how-much-does-it-cost-to-send-usd-to-countries-outside-the-us"
+      },
+      {
+        "name": "Wallbit · Tarifas por plan y método",
+        "url": "https://www.wallbit.io/es/pricing"
       }
     ]
   },
@@ -351,22 +383,27 @@
     "currencyIn": "USD",
     "currencyOut": "USD",
     "method": "ach",
-    "networkName": null,
+    "networkName": "Plan Classic",
     "fees": {
-      "fixed": null,
-      "percent": "0",
+      "fixed": "0",
+      "percent": "1",
       "network": "0",
       "other": "0",
-      "receiving": null
+      "receiving": null,
+      "percentMinimum": "5"
     },
     "rate": "1",
     "status": "partial",
     "reviewedAt": "2026-10-29",
-    "note": "Método publicado; tarifa y recepción por confirmar según plan y cuenta. ACH y wire son métodos distintos.",
+    "note": "Referencia plan Classic:1%, mínimoUSD5. Se cobra el mayor de porcentaje y mínimo, no ambos sumados. Pro/Max publican0,5% con el mismo mínimo; este movimiento calcula Classic. Suscripciones mensuales no incluidas. Recepción del banco de destino sin referencia: neto parcial. Confirmá condiciones en tu cuenta.",
     "sources": [
       {
         "name": "Wallbit · Métodos de retiro",
         "url": "https://help.wallbit.io/es/articles/8062980-como-retiro-dinero-de-mi-cuenta-de-wallbit"
+      },
+      {
+        "name": "Wallbit · Tarifas por plan y método",
+        "url": "https://www.wallbit.io/es/pricing"
       }
     ]
   },
@@ -384,7 +421,7 @@
       "percent": "0",
       "network": "0",
       "other": "0",
-      "receiving": null
+      "receiving": "0"
     },
     "rate": "1",
     "status": "partial",
@@ -398,6 +435,10 @@
       {
         "name": "Wise · Precio USD fuera de EE.UU.",
         "url": "https://wise.com/help/articles/2946451/how-much-does-it-cost-to-send-usd-to-countries-outside-the-us"
+      },
+      {
+        "name": "Wallbit · Tarifas por plan y método",
+        "url": "https://www.wallbit.io/es/pricing"
       }
     ]
   },
@@ -409,22 +450,27 @@
     "currencyIn": "USD",
     "currencyOut": "USD",
     "method": "wire",
-    "networkName": null,
+    "networkName": "Plan Classic",
     "fees": {
-      "fixed": null,
-      "percent": "0",
+      "fixed": "0",
+      "percent": "1",
       "network": "0",
       "other": "0",
-      "receiving": null
+      "receiving": null,
+      "percentMinimum": "25"
     },
     "rate": "1",
     "status": "partial",
     "reviewedAt": "2026-10-29",
-    "note": "Método publicado; tarifa y recepción por confirmar según plan y cuenta. ACH y wire son métodos distintos.",
+    "note": "Referencia plan Classic:1%, mínimoUSD25. Se cobra el mayor de porcentaje y mínimo, no ambos sumados. Pro/Max publican0,5% con el mismo mínimo; este movimiento calcula Classic. Suscripciones mensuales no incluidas. Recepción del banco de destino sin referencia: neto parcial. Confirmá condiciones en tu cuenta.",
     "sources": [
       {
         "name": "Wallbit · Métodos de retiro",
         "url": "https://help.wallbit.io/es/articles/8062980-como-retiro-dinero-de-mi-cuenta-de-wallbit"
+      },
+      {
+        "name": "Wallbit · Tarifas por plan y método",
+        "url": "https://www.wallbit.io/es/pricing"
       }
     ]
   },

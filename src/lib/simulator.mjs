@@ -21,7 +21,9 @@ export function calculateJourney({amount,currency,origin,stages}){
    if(s.currencyIn===s.currencyOut&&rate!==SCALE)throw new Error('La misma moneda no requiere conversión: usá una cotización de 1.');
    const percent=parseDecimal(s.percent);if(percent>100n*SCALE)throw new Error('El porcentaje no puede superar 100.');
    const fixed=parseDecimal(s.fixed,precision(currentCurrency)),network=parseDecimal(s.network,precision(currentCurrency)),other=parseDecimal(s.other,precision(currentCurrency));
-   const percentFee=roundRationalCurrency(balance*percent,100n*SCALE,currentCurrency);
+   const proportional=roundRationalCurrency(balance*percent,100n*SCALE,currentCurrency);
+   const minimum=parseDecimal(s.percentMinimum??'0',precision(currentCurrency));
+   const percentFee=proportional>minimum?proportional:minimum;
    const fee=fixed+percentFee+other+(s.networkSeparate?0n:network);
    if(fee>balance)throw new Error('Los gastos superan el importe disponible.');
    const afterFees=balance-fee;
