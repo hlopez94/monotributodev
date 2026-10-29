@@ -1,0 +1,90 @@
+{
+  "arca": {
+    "name": "ARCA · Exportación de servicios",
+    "url": "https://www.arca.gob.ar/monotributo/exportacion-servicios/"
+  },
+  "cuitTipos": {
+    "name": "ARCA · CUIT-país y tipo de sujeto",
+    "url": "https://arca.gob.ar/inversiones-bienes-uso/documentos/CUIT-pais.pdf"
+  },
+  "cuit": {
+    "name": "ARCA · CUIT por país",
+    "url": "https://servicioscf.afip.gob.ar/publico/FE-lista-paises/paises.aspx"
+  },
+  "bcra": {
+    "name": "BCRA · Exterior y Cambios, sección 2.2",
+    "url": "https://www.bcra.gob.ar/Pdfs/Texord/t-excbio.pdf"
+  },
+  "santander": {
+    "name": "Santander · Datos para recibir fondos",
+    "url": "https://ayuda.santander.com.ar/06AK356I2O-1/article/KPLFB397X1-que-datos-necesitas-para-recibir-fondos-exterior/"
+  },
+  "santanderCobro": {
+    "name": "Santander · Acreditar fondos del exterior",
+    "url": "https://ayuda.santander.com.ar/06AK356I2O-1/article/B8BTMXKQ8Q-como-acreditar-fondos-exterior-tu-cuenta/"
+  },
+  "bbva": {
+    "name": "BBVA · Instrucciones para recibir fondos",
+    "url": "https://www.bbva.com.ar/personas/productos/comex/instrucciones-para-recibir-fondos-del-exterior.html"
+  },
+  "galicia": {
+    "name": "Galicia · Documentación de cobros del exterior",
+    "url": "https://comex.galicia.ar/content/dam/galicia/comex/formularios/personas/Codigos_de_concepto_Cobros_del_exterior.pdf"
+  },
+  "wise": {
+    "name": "Wise · USD por SWIFT a Argentina",
+    "url": "https://wise.com/help/articles/2974947/what-countries-and-regions-can-i-send-usd-to-via-swift"
+  },
+  "wiseFields": {
+    "name": "Wise · Datos bancarios para enviar USD",
+    "url": "https://wise.com/help/articles/4pumKbx24JZpG49f0fdTjo/entering-usd-bank-details"
+  },
+  "payoneer": {
+    "name": "Payoneer · Retiros en Argentina",
+    "url": "https://pages.payoneer.com/es/withdrawal-of-funds/"
+  },
+  "payoneerSteps": {
+    "name": "Payoneer · Cómo retirar al banco",
+    "url": "https://www.payoneer.com/es/resources/how-to-use-payoneer/como-retirar-fondos-de-payoneer-a-tu-cuenta-bancaria/"
+  },
+  "wallbit": {
+    "name": "Wallbit · Exportación de servicios a Santander",
+    "url": "https://help.wallbit.io/es/articles/12632940-como-registrar-cobros-del-exterior-con-santander"
+  },
+  "wallbitStatement": {
+    "name": "Wallbit · Extractos mensuales y período en curso",
+    "url": "https://help.wallbit.io/es/articles/11198850-como-descargar-los-documentos-financieros-desde-wallbit"
+  },
+  "wallbitSupport": {
+    "name": "Wallbit · Contactar a soporte",
+    "url": "https://help.wallbit.io/es/articles/8062891-como-puedo-comunicarme-con-wallbit"
+  },
+  "wallbitArs": {
+    "name": "Wallbit · Retiros locales y otras monedas",
+    "url": "https://help.wallbit.io/es/articles/8062980-como-retiro-dinero-de-mi-cuenta-de-wallbit"
+  },
+  "deel": {
+    "name": "Deel · Métodos de retiro y SWIFT",
+    "url": "https://help.letsdeel.com/hc/en-gb/articles/7338494928913-How-Contractors-can-move-funds-from-Deel"
+  },
+  "nexo": {
+    "name": "Nexo Argentina · Información del producto",
+    "url": "https://nexo.com/es-ar"
+  },
+  "arba": {
+    "name": "ARBA · Actividades no alcanzadas por IBS",
+    "url": "https://web.arba.gov.ar/preguntas-frecuentes/quienes-se-identificanclasificanincorporan-ingresos-brutos-simplificado-ibs"
+  },
+  "arbaCero": {
+    "name": "ARBA · Padrón de alícuota cero",
+    "url": "https://www.arba.gov.ar/GuiaTramites/TramiteSeleccionado.asp?mostrar=S&tramite=666"
+  },
+  "reddit": {
+    "name": "Post original y conversaciones de la comunidad",
+    "url": "https://www.reddit.com/r/devsfinanzas/comments/1t3o1x0/gu%C3%ADa_definitiva_cobrar_usd_por_swift_en_argentina/"
+  },
+  "recategorizacion": {
+    "name": "ARCA · Recategorización",
+    "url": "https://serviciosweb.arca.gob.ar/genericos/guiasPasoPaso/VerGuia.aspx?id=515"
+  }
+}

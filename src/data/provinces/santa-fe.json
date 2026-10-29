@@ -1,0 +1,77 @@
+{
+  "id": "santa-fe",
+  "agency": "API",
+  "status": "partial",
+  "reviewedAt": "2026-10-29",
+  "scope": "El simplificado provincial es optativo. Santa Fe no figura en la lista de Monotributo Unificado consultada; no son el mismo régimen.",
+  "regime": {
+    "title": "1. Revisar el simplificado provincial",
+    "status": "partial",
+    "intro": "No tramites una baja nacional para modificar IIBB. No confirmamos una exclusión obligatoria por el solo hecho de exportar.",
+    "steps": [
+      "Consultá tu situación ante API y el Régimen Simplificado provincial. Confirmá si corresponde inscripción, permanencia o renuncia según tu actividad.",
+      "La gestión del simplificado está incorporada a SIAT. Accedé desde el portal oficial con CUIT y clave fiscal y los servicios que indica API.",
+      "Si corresponde renunciar, verificá antes la fecha de efecto y las restricciones de reingreso: la norma publicada prevé efectos desde el mes siguiente y tres años calendario posteriores. Guardá la constancia y confirmá tu situación resultante."
+    ],
+    "sources": [
+      {
+        "name": "API · Régimen Simplificado provincial",
+        "url": "https://www.santafe.gob.ar/index.php/tramites/modul1/index?id=233486&m=descripcion"
+      },
+      {
+        "name": "Santa Fe · Normativa del simplificado (21/01/2025)",
+        "url": "https://www.santafe.gob.ar/boletinoficial/ver.php?seccion=2025%2F2025-01-21avisos.html"
+      },
+      {
+        "name": "API · Sistema Integral de Administración Tributaria",
+        "url": "https://www.santafe.gov.ar/index.php/web/Estructura-de-Gobierno/Ministerios/Economia/Secretaria-de-Hacienda/Subsecretaria-de-Ingresos-Publicos/Administracion-Provincial-de-Impuestos/Temas-Especificos/Ingresos-Brutos/Sistema-Integral-de-Administracion-Tributaria"
+      },
+      {
+        "name": "ARCA · Jurisdicciones del Monotributo Unificado",
+        "url": "https://www.afip.gob.ar/monotributo/ayuda/monotributo-unificado.asp"
+      }
+    ]
+  },
+  "exports": {
+    "title": "2. Tratamiento de las exportaciones",
+    "status": "partial",
+    "intro": "El Código Fiscal publicado por API contempla servicios utilizados o prestados efectivamente en el exterior como ingresos no gravados.",
+    "steps": [
+      "Conservá Facturas E, contratos u otros respaldos que permitan acreditar la naturaleza y utilización del servicio en el exterior.",
+      "No confundas este tratamiento con la exención por profesión liberal: son fundamentos y gestiones diferentes.",
+      "Para actividad exclusivamente no gravada, confirmá con API la situación registral y las obligaciones que corresponden. No tenemos verificada una obligación universal de alta en régimen general para todo exportador exclusivo."
+    ],
+    "sources": [
+      {
+        "name": "API · Código Fiscal, texto ordenado 2024",
+        "url": "https://www.santafe.gob.ar/index.php/web/content/download/215084/1115740/file/Codigo%20Fiscal%20-%20texto%20ordenado%202024.pdf"
+      },
+      {
+        "name": "API · Sistema Integral de Administración Tributaria",
+        "url": "https://www.santafe.gov.ar/index.php/web/Estructura-de-Gobierno/Ministerios/Economia/Secretaria-de-Hacienda/Subsecretaria-de-Ingresos-Publicos/Administracion-Provincial-de-Impuestos/Temas-Especificos/Ingresos-Brutos/Sistema-Integral-de-Administracion-Tributaria"
+      }
+    ],
+    "treatment": "no-gravado"
+  },
+  "monthly": {
+    "title": "3. DDJJ si sos contribuyente local del régimen general",
+    "status": "partial",
+    "intro": "SIAT permite presentar DDJJ mensuales y anuales. La obligación depende de tu condición registral.",
+    "steps": [
+      "Ingresá al portal SIAT desde el enlace oficial y habilitá el servicio de API que allí se indica mediante clave fiscal.",
+      "Seleccioná el período y discriminá ingresos gravados, exentos y no gravados con el encuadre correspondiente. Declarar exportaciones no gravadas no significa declarar que no tuviste ingresos.",
+      "Revisá la liquidación completa, presentá y guardá el acuse; controlá también la anual. No verificamos la pantalla exacta ni el casillero actual para exportaciones: confirmalo con API antes de cargar."
+    ],
+    "sources": [
+      {
+        "name": "API · Sistema Integral de Administración Tributaria",
+        "url": "https://www.santafe.gov.ar/index.php/web/Estructura-de-Gobierno/Ministerios/Economia/Secretaria-de-Hacienda/Subsecretaria-de-Ingresos-Publicos/Administracion-Provincial-de-Impuestos/Temas-Especificos/Ingresos-Brutos/Sistema-Integral-de-Administracion-Tributaria"
+      },
+      {
+        "name": "API · Código Fiscal, texto ordenado 2024",
+        "url": "https://www.santafe.gob.ar/index.php/web/content/download/215084/1115740/file/Codigo%20Fiscal%20-%20texto%20ordenado%202024.pdf"
+      }
+    ],
+    "appliesTo": "general"
+  }
+}

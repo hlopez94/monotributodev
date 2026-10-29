@@ -50,3 +50,13 @@ No quedan hallazgos P0/P1/P2 de diseño. P3: el raster usa marcas en los selecto
 - Revisión independiente sin hallazgos Critical/Important. Mejoras menores diferidas: búsqueda por teclado con letras repetidas/espacios; redacción del caso poco común Cliente directo + cuenta propia; automatizar comprobaciones de foco/cierre que se validaron manualmente.
 - Pruebas: 16 de lógica/API + 4 de empaquetado aprobadas, build correcto.
 - Producción verificada: Pages workflow 40910187839 exitoso (144b4d2); ocho marcas de bancos cargadas desde ./brands sin errores de imagen. Captura final: docs/qa/selectors-public.png.
+
+## Actualización: catálogos JSON y provincias (29/10/2026)
+
+- Se mantienen tipografía, verde y estructura existentes. Trámites provinciales en tres bloques numerados, cada uno con estado, instrucciones, fuentes y aporte contextual. Aviso visible de errores posibles y fecha de revisión.
+- Navegador: régimen general muestra DDJJ local; CM cambia a SIFERE; desconocido pide confirmar; ingresos mixtos muestra aviso. Cambio de provincia vuelve el régimen a desconocido para no trasladar supuestos.
+- Mendoza (sin ficha ampliada) conserva portal oficial, faltantes y contribución; no hereda instrucciones de Buenos Aires. Entre Ríos muestra módulo de exportador específico.
+- Móvil 390 × 844: ancho de contenido 375 y scrollWidth 375, sin desbordes horizontales. Se restableció el tamaño predeterminado. Capturas docs/qa/provinces-desktop.png y provinces-mobile.png.
+- Catálogos de cobros comparados como objetos contra la versión anterior por revisor independiente: idénticos. Revisadas referencias, IDs, los 24 archivos provinciales y fuentes/aportes.
+- Revisión independiente json_provinces_review sin defectos Critical/Important ni minor concreto. Límite: algunos PDF y páginas oficiales no se pudieron revalidar de nuevo; la cobertura y los bloqueos están documentados en las fichas y la investigación.
+- 19 pruebas de lógica/API/catálogos y 4 de empaquetado aprobadas. Build frontend y bundle API en seco correctos.

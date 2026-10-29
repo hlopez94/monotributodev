@@ -1,0 +1,146 @@
+[
+  {
+    "id": "caba",
+    "name": "Ciudad Autónoma de Buenos Aires",
+    "agencyUrl": "https://www.agip.gob.ar/",
+    "status": "partial"
+  },
+  {
+    "id": "buenos-aires",
+    "name": "Buenos Aires",
+    "agencyUrl": "https://www.arba.gov.ar/",
+    "status": "partial"
+  },
+  {
+    "id": "catamarca",
+    "name": "Catamarca",
+    "agencyUrl": "https://arcat.gob.ar/",
+    "status": "missing"
+  },
+  {
+    "id": "chaco",
+    "name": "Chaco",
+    "agencyUrl": "https://atp.chaco.gob.ar/",
+    "status": "missing"
+  },
+  {
+    "id": "chubut",
+    "name": "Chubut",
+    "agencyUrl": "https://www.dgrchubut.gov.ar/",
+    "status": "missing"
+  },
+  {
+    "id": "cordoba",
+    "name": "Córdoba",
+    "agencyUrl": "https://www.rentascordoba.gob.ar/",
+    "status": "partial"
+  },
+  {
+    "id": "corrientes",
+    "name": "Corrientes",
+    "agencyUrl": "https://www.dgrcorrientes.gov.ar/",
+    "status": "missing"
+  },
+  {
+    "id": "entre-rios",
+    "name": "Entre Ríos",
+    "agencyUrl": "https://www.ater.gob.ar/",
+    "status": "partial"
+  },
+  {
+    "id": "formosa",
+    "name": "Formosa",
+    "agencyUrl": "https://www.dgrformosa.gob.ar/",
+    "status": "missing"
+  },
+  {
+    "id": "jujuy",
+    "name": "Jujuy",
+    "agencyUrl": "https://www.rentasjujuy.gob.ar/",
+    "status": "missing"
+  },
+  {
+    "id": "la-pampa",
+    "name": "La Pampa",
+    "agencyUrl": "https://dgr.lapampa.gob.ar/",
+    "status": "missing"
+  },
+  {
+    "id": "la-rioja",
+    "name": "La Rioja",
+    "agencyUrl": "https://dgiplarioja.gob.ar/",
+    "status": "missing"
+  },
+  {
+    "id": "mendoza",
+    "name": "Mendoza",
+    "agencyUrl": "https://www.atm.mendoza.gov.ar/",
+    "status": "missing"
+  },
+  {
+    "id": "misiones",
+    "name": "Misiones",
+    "agencyUrl": "https://atmisiones.gob.ar/",
+    "status": "missing"
+  },
+  {
+    "id": "neuquen",
+    "name": "Neuquén",
+    "agencyUrl": "https://dprneuquen.gob.ar/",
+    "status": "missing"
+  },
+  {
+    "id": "rio-negro",
+    "name": "Río Negro",
+    "agencyUrl": "https://agencia.rionegro.gov.ar/",
+    "status": "missing"
+  },
+  {
+    "id": "salta",
+    "name": "Salta",
+    "agencyUrl": "https://www.dgrsalta.gov.ar/",
+    "status": "missing"
+  },
+  {
+    "id": "san-juan",
+    "name": "San Juan",
+    "agencyUrl": "https://www.ca.gob.ar/datos-jurisdicciones",
+    "status": "missing"
+  },
+  {
+    "id": "san-luis",
+    "name": "San Luis",
+    "agencyUrl": "https://www.ca.gob.ar/datos-jurisdicciones",
+    "status": "missing"
+  },
+  {
+    "id": "santa-cruz",
+    "name": "Santa Cruz",
+    "agencyUrl": "https://www.asip.gob.ar/",
+    "status": "missing"
+  },
+  {
+    "id": "santa-fe",
+    "name": "Santa Fe",
+    "agencyUrl": "https://www.santafe.gov.ar/",
+    "status": "partial"
+  },
+  {
+    "id": "santiago",
+    "name": "Santiago del Estero",
+    "agencyUrl": "https://www.dgrsantiago.gov.ar/",
+    "status": "missing"
+  },
+  {
+    "id": "tierra-del-fuego",
+    "name": "Tierra del Fuego",
+    "agencyUrl": "https://www.aref.gob.ar/",
+    "status": "missing"
+  },
+  {
+    "id": "tucuman",
+    "name": "Tucumán",
+    "agencyUrl": "https://www.rentastucuman.gob.ar/",
+    "status": "missing"
+  }
+]

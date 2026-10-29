@@ -1,0 +1,34 @@
+{
+  "reviewedAt": "2026-10-29",
+  "warning": "Esta guía puede contener errores o quedar desactualizada. Las pantallas y obligaciones dependen de tu inscripción y actividad. Su autor no es contador; contrastá las fuentes y consultá a un profesional. Aportá correcciones, enlaces o tu experiencia para mejorarla, sin publicar datos privados.",
+  "monthlyNotZero": "Declarar impuesto cero no es declarar ingresos cero. No fuerces un resultado: informá los ingresos reales y su tratamiento. Factura E no garantiza por sí sola exención, no inscripción, ausencia de retenciones ni saldo final cero.",
+  "regimeMessages": {
+    "unknown": "Primero confirmá tu régimen provincial y si tenés obligación de presentar. Elegí Régimen general para ver los pasos locales; si estás en Convenio Multilateral, usá SIFERE.",
+    "simplified": "Mientras estés válidamente en un régimen simplificado, no apliques automáticamente la presentación del general. Revisá la gestión provincial y su fecha efectiva antes de cambiar tus obligaciones.",
+    "not-registered": "Una condición de no inscripto, no alcanzado o exento no equivale por sí sola a una dispensa de DDJJ. Confirmá el encuadre y si el organismo exige inscripción o presentaciones; no tomes una baja como universal."
+  },
+  "cm": {
+    "title": "3. Convenio Multilateral: SIFERE Web",
+    "status": "partial",
+    "intro": "Si ya tributás por Convenio Multilateral, no uses la DDJJ local de esta ficha. El encuadre en CM requiere analizar dónde se ejerce la actividad.",
+    "steps": [
+      "Ingresá con clave fiscal al servicio Convenio Multilateral – SIFERE WEB – DDJJ y creá la mensual CM03 correspondiente.",
+      "En Datos a Nivel País → Datos de Facturación, informá las exportaciones. COMARB exige reflejar esos conceptos también en Ingresos No Gravados por jurisdicción; si no es factible discriminarlos, indica asignar el total a la sede.",
+      "Contrastá el tratamiento de cada jurisdicción y revisá las validaciones y la liquidación final antes de presentar. No garantizamos saldo cero por el solo hecho de cargar Facturas E. Guardá el acuse y controlá la anual CM05 según calendario."
+    ],
+    "sources": [
+      {
+        "name": "COMARB · Acceso y módulos SIFERE",
+        "url": "https://www.ca.gob.ar/preguntas-frecuentes/sistemas/sifere/sifere-web-consultas/que-funcionalidad-tiene-cada-uno-de-los-modulos-del-sifere-web"
+      },
+      {
+        "name": "COMARB · Exportaciones e ingresos no gravados por jurisdicción",
+        "url": "https://www.ca.gob.ar/preguntas-frecuentes/sistemas/sifere/sifere-web-ddjj/se-deben-incluir-el-iva-exportaciones-y-el-resto-de-los-datos-de-facturacion-tambien-como-ingresos-no-gravados-cuando-se-hace-la-carga-por-jurisdiccion"
+      },
+      {
+        "name": "COMARB · Validaciones de liquidación",
+        "url": "https://www.ca.gob.ar/preguntas-frecuentes/sistemas/sifere/sifere-web-ddjj/que-datos-valida-sifere-para-permitir-cerrar-la-liquidacion-total"
+      }
+    ]
+  }
+}

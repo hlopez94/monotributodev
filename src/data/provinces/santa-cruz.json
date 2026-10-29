@@ -1,0 +1,44 @@
+{
+  "id": "santa-cruz",
+  "agency": "Santa Cruz",
+  "status": "missing",
+  "reviewedAt": null,
+  "scope": "Aún no contamos con una guía validada para esta jurisdicción. No trasladamos automáticamente los procedimientos de otra provincia.",
+  "regime": {
+    "title": "1. Régimen simplificado / unificado",
+    "status": "missing",
+    "intro": "Procedimiento pendiente de verificar. Consultá al organismo provincial y aportá el enlace público o su respuesta sin datos privados.",
+    "steps": [],
+    "sources": [
+      {
+        "name": "Portal provincial / organismo",
+        "url": "https://www.asip.gob.ar/"
+      }
+    ]
+  },
+  "exports": {
+    "title": "2. Tratamiento de exportaciones en IIBB",
+    "status": "missing",
+    "intro": "Procedimiento pendiente de verificar. Consultá al organismo provincial y aportá el enlace público o su respuesta sin datos privados.",
+    "steps": [],
+    "sources": [
+      {
+        "name": "Portal provincial / organismo",
+        "url": "https://www.asip.gob.ar/"
+      }
+    ]
+  },
+  "monthly": {
+    "title": "3. Declaración mensual, si corresponde",
+    "status": "missing",
+    "intro": "Procedimiento pendiente de verificar. Consultá al organismo provincial y aportá el enlace público o su respuesta sin datos privados.",
+    "steps": [],
+    "sources": [
+      {
+        "name": "Portal provincial / organismo",
+        "url": "https://www.asip.gob.ar/"
+      }
+    ],
+    "appliesTo": "general"
+  }
+}

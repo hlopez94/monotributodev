@@ -1,0 +1,73 @@
+{
+  "id": "entre-rios",
+  "agency": "ATER",
+  "status": "partial",
+  "reviewedAt": "2026-10-29",
+  "scope": "ATER tiene una gestión específica para registrar exportadores. Verificá la migración y sus efectos en tu legajo.",
+  "regime": {
+    "title": "1. Registro de exportador y régimen provincial",
+    "status": "partial",
+    "intro": "ATER informa que el registro de exportador permite migrar del simplificado al régimen general.",
+    "steps": [
+      "Revisá la inscripción y constituí el Domicilio Fiscal Electrónico de ATER antes de iniciar la gestión.",
+      "Ingresá con clave fiscal al servicio Servicios Administradora Tributaria de Entre Ríos y abrí Servicios → Sistema de Exenciones → Exportaciones Art. 197 U.",
+      "Completá la solicitud y los respaldos que pida la aplicación. Conservá la constancia y verificá el encuadre y la fecha efectiva comunicada por ATER; no des de baja el Monotributo nacional."
+    ],
+    "sources": [
+      {
+        "name": "ATER · Registro de exportadores y pase al general",
+        "url": "https://www.ater.gob.ar/ater2/NoticiasV2.asp?ID=483"
+      },
+      {
+        "name": "ATER · RG 083/2023, Sistema de Exenciones - Exportaciones",
+        "url": "https://www.ater.gob.ar/Normativas/uploaded/2023/resolucion%20n%20083%20sistema%20de%20exenciones%20exportaciones.pdf"
+      },
+      {
+        "name": "ARCA · Jurisdicciones del Monotributo Unificado",
+        "url": "https://www.afip.gob.ar/monotributo/ayuda/monotributo-unificado.asp"
+      }
+    ]
+  },
+  "exports": {
+    "title": "2. Gestionar la exención por exportación",
+    "status": "partial",
+    "intro": "La RG 083/2023 aprueba el Sistema de Exenciones para exportaciones y exige DFE.",
+    "steps": [
+      "Usá el módulo Exportaciones para informar la condición de exportador. Conservá el respaldo de los servicios y sus comprobantes.",
+      "Seguí la solicitud en el sistema y el DFE. No tenemos verificados una lista exhaustiva de adjuntos ni un plazo fijo de aprobación: confirmalos en el trámite.",
+      "Diferenciá exportaciones de operaciones locales y de otras exenciones. El beneficio no libera automáticamente de todas las obligaciones formales."
+    ],
+    "sources": [
+      {
+        "name": "ATER · RG 083/2023, Sistema de Exenciones - Exportaciones",
+        "url": "https://www.ater.gob.ar/Normativas/uploaded/2023/resolucion%20n%20083%20sistema%20de%20exenciones%20exportaciones.pdf"
+      },
+      {
+        "name": "ATER · Exenciones y dispensa de DDJJ",
+        "url": "https://www.ater.gob.ar/ater2/pregfrec/busquedaIDQ.asp?bID=216"
+      }
+    ],
+    "treatment": "exento"
+  },
+  "monthly": {
+    "title": "3. Declarar como contribuyente directo en DIU",
+    "status": "partial",
+    "intro": "La exención por exportación no aparece entre las dispensas de presentación mensual de la FAQ consultada.",
+    "steps": [
+      "Entrá desde ARCA al servicio Mis Aplicaciones Web y a la Declaración Impositiva Unificada de ATER. Revisá NAES y DFE según el acceso oficial.",
+      "Seleccioná el período e informá los ingresos reales aplicando el tratamiento exento que corresponda. No cargues toda la facturación en cero: separá también operaciones gravadas locales.",
+      "Controlá impuesto, deducciones y saldos, presentá y conservá el acuse. La pantalla exacta de carga para exportaciones no está verificada en esta ficha; seguí las instrucciones vigentes de DIU."
+    ],
+    "sources": [
+      {
+        "name": "ATER · Declaración Impositiva Unificada (DIU)",
+        "url": "https://www.ater.gob.ar/ater2/diu.asp"
+      },
+      {
+        "name": "ATER · Exenciones y dispensa de DDJJ",
+        "url": "https://www.ater.gob.ar/ater2/pregfrec/busquedaIDQ.asp?bID=216"
+      }
+    ],
+    "appliesTo": "general"
+  }
+}

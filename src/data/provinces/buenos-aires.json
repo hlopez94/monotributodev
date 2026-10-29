@@ -1,0 +1,70 @@
+{
+  "id": "buenos-aires",
+  "agency": "ARBA",
+  "status": "partial",
+  "reviewedAt": "2026-10-29",
+  "scope": "Contribuyentes locales. La vía No Alcanzado y la salida al régimen general tienen efectos distintos.",
+  "regime": {
+    "title": "1. Revisar el unificado: Exclusión o No Alcanzado",
+    "status": "partial",
+    "intro": "Exportar no obliga a elegir siempre el régimen general. ARBA distingue dos gestiones.",
+    "steps": [
+      "Abrí el trámite oficial e ingresá a la aplicación de Ingresos Brutos Simplificado con CUIT y CIT.",
+      "Si corresponde seguir inscripto en IIBB como contribuyente directo, la opción Exclusión mantiene esa inscripción y sus DDJJ mensuales y anuales.",
+      "Si toda tu actividad reúne las condiciones de no alcanzado, revisá la opción No Alcanzado. ARBA incluye exportación exclusiva de bienes o servicios al exterior. Esa opción también cesa la inscripción en IIBB; no equivale a la anterior.",
+      "Confirmá solo la opción que corresponde, guardá la constancia y verificá el estado en Consultas y el componente provincial de tu credencial. No des de baja el Monotributo nacional para este trámite."
+    ],
+    "sources": [
+      {
+        "name": "ARBA · Exclusión o No Alcanzado",
+        "url": "https://www.arba.gov.ar/GuiaTramites/TramiteSeleccionado.asp?tramite=688"
+      },
+      {
+        "name": "ARBA · Actividades no alcanzadas por IBS",
+        "url": "https://web.arba.gov.ar/preguntas-frecuentes/quienes-se-identificanclasificanincorporan-ingresos-brutos-simplificado-ibs"
+      }
+    ]
+  },
+  "exports": {
+    "title": "2. Exportaciones: no alcanzado y padrón de recaudación",
+    "status": "partial",
+    "intro": "La condición frente al impuesto y la alícuota de retenciones son trámites distintos.",
+    "steps": [
+      "Separá las exportaciones reales de servicios de los ingresos locales. Tener Factura E no reemplaza verificar el encuadre provincial.",
+      "Si tu actividad es exclusivamente exportación de servicios, revisá el trámite específico de incorporación al padrón 0%. Prepará nota sobre la actividad, facturas correlativas del mes anterior y detalle de puntos de venta; la guía agrega documentos societarios para personas jurídicas.",
+      "Desde Iniciar trámite, completá los datos y adjuntá los respaldos indicados. Guardá el número de solicitud y seguí su estado. El padrón 0% no decide por sí solo si tenés obligación de presentar DDJJ."
+    ],
+    "sources": [
+      {
+        "name": "ARBA · Actividades no alcanzadas por IBS",
+        "url": "https://web.arba.gov.ar/preguntas-frecuentes/quienes-se-identificanclasificanincorporan-ingresos-brutos-simplificado-ibs"
+      },
+      {
+        "name": "ARBA · Padrón 0% para exportación exclusiva de servicios",
+        "url": "https://www.arba.gov.ar/GuiaTramites/TramiteSeleccionado.asp?mostrar=S&tramite=666"
+      }
+    ],
+    "treatment": "no-gravado"
+  },
+  "monthly": {
+    "title": "3. DDJJ mensual si seguís en régimen general",
+    "status": "partial",
+    "intro": "Esta presentación es para contribuyentes directos inscriptos; la guía oficial excluye simplificado y Convenio Multilateral.",
+    "steps": [
+      "Entrá a DDJJ Web con CUIT y CIT desde Declaraciones Juradas y deducciones informadas. Elegí el anticipo y revisá las actividades.",
+      "Informá los ingresos reales del período y discriminá gravados, no gravados y exentos según el encuadre. Exportaciones no alcanzadas no se cargan como facturación cero ni se confunden con una exención de otra actividad.",
+      "Revisá impuesto determinado, deducciones y saldos; confirmá la presentación y guardá el acuse. Un importe a pagar cero depende de toda la liquidación, no solo de tener Facturas E. Controlá también la DDJJ anual."
+    ],
+    "sources": [
+      {
+        "name": "ARBA · DDJJ mensual de contribuyentes directos",
+        "url": "https://arba.gov.ar/guiatramites/TramiteSeleccionado.asp?tramite=559"
+      },
+      {
+        "name": "ARBA · Instructivo DDJJ Web",
+        "url": "https://www.arba.gov.ar/archivos/Publicaciones/Instructivo%20Presentacion%20Web%20DDJJ%20IIBB%20Periodicas%20y%20Anuales.pdf"
+      }
+    ],
+    "appliesTo": "general"
+  }
+}

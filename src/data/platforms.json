@@ -1,0 +1,87 @@
+[
+  {
+    "id": "wise",
+    "name": "Wise",
+    "status": "verified",
+    "sources": [
+      "wise",
+      "wiseFields"
+    ],
+    "hint": "Retiro internacional en USD"
+  },
+  {
+    "id": "payoneer",
+    "name": "Payoneer",
+    "status": "verified",
+    "sources": [
+      "payoneer",
+      "payoneerSteps"
+    ],
+    "hint": "Verificá moneda y método de retiro"
+  },
+  {
+    "id": "wallbit",
+    "name": "Wallbit",
+    "status": "verified",
+    "sources": [
+      "wallbit",
+      "wallbitArs"
+    ],
+    "hint": "SWIFT / exportador de servicios"
+  },
+  {
+    "id": "deel",
+    "name": "Deel",
+    "status": "verified",
+    "sources": [
+      "deel"
+    ],
+    "hint": "Método Bank Transfer / SWIFT"
+  },
+  {
+    "id": "directo",
+    "name": "Cliente directo",
+    "status": "partial",
+    "sources": [
+      "santander"
+    ],
+    "hint": "El cliente transfiere al banco argentino"
+  },
+  {
+    "id": "nexo-ar",
+    "name": "Nexo Argentina",
+    "status": "partial",
+    "sources": [
+      "nexo"
+    ],
+    "hint": "Ruta cripto: revisión profesional"
+  },
+  {
+    "id": "nexo-int",
+    "name": "Nexo Internacional",
+    "status": "missing",
+    "sources": [],
+    "hint": "Aportá información de esta ruta"
+  },
+  {
+    "id": "cripto",
+    "name": "Cripto / otra billetera",
+    "status": "missing",
+    "sources": [],
+    "hint": "Aportá información de esta ruta"
+  },
+  {
+    "id": "banco-usa",
+    "name": "Cuenta bancaria en EE.UU.",
+    "status": "missing",
+    "sources": [],
+    "hint": "Aportá información de esta ruta"
+  },
+  {
+    "id": "otro",
+    "name": "Otra plataforma",
+    "status": "missing",
+    "sources": [],
+    "hint": "Aportá información de esta ruta"
+  }
+]

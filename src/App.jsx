@@ -1,6 +1,6 @@
 import React,{useEffect,useRef,useState} from 'react';
 import {GithubLogo,ArrowRight,ArrowSquareOut,Code,Heart,Info} from '@phosphor-icons/react';
-import {RouteGuide} from './components/RouteGuide.jsx';import {Simulator} from './components/Simulator.jsx';import {CountryCuit,BankDirectory,Cases} from './components/Directories.jsx';import {ProvinceGuide} from './components/ProvinceGuide.jsx';import {CommunityReviews} from './components/CommunityReviews.jsx';import {Sources,Contribution} from './components/Shared.jsx';import {checkedAt,sources} from './data/catalog.mjs';
+import {RouteGuide} from './components/RouteGuide.jsx';import {Simulator} from './components/Simulator.jsx';import {CountryCuit,BankDirectory,Cases} from './components/Directories.jsx';import {ProvinceGuide} from './components/ProvinceGuide.jsx';import {CommunityReviews} from './components/CommunityReviews.jsx';import {Sources,Contribution} from './components/Shared.jsx';import metadata from './data/metadata.json';import sources from './data/sources.json';const {checkedAt}=metadata;
 const nav=[['cobrar','Traer mi cobro'],['simulador','Simulador'],['bancos','Bancos'],['cuit','CUIT-país'],['provincia','Tu provincia'],['comunidad','Comunidad']];
 const views=new Set([...nav.map(n=>n[0]),'casos','fuentes']);
 export function App(){const [view,setView]=useState(()=>views.has(location.hash.slice(1))?location.hash.slice(1):'cobrar'),[entity,setEntity]=useState('santander');const main=useRef(null);

@@ -1,0 +1,152 @@
+[
+  {
+    "origin": "wise",
+    "bank": "santander",
+    "status": "verified",
+    "instructions": [
+      "En Wise, iniciá un envío o retiro y agregá tu propia cuenta bancaria como destinatario.",
+      "Seleccioná una transferencia internacional en USD a Argentina. No uses los datos ACH de una cuenta estadounidense para un destino argentino.",
+      "Cargá los datos de tu banco según la tabla. Los nombres de campos pueden variar según tu cuenta y la versión de Wise."
+    ],
+    "sources": [
+      "wise",
+      "wiseFields",
+      "santander"
+    ],
+    "note": "Datos oficiales de plataforma y banco. La disponibilidad final y los campos se confirman al configurar el envío."
+  },
+  {
+    "origin": "wise",
+    "bank": "bbva",
+    "status": "partial",
+    "instructions": [
+      "En Wise, iniciá un envío o retiro y agregá tu propia cuenta bancaria como destinatario.",
+      "Seleccioná una transferencia internacional en USD a Argentina. No uses los datos ACH de una cuenta estadounidense para un destino argentino.",
+      "Cargá los datos de tu banco según la tabla. Los nombres de campos pueden variar según tu cuenta y la versión de Wise."
+    ],
+    "sources": [
+      "wise",
+      "wiseFields",
+      "bbva"
+    ],
+    "note": "Datos oficiales de plataforma y banco. La disponibilidad final y los campos se confirman al configurar el envío."
+  },
+  {
+    "origin": "payoneer",
+    "bank": "santander",
+    "status": "verified",
+    "instructions": [
+      "Entrá a Retirar y Convertir → Retirar fondos a mi banco.",
+      "Agregá una cuenta bancaria propia de Santander Argentina en USD. Verificá que el método ofrecido acredite dólares, no pesos.",
+      "Elegí el saldo USD, el monto y la cuenta. Revisá la comisión y los datos antes de confirmar."
+    ],
+    "sources": [
+      "payoneer",
+      "payoneerSteps",
+      "santander"
+    ],
+    "note": "Payoneer publica una opción específica para retirar USD a Santander. No asumas que todos los retiros bancarios tienen la misma vía o costo."
+  },
+  {
+    "origin": "wallbit",
+    "bank": "santander",
+    "status": "verified",
+    "instructions": [
+      "En Wallbit, elegí Retirar → Dólares → Exportador de servicio.",
+      "La primera vez, agregá el CBU de tu cuenta en dólares de Santander.",
+      "Revisá el importe y el costo que muestra la aplicación antes de confirmar."
+    ],
+    "sources": [
+      "wallbit",
+      "santanderCobro"
+    ],
+    "note": "La modalidad “exportador de servicio” tiene documentación propia. El retiro local en ARS es una ruta distinta."
+  },
+  {
+    "origin": "deel",
+    "bank": "santander",
+    "status": "partial",
+    "instructions": [
+      "En Deel, entrá a Finance → Withdrawal methods → Add Method.",
+      "Elegí Bank Transfer y comprobá que la modalidad disponible sea internacional/SWIFT en USD para Argentina.",
+      "El nombre del titular debe coincidir con tu perfil. Cargá las coordenadas que te dé COMEX y verificá la dirección."
+    ],
+    "sources": [
+      "deel",
+      "santander"
+    ],
+    "note": "Deel documenta retiros SWIFT; la disponibilidad para tu cuenta y el tratamiento por el banco receptor requieren confirmación."
+  },
+  {
+    "origin": "deel",
+    "bank": "bbva",
+    "status": "partial",
+    "instructions": [
+      "En Deel, entrá a Finance → Withdrawal methods → Add Method.",
+      "Elegí Bank Transfer y comprobá que la modalidad disponible sea internacional/SWIFT en USD para Argentina.",
+      "El nombre del titular debe coincidir con tu perfil. Cargá las coordenadas que te dé COMEX y verificá la dirección."
+    ],
+    "sources": [
+      "deel",
+      "bbva"
+    ],
+    "note": "Deel documenta retiros SWIFT; la disponibilidad para tu cuenta y el tratamiento por el banco receptor requieren confirmación."
+  },
+  {
+    "origin": "deel",
+    "bank": "galicia",
+    "status": "partial",
+    "instructions": [
+      "En Deel, entrá a Finance → Withdrawal methods → Add Method.",
+      "Elegí Bank Transfer y comprobá que la modalidad disponible sea internacional/SWIFT en USD para Argentina.",
+      "El nombre del titular debe coincidir con tu perfil. Cargá las coordenadas que te dé COMEX y verificá la dirección."
+    ],
+    "sources": [
+      "deel",
+      "galicia"
+    ],
+    "note": "Deel documenta retiros SWIFT; la disponibilidad para tu cuenta y el tratamiento por el banco receptor requieren confirmación."
+  },
+  {
+    "origin": "directo",
+    "bank": "santander",
+    "status": "verified",
+    "instructions": [
+      "Pedile a COMEX de tu banco las instrucciones para recibir un cobro del exterior en USD.",
+      "Compartí con tu cliente tus datos de beneficiario y las coordenadas oficiales del banco.",
+      "Pedí el comprobante de transferencia para seguir la operación y conciliar gastos."
+    ],
+    "sources": [
+      "santander"
+    ],
+    "note": "La factura corresponde al cliente del servicio. El banco puede pedir contrato u otros respaldos."
+  },
+  {
+    "origin": "directo",
+    "bank": "bbva",
+    "status": "partial",
+    "instructions": [
+      "Pedile a COMEX de tu banco las instrucciones para recibir un cobro del exterior en USD.",
+      "Compartí con tu cliente tus datos de beneficiario y las coordenadas oficiales del banco.",
+      "Pedí el comprobante de transferencia para seguir la operación y conciliar gastos."
+    ],
+    "sources": [
+      "bbva"
+    ],
+    "note": "La factura corresponde al cliente del servicio. El banco puede pedir contrato u otros respaldos."
+  },
+  {
+    "origin": "directo",
+    "bank": "galicia",
+    "status": "partial",
+    "instructions": [
+      "Pedile a COMEX de tu banco las instrucciones para recibir un cobro del exterior en USD.",
+      "Compartí con tu cliente tus datos de beneficiario y las coordenadas oficiales del banco.",
+      "Pedí el comprobante de transferencia para seguir la operación y conciliar gastos."
+    ],
+    "sources": [
+      "galicia"
+    ],
+    "note": "La factura corresponde al cliente del servicio. El banco puede pedir contrato u otros respaldos."
+  }
+]

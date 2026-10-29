@@ -1,4 +1,6 @@
-import {banks,platforms,routes} from '../../src/data/catalog.mjs';
+import banks from '../../src/data/banks.json' with {type:'json'};
+import platforms from '../../src/data/platforms.json' with {type:'json'};
+import routes from '../../src/data/routes.json' with {type:'json'};
 const entities=new Set([...banks,...platforms].filter(e=>e.id!=='otro').map(e=>e.id));
 const routeIds=new Set(routes.map(r=>r.origin+'-'+r.bank));
 const uuid=/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;

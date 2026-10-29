@@ -1,0 +1,96 @@
+[
+  {
+    "id": "santander",
+    "name": "Santander",
+    "status": "verified",
+    "swift": "BSCHARBAXXX",
+    "legalName": "Banco Santander Argentina S.A.",
+    "accountField": "Tu número de cuenta en USD o CBU, según el formulario y las instrucciones de Santander",
+    "channel": "Solicitud de acreditación desde Online Banking.",
+    "detail": "Transacciones → Cobros del exterior. Seleccioná la orden de pago, el concepto, tu cuenta y adjuntá los respaldos.",
+    "sources": [
+      "santander",
+      "santanderCobro"
+    ]
+  },
+  {
+    "id": "bbva",
+    "name": "BBVA",
+    "status": "partial",
+    "swift": "BFRPARBA",
+    "legalName": "Banco BBVA Argentina S.A.",
+    "accountField": "El CBU de 22 dígitos de tu cuenta en USD",
+    "correspondent": "Standard Chartered Bank · New York · SWIFT SCBLUS33 · ABA 026002561 (solo si se solicita corresponsal)",
+    "channel": "Coordenadas verificadas; confirmar alta y canal de presentación con COMEX.",
+    "detail": "Publica CBU, beneficiario y SWIFT. Si te piden corresponsal en USD: Standard Chartered Bank, New York; SWIFT SCBLUS33; ABA 026002561.",
+    "sources": [
+      "bbva"
+    ]
+  },
+  {
+    "id": "galicia",
+    "name": "Galicia",
+    "status": "partial",
+    "swift": null,
+    "legalName": "Banco de Galicia y Buenos Aires",
+    "channel": "Requisitos documentales publicados; guía completa pendiente.",
+    "detail": "Para fondos desde cuenta propia en el exterior, su grilla contempla extracto de la cuenta recaudadora. Obtené las coordenadas actuales en COMEX.",
+    "sources": [
+      "galicia"
+    ]
+  },
+  {
+    "id": "nacion",
+    "name": "Banco Nación",
+    "status": "missing",
+    "swift": null,
+    "channel": "Sin información documentada todavía.",
+    "detail": "No tenemos un procedimiento actual verificado. Solicitá información o contanos cómo fue tu experiencia.",
+    "sources": []
+  },
+  {
+    "id": "icbc",
+    "name": "ICBC",
+    "status": "missing",
+    "swift": null,
+    "channel": "Sin información documentada todavía.",
+    "detail": "No tenemos un procedimiento actual verificado. Solicitá información o contanos cómo fue tu experiencia.",
+    "sources": []
+  },
+  {
+    "id": "supervielle",
+    "name": "Supervielle",
+    "status": "missing",
+    "swift": null,
+    "channel": "Sin información documentada todavía.",
+    "detail": "No tenemos un procedimiento actual verificado. Solicitá información o contanos cómo fue tu experiencia.",
+    "sources": []
+  },
+  {
+    "id": "provincia",
+    "name": "Banco Provincia",
+    "status": "missing",
+    "swift": null,
+    "channel": "Sin información documentada todavía.",
+    "detail": "No tenemos un procedimiento actual verificado. Solicitá información o contanos cómo fue tu experiencia.",
+    "sources": []
+  },
+  {
+    "id": "macro",
+    "name": "Banco Macro",
+    "status": "missing",
+    "swift": null,
+    "channel": "Sin información documentada todavía.",
+    "detail": "No tenemos un procedimiento actual verificado. Solicitá información o contanos cómo fue tu experiencia.",
+    "sources": []
+  },
+  {
+    "id": "otro",
+    "name": "Otro banco",
+    "status": "missing",
+    "swift": null,
+    "channel": "Sin información documentada todavía.",
+    "detail": "No tenemos un procedimiento actual verificado. Solicitá información o contanos cómo fue tu experiencia.",
+    "sources": []
+  }
+]

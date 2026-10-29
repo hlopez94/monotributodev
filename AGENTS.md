@@ -22,3 +22,6 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Selectores de plataforma/banco con logos reales locales (public/brands/sources.json), lista con estilo propio y teclado. No usar marcas generadas ni dibujadas.
 - Guía SWIFT: coordenadas por banco incluso sin ruta documentada; pasos 2/3 comunes. Falta de coordenadas explícita con aporte.
 - Paso 4 según ordenante real: cuenta propia/espejo exige trazabilidad, cliente coincide con receptor fiscal cuando es quien contrató, procesador no determina a quién facturar. Wallbit: extracto mensual a mes cerrado; soporte para período en curso.
+
+- Todos los catálogos editables son JSON legible con dos espacios, sin minimizar; temas separados y un archivo por provincia. Los módulos JS solo cargan datos o implementan reglas/UI.
+- Cada procedimiento provincial debe tener fuentes disponibles, fecha/alcance y aporte contextual; avisar que puede haber errores. No generalizar salida del unificado ni DDJJ mensual/cero a todos; discriminar régimen, ingresos mixtos y CM.

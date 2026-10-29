@@ -34,3 +34,10 @@ Final: minor (deferred): typeahead del selector no recorre coincidencias al repe
 Final: minor (deferred): combinación Cliente directo + cuenta propia menciona resumen de Cliente directo en vez de identificar el proveedor de cuenta externa; verificar con COMEX y usar cuenta real.
 Final: minor (deferred): teclado/foco/cierre del combobox comprobados manualmente, pendiente automatización del navegador.
 Publicación: commit 144b4d2, workflow Pages 40910187839 finalizado success. Navegador de producción confirma combobox, campos y carga de los ocho logos de bancos; captura docs/qa/selectors-public.png.
+
+## JSON y provincias — 29/10/2026
+Plan: docs/superpowers/plans/2026-10-29-json-provinces.md. Catálogos migrados a JSON con dos espacios y un archivo por jurisdicción; instrucciones de edición en docs/catalogs.md.
+Tests RED→GREEN: archivos JSON y selección de presentación inexistentes → contratos íntegros y reglas de DDJJ. Se detectó import antiguo en API al retirar catalog.mjs; corregido a JSON, pruebas y bundle API en seco correctos. IDs y objetos de cobros iguales a HEAD previo.
+Material aportado: dos adjuntos idénticos, contrastados con fuentes oficiales. Cinco fichas ampliadas parciales; diecinueve pendientes con portal, error posible y aporte. No se presume exclusión/general/mensual0 universal; registro/no alcanzado, exención y retenciones diferenciados. Límites Córdoba vigencia/pantallas explícitos. Investigación: docs/research/provinces-2026-10-29.md.
+Interrupción del usuario: documentación y código persistidos; servidor local reiniciado al retomar, sin reconstruir el trabajo.
+Navegador: general, CM, mixto, cambio de jurisdicción, Entre Ríos y provincia sin guía comprobados. Móvil sin desborde. Revisión independiente json_provinces_review: sin defectos concretos. Suite 19/19, empaquetado 4/4, build y api:bundle correctos. Publicación Pages pendiente de esta entrega.

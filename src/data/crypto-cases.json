@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Cripto → banco USA → SWIFT → Argentina",
+    "status": "Requiere revisión",
+    "text": "Confirmar que la cuenta bancaria admite esos fondos, origen de la cripto, conversión, trazabilidad y aceptación COMEX. El SWIFT final no valida automáticamente todos los tramos."
+  },
+  {
+    "name": "Cripto → billetera / Nexo Argentina → ARS → banco",
+    "status": "Requiere revisión",
+    "text": "Distinguir un servicio cobrado en cripto de la venta de activos propios. Recibir ARS no convierte una exportación en una operación local ni acredita por sí solo ingreso por MLC."
+  },
+  {
+    "name": "Cripto → Nexo internacional / otra plataforma → Wallbit",
+    "status": "Sin guía completa",
+    "text": "Verificar activos y redes admitidos, titularidad, condiciones de cada proveedor y vía de retiro final. No asumimos compatibilidad entre plataformas."
+  },
+  {
+    "name": "USD → Wallbit → SWIFT / exportador de servicio",
+    "status": "Documentación disponible",
+    "text": "Hay instrucciones publicadas para Santander. Se prepara Factura E y extracto con el cobro del cliente; revisá las condiciones de la modalidad elegida."
+  },
+  {
+    "name": "USD → Wallbit → retiro local en ARS",
+    "status": "Operación y normativa separadas",
+    "text": "Wallbit documenta retiros locales. Para exportación corresponde Factura E; la transferencia local no acredita por sí sola cumplimiento del régimen cambiario."
+  }
+]

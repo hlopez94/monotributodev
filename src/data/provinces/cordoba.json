@@ -1,0 +1,69 @@
+{
+  "id": "cordoba",
+  "agency": "Rentas Córdoba",
+  "status": "partial",
+  "reviewedAt": "2026-10-29",
+  "scope": "Verificación parcial: hay evidencia oficial histórica, pero falta confirmar texto 2026 y trámite actual de exclusión por exportación. No se inventan menús ni adjuntos.",
+  "regime": {
+    "title": "1. Consultar la exclusión del simplificado",
+    "status": "missing",
+    "intro": "El Código publicado en versión 2022 prevé solicitar exclusión por ingresos principales de exportación y pasar al general. Falta verificar la regla y procedimiento vigentes.",
+    "steps": [
+      "Ingresá al portal oficial de Rentas y consultá tu inscripción. Pedí específicamente el procedimiento vigente de exclusión del simplificado por exportación de servicios.",
+      "Confirmá la causal, documentación, fecha de efectos y obligaciones posteriores antes de pedir el cambio. No uses una guía de exención por producción de software como sustituto.",
+      "Guardá la respuesta y la constancia si corresponde tramitarlo. Podés aportar el enlace público o la experiencia sin datos privados para completar esta ficha."
+    ],
+    "sources": [
+      {
+        "name": "Rentas Córdoba · Portal y canales de consulta",
+        "url": "https://www.rentascordoba.gob.ar/"
+      },
+      {
+        "name": "Córdoba · Código Tributario publicado, versión 2022",
+        "url": "https://www.rentascordoba.gob.ar/cms/wp-content/uploads/2022/03/ley_n%C2%B0_6006_%E2%80%93_codigo_tributario_provincial_2022.pdf"
+      }
+    ]
+  },
+  "exports": {
+    "title": "2. Verificar ingresos no computables por exportación",
+    "status": "partial",
+    "intro": "El compendio publicado por Rentas trata las exportaciones como ingresos no computables para la base, con utilización efectiva del servicio en el exterior.",
+    "steps": [
+      "Conservá las Facturas E y respaldos del servicio y su aprovechamiento externo.",
+      "Separá operaciones locales y actividades conexas: no reciben automáticamente el mismo tratamiento. No lo confundas con una exención subjetiva o profesional.",
+      "Confirmá con Rentas la aplicación de la norma vigente a tu actividad; esta ficha no verifica una dispensa universal de inscripción ni de DDJJ en 2026."
+    ],
+    "sources": [
+      {
+        "name": "Rentas Córdoba · Compendio Ingresos Brutos",
+        "url": "https://www.rentascordoba.gob.ar/cms/wp-content/uploads/2022/09/ParteIngresosBrutos.pdf"
+      },
+      {
+        "name": "Rentas Córdoba · Portal y canales de consulta",
+        "url": "https://www.rentascordoba.gob.ar/"
+      }
+    ],
+    "treatment": "no-computable"
+  },
+  "monthly": {
+    "title": "3. Presentación local: SIFERE Locales Córdoba",
+    "status": "partial",
+    "intro": "Rentas publica una guía específica de DJ mensual en SIFERE Local. La descarga presentó bloqueo de acceso durante la revisión; no se comprobaron las pantallas posteriores.",
+    "steps": [
+      "Si seguís inscripto en el régimen general local y tenés obligación de presentar, ingresá al portal oficial y buscá Mis Servicios → SIFERE LOCALES PROVINCIA DE CÓRDOBA.",
+      "Confirmá el período, los ingresos reales y cómo se discriminan los ingresos no computables respecto de los gravados. No equivale a SIFERE Web de Convenio Multilateral.",
+      "Revisá la liquidación completa y guardá el acuse. Si el enlace no abre o la interfaz cambió, consultá Rentas y aportá la corrección: no tenemos validado el casillero exacto."
+    ],
+    "sources": [
+      {
+        "name": "Rentas Córdoba · Guía DJ mensual SIFERE Local",
+        "url": "https://www.rentascordoba.gob.ar/cms/wp-content/uploads/2024/02/ppgc-presentar-dj-mensual-SIFERE.pdf"
+      },
+      {
+        "name": "Rentas Córdoba · Portal y canales de consulta",
+        "url": "https://www.rentascordoba.gob.ar/"
+      }
+    ],
+    "appliesTo": "general"
+  }
+}

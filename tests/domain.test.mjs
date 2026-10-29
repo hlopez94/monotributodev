@@ -1,7 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {simulate,resolveRoute,searchCountries,buildIssueUrl,classifyIncome} from '../src/lib/domain.mjs';
-import {banks,platforms,routes} from '../src/data/catalog.mjs';
+import banks from '../src/data/banks.json' with {type:'json'};
+import platforms from '../src/data/platforms.json' with {type:'json'};
+import routes from '../src/data/routes.json' with {type:'json'};
 test('factura no se reduce por costos de cobro y transferencia',()=>{
  assert.deepEqual(simulate({serviceAmount:200000,receiptFee:2000,transferFee:3000,intermediaryFee:0}),{invoiceAmount:200000,platformNet:198000,argentinaNet:195000});
 });

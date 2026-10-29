@@ -18,7 +18,9 @@ El frontend no requiere secretos. Los valores `VITE_*` del ejemplo son públicos
 
 ## Contenido y fuentes
 
-`src/data/catalog.mjs`: entidades, rutas y fuentes. `src/data/provinces.mjs`: orientación provincial con pendientes explícitos. `src/data/cuit-countries.json`: datos importados desde la fuente conservada en `docs/research`. Para regenerar, `python3 scripts/import-cuit.py` (biblioteca estándar). El tipo de sujeto se obtiene de la leyenda E/F del archivo, contrastada con la tabla PDF de ARCA. No deducirlo del prefijo del CUIT.
+Los catálogos están separados en JSON legible: bancos, plataformas, rutas, casos, fuentes y metadatos. `src/data/provinces.json` contiene el índice de 24 jurisdicciones y `src/data/provinces/<id>.json` sus procedimientos. Cinco fichas ampliadas (Buenos Aires, CABA, Córdoba, Santa Fe y Entre Ríos) distinguen régimen, exportaciones y DDJJ; los límites y las guías faltantes son explícitos. Ver [cómo editar los catálogos](docs/catalogs.md).
+
+`src/data/cuit-countries.json` conserva los 899 registros importados desde la fuente de `docs/research`. Para regenerar: `python3 scripts/import-cuit.py` (biblioteca estándar). El tipo de sujeto se obtiene de la leyenda E/F del archivo, contrastada con la tabla PDF de ARCA. No deducirlo del prefijo del CUIT.
 
 La modalidad publicada por una plataforma no garantiza compatibilidad con todas las cuentas ni cumplimiento cambiario. La Factura E para exportaciones no depende de recibir SWIFT. Consultá [ARCA](https://www.arca.gob.ar/monotributo/exportacion-servicios/) y las fuentes de cada ficha.
 

@@ -1,5 +1,7 @@
 import React,{useEffect,useRef,useState} from 'react';import {Star,Clock,ChatCircle,ArrowRight} from '@phosphor-icons/react';
-import {banks,platforms,routes} from '../data/catalog.mjs';import {Contribution,Button} from './Shared.jsx';
+import banks from '../data/banks.json';
+import platforms from '../data/platforms.json';
+import routes from '../data/routes.json';import {Contribution,Button} from './Shared.jsx';
 const API=import.meta.env.VITE_COMMUNITY_API||'';
 const SITEKEY=import.meta.env.VITE_TURNSTILE_SITEKEY||'';
 function Turnstile({onToken,resetKey}){const ref=useRef(null);useEffect(()=>{let id,cancelled=false;async function init(){try{if(!window.turnstile){await new Promise((resolve,reject)=>{let script=document.querySelector('script[data-turnstile]');if(!script){script=document.createElement('script');script.dataset.turnstile='true';script.src='https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';script.async=true;document.head.appendChild(script);}if(window.turnstile)resolve();else {script.addEventListener('load',resolve,{once:true});script.addEventListener('error',reject,{once:true});}});}if(!cancelled&&ref.current){id=window.turnstile.render(ref.current,{sitekey:SITEKEY,action:'review',callback:onToken,'expired-callback':()=>onToken(''),'error-callback':()=>onToken('')});}}catch{onToken('')}}if(SITEKEY)init();return ()=>{cancelled=true;if(id!==undefined&&window.turnstile)window.turnstile.remove(id)}} ,[resetKey]);return <div ref={ref}/>}
