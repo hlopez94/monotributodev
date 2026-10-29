@@ -67,3 +67,4 @@ Publicado3fe7441: Pages40939167002 success. Navegador público con versión3fe74
 
 ## Payoneer y Deel — 29/10/2026
 11 movimientos JSON con fuentes: PayoneerSantander3,3% específico, bancoUSD/ARS rango1–4% sin precio arbitrario, conversiones0,5%; DeelWise, Payoneer1% mínimo12/retiro50 y4 destinosSWIFT variable5–10/retiro100. No se presumeSWIFT en retiro Payoneer ni se duplica cross-border. `minimumAmount` validado por motor; avisos visibles sin abrir ajustes. Prueba RED→GREEN y navegador:49 rechazado;1000→988→955,40 parcial por recepción desconocida.40+4 pruebas, build y diff-check correctos.
+Publicado d68ce78, Pages40939907065 success. Navegador público confirma30movimientos y Deel1000→Payoneer988→Santander955,40 con parcialidad explícita. Captura docs/qa/payoneer-deel-public.png.
