@@ -63,3 +63,4 @@ Actualizados estimados SWIFT USD7,28 y conversión EUR→USD0,458%, USD→EUR0,2
 
 ## Wallbit pricing — 29/10/2026
 Fuente aportada https://www.wallbit.io/es/pricing revisada. Depósitos propios0; ACH/Wire Classic1% mínimoUSD5/USD25. Pro/Max0,5% documentado sin asumir plan. ARS conserva parcialidad y referencia de mercado; FXbonificado y posible0,35 no aplicados sin certeza regional. Motor incorpora mínimo porcentual como máximo, sin sumarlo al porcentaje; campo opcional ajustable. RED→GREEN:100→95,500→495,1000→990, gastos superiores rechazados. Navegador ACH100 muestra comisión5 y parcial por receptor desconocido.39 pruebas+4 empaquetado y build pasan.
+Publicado3fe7441: Pages40939167002 success. Navegador público con versión3fe7441 confirma Wise2000→1992,72 (costo7,28) y WallbitACH100→95 antes de cargo receptor desconocido. Captura docs/qa/wallbit-pricing-public.png.
