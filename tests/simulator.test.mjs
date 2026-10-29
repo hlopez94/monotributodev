@@ -31,10 +31,12 @@ test('todos los ejemplos JSON se calculan y tarifas referencian nodos válidos',
  const json=async name=>JSON.parse(await readFile(new URL('../src/data/simulator/'+name+'.json',import.meta.url),'utf8'));
  const [nodes,tariffs,scenarios,currencies]=await Promise.all(['nodes','tariffs','scenarios','currencies'].map(json));
  for(const n of nodes)for(const code of n.currencies)assert.ok(currencies.some(c=>c.id===code));
- const {calculateJourney,stageFromTariff,receivingIsFree}=await load();
+ const {calculateJourney,stageFromTariff}=await load();
+ const {resolveAutomaticStage}=await import('../src/lib/automatic-simulator.mjs');
+ const quotes=await json('quote-snapshot');
  for(const t of tariffs){assert.ok(nodes.some(n=>n.id===t.from));assert.ok(nodes.some(n=>n.id===t.to));assert.ok(t.sources.length);}
  for(const scenario of scenarios){
-  const stages=scenario.stages.map(s=>{const row=stageFromTariff(tariffs.find(t=>t.id===s.tariffId),s.overrides,'example');return {...row,receiving:receivingIsFree(row,true,nodes)?'0':row.receiving};});
+  const stages=scenario.stages.map(s=>resolveAutomaticStage({...stageFromTariff(tariffs.find(t=>t.id===s.tariffId)),overrides:{}},{quotes,basis:'crypto',eligible:true,nodes}).stage);
   assert.doesNotThrow(()=>calculateJourney({...scenario,stages}),scenario.id);
  }
 });

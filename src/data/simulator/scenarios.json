@@ -5,21 +5,12 @@
     "origin": "cripto",
     "currency": "USDC",
     "amount": "2000",
-    "note": "Ejemplo: ERC20 equivalente a 5 USDC descontados, USDC/USD 1:1 y USD/ARS 1560. No son cotizaciones ni costos de red actuales.",
     "stages": [
       {
-        "tariffId": "crypto-wallbit-usdc-erc20",
-        "overrides": {
-          "network": "5"
-        }
+        "tariffId": "crypto-wallbit-usdc-erc20"
       },
       {
-        "tariffId": "wallbit-ars",
-        "overrides": {
-          "fixed": "0",
-          "rate": "1560",
-          "receiving": "0"
-        }
+        "tariffId": "wallbit-ars"
       }
     ]
   },
@@ -29,13 +20,9 @@
     "origin": "wise",
     "currency": "USD",
     "amount": "2000",
-    "note": "Ejemplo aportado: costo total Wise USD24,95. No es una tarifa oficial universal.",
     "stages": [
       {
-        "tariffId": "wise-santander",
-        "overrides": {
-          "fixed": "24.95"
-        }
+        "tariffId": "wise-santander"
       }
     ]
   },
@@ -45,13 +32,9 @@
     "origin": "wallbit",
     "currency": "USD",
     "amount": "2000",
-    "note": "Ejemplo aportado: 1,5%. El instructivo oficial consultado publica 1%; podés restaurar la referencia o ingresar el valor de tu cuenta.",
     "stages": [
       {
-        "tariffId": "wallbit-santander",
-        "overrides": {
-          "percent": "1.5"
-        }
+        "tariffId": "wallbit-santander"
       }
     ]
   },
@@ -61,19 +44,27 @@
     "origin": "cripto",
     "currency": "USDC",
     "amount": "2000",
-    "note": "Ejemplo: 5 USDC de red descontada y luego 1,5%. No es una tarifa garantizada ni valida el encuadre de fondos cripto.",
     "stages": [
       {
-        "tariffId": "crypto-wallbit-usdc-erc20",
-        "overrides": {
-          "network": "5"
-        }
+        "tariffId": "crypto-wallbit-usdc-erc20"
       },
       {
-        "tariffId": "wallbit-santander",
-        "overrides": {
-          "percent": "1.5"
-        }
+        "tariffId": "wallbit-santander"
+      }
+    ]
+  },
+  {
+    "id": "eur-usd",
+    "name": "EUR → USD → Argentina",
+    "origin": "wise",
+    "currency": "EUR",
+    "amount": "2000",
+    "stages": [
+      {
+        "tariffId": "wise-eur-usd"
+      },
+      {
+        "tariffId": "wise-santander"
       }
     ]
   }

@@ -1,0 +1,30 @@
+import React from 'react';
+import {ArrowRight,Trash,ArrowCounterClockwise} from '@phosphor-icons/react';
+import nodes from '../data/simulator/nodes.json';
+import methods from '../data/simulator/methods.json';
+import tariffs from '../data/simulator/tariffs.json';
+import {EntityLogo,EntitySelect} from './EntitySelect.jsx';
+import {formatAmount,tariffMatches,receivingIsFree} from '../lib/simulator.mjs';
+import {expenseLines} from '../lib/automatic-simulator.mjs';
+import {quoteDate} from '../lib/quotes.mjs';
+import {Sources,Contribution} from './Shared.jsx';
+const node=id=>nodes.find(n=>n.id===id);
+function Field({label,index,value,onChange}){return <label>{label}<input type="text" inputMode="decimal" autoComplete="off" aria-label={`${label} · paso ${index+1}`} value={value} maxLength={24} onChange={e=>onChange(e.target.value)}/></label>;}
+export function SimulatorStep({raw,resolved,index,calculated,eligible,onMovement,onCustomTopology,onField,onReset,onRemove}){
+ const s=resolved.stage,tariff=tariffs.find(t=>t.id===raw.tariffId),expenses=calculated?expenseLines(calculated):[],free=receivingIsFree(s,eligible,nodes);
+ const options=tariffs.filter(t=>tariffMatches(t,{from:s.from,currency:s.currencyIn})).map(t=>({id:t.id,logoId:t.to,group:node(t.to).group,name:node(t.to).name,subtitle:`${methods.find(m=>m.id===t.method)?.name??t.method}${t.networkName?' · '+t.networkName:''} · ${t.currencyOut}`}));
+ options.push({id:'custom',name:'Otro movimiento',subtitle:'Configuración avanzada',logoId:'otro'});
+ return <section className="compact-step" aria-label={`Paso ${index+1}`}>
+  <div className="compact-step-main"><span className="compact-step-number">{index+1}</span><div className="compact-step-origin"><EntityLogo entity={node(s.from)}/><span><strong>{node(s.from).name}</strong><small>{s.currencyIn}</small></span></div><ArrowRight size={18} className="compact-step-arrow"/><EntitySelect label={`Destino y método · paso ${index+1}`} value={s.tariffId||'custom'} onChange={onMovement} options={options}/><div className="compact-step-output"><small>Queda</small><strong>{calculated?formatAmount(calculated.output,s.currencyOut):'—'}</strong></div><button type="button" className="icon-button" aria-label={`Quitar paso ${index+1} y los siguientes`} onClick={onRemove}><Trash size={17}/></button></div>
+  <div className="compact-step-costs">{expenses.map(line=><span key={line.key}>{line.label}: {formatAmount(line.amount,line.currency)}{line.separate?' (aparte)':''}</span>)}{!expenses.length&&!resolved.partial&&<span>Sin cargos incluidos en este paso</span>}{resolved.assumptions.length>0&&<span className="cost-estimated">Costo estimado</span>}{resolved.partial&&<span className="cost-missing">Tarifa incompleta · cargos sin incluir</span>}{s.currencyIn!==s.currencyOut&&<span>{resolved.quote.kind==='manual'?'Cambio manual':'Cambio ref.'}: 1 {s.currencyIn} = {s.rate||'—'} {s.currencyOut}</span>}</div>
+  <details className="compact-step-details"><summary>Ajustar / ver fuentes</summary>
+   {!tariff&&<div className="compact-custom-fields"><EntitySelect label={`Destino personalizado · paso ${index+1}`} value={s.to} onChange={value=>onCustomTopology({to:value,currencyOut:node(value).currencies[0]})} options={nodes.map(n=>({...n,subtitle:n.currencies.join(' · ')}))}/><label>Método<select aria-label={`Método · paso ${index+1}`} value={s.method} onChange={e=>onCustomTopology({method:e.target.value})}>{methods.map(m=><option key={m.id} value={m.id}>{m.name}</option>)}</select></label><label>Moneda de salida<select aria-label={`Moneda de salida · paso ${index+1}`} value={s.currencyOut} onChange={e=>onCustomTopology({currencyOut:e.target.value})}>{node(s.to).currencies.map(c=><option key={c}>{c}</option>)}</select></label></div>}
+   <div className="compact-adjustments"><Field index={index} label={`Costo fijo (${s.currencyIn})`} value={s.fixed} onChange={v=>onField('fixed',v)}/><Field index={index} label="Comisión (%)" value={s.percent} onChange={v=>onField('percent',v)}/>{s.method==='crypto'&&<><Field index={index} label={`Red (${s.currencyIn})`} value={s.network} onChange={v=>onField('network',v)}/><label>Pago de red<select aria-label={`Pago de red · paso ${index+1}`} value={s.networkSeparate?'separate':'deduct'} onChange={e=>onField('networkSeparate',e.target.value==='separate')}><option value="deduct">Descontada del envío</option><option value="separate">Pagada aparte</option></select></label></>}<Field index={index} label={`Otros (${s.currencyIn})`} value={s.other} onChange={v=>onField('other',v)}/>{!free&&<Field index={index} label={`Receptor (${s.currencyOut})`} value={s.receiving} onChange={v=>onField('receiving',v)}/>} {s.currencyIn!==s.currencyOut&&<Field index={index} label={`Cambio: ${s.currencyIn} → ${s.currencyOut}`} value={s.rate} onChange={v=>onField('rate',v)}/>}</div>
+   {resolved.omissions.length>0&&<p className="cost-missing">No incluidos por falta de referencia: {resolved.omissions.map(o=>o.label+' ('+o.currency+')').join(', ')}. Los ceros de esos campos son solo el cálculo antes de esos cargos, no una tarifa gratuita.</p>}
+   {resolved.assumptions.map(a=><p key={a.field}>{a.label}: {a.value}. {a.source}</p>)}
+   {resolved.quote.kind==='market'&&<p>{resolved.quote.label} · {quoteDate(resolved.quote)}. Referencia de mercado, no cotización de la plataforma.</p>}{resolved.quote.kind==='assumption'&&<p>Stablecoin/USD 1:1 es un supuesto y no una garantía.</p>}
+   {tariff&&<p>{tariff.note}</p>}<p>El porcentaje se aplica a la entrada. Se descuentan cargos antes de convertir y el receptor después. El gas pagado aparte no reduce el envío. Cambiar recorrido elimina pasos posteriores; ajustar costos los conserva.</p>
+   <Sources links={[...(tariff?.sources??[]),...(resolved.quote.sourceUrl?[{name:resolved.quote.source,url:resolved.quote.sourceUrl}]:[])]}/><div className="compact-detail-actions"><button type="button" className="text-button" onClick={onReset}><ArrowCounterClockwise size={14}/>Volver a automático</button><Contribution topic={'tarifa-'+(s.tariffId||s.from+'-'+s.to)}/></div>
+  </details>
+ </section>;
+}

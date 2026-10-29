@@ -18,7 +18,7 @@
     "rate": "1",
     "status": "partial",
     "reviewedAt": "2026-10-29",
-    "note": "Depósito sin comisión propia según Wallbit. Costo de red variable del emisor: completalo. El 1:1 cripto/USD es un supuesto editable. Confirmá activo, red, mínimos y monto neto en la app. Si el gas se paga en otro activo, ingresá su equivalente y marcá pago aparte.",
+    "note": "Depósito sin comisión propia según Wallbit. La red es variable; el modo automático usa una estimación ERC20 cuando está disponible y señala las demás tarifas sin referencia. El 1:1 stablecoin/USD es un supuesto. Confirmá activo, red, mínimos y monto neto; podés ajustar el gas y si se paga aparte.",
     "sources": [
       {
         "name": "Wallbit · Redes y depósitos cripto",
@@ -45,7 +45,7 @@
     "rate": "1",
     "status": "partial",
     "reviewedAt": "2026-10-29",
-    "note": "Depósito sin comisión propia según Wallbit. Costo de red variable del emisor: completalo. El 1:1 cripto/USD es un supuesto editable. Confirmá activo, red, mínimos y monto neto en la app. Si el gas se paga en otro activo, ingresá su equivalente y marcá pago aparte.",
+    "note": "Depósito sin comisión propia según Wallbit. La red es variable; el modo automático usa una estimación ERC20 cuando está disponible y señala las demás tarifas sin referencia. El 1:1 stablecoin/USD es un supuesto. Confirmá activo, red, mínimos y monto neto; podés ajustar el gas y si se paga aparte.",
     "sources": [
       {
         "name": "Wallbit · Redes y depósitos cripto",
@@ -72,7 +72,7 @@
     "rate": "1",
     "status": "partial",
     "reviewedAt": "2026-10-29",
-    "note": "Depósito sin comisión propia según Wallbit. Costo de red variable del emisor: completalo. El 1:1 cripto/USD es un supuesto editable. Confirmá activo, red, mínimos y monto neto en la app. Si el gas se paga en otro activo, ingresá su equivalente y marcá pago aparte.",
+    "note": "Depósito sin comisión propia según Wallbit. La red es variable; el modo automático usa una estimación ERC20 cuando está disponible y señala las demás tarifas sin referencia. El 1:1 stablecoin/USD es un supuesto. Confirmá activo, red, mínimos y monto neto; podés ajustar el gas y si se paga aparte.",
     "sources": [
       {
         "name": "Wallbit · Redes y depósitos cripto",
@@ -99,7 +99,7 @@
     "rate": "1",
     "status": "partial",
     "reviewedAt": "2026-10-29",
-    "note": "Depósito sin comisión propia según Wallbit. Costo de red variable del emisor: completalo. El 1:1 cripto/USD es un supuesto editable. Confirmá activo, red, mínimos y monto neto en la app. Si el gas se paga en otro activo, ingresá su equivalente y marcá pago aparte.",
+    "note": "Depósito sin comisión propia según Wallbit. La red es variable; el modo automático usa una estimación ERC20 cuando está disponible y señala las demás tarifas sin referencia. El 1:1 stablecoin/USD es un supuesto. Confirmá activo, red, mínimos y monto neto; podés ajustar el gas y si se paga aparte.",
     "sources": [
       {
         "name": "Wallbit · Redes y depósitos cripto",
@@ -126,7 +126,7 @@
     "rate": "1",
     "status": "partial",
     "reviewedAt": "2026-10-29",
-    "note": "Depósito sin comisión propia según Wallbit. Costo de red variable del emisor: completalo. El 1:1 cripto/USD es un supuesto editable. Confirmá activo, red, mínimos y monto neto en la app. Si el gas se paga en otro activo, ingresá su equivalente y marcá pago aparte.",
+    "note": "Depósito sin comisión propia según Wallbit. La red es variable; el modo automático usa una estimación ERC20 cuando está disponible y señala las demás tarifas sin referencia. El 1:1 stablecoin/USD es un supuesto. Confirmá activo, red, mínimos y monto neto; podés ajustar el gas y si se paga aparte.",
     "sources": [
       {
         "name": "Wallbit · Redes y depósitos cripto",
@@ -153,7 +153,7 @@
     "rate": null,
     "status": "partial",
     "reviewedAt": "2026-10-29",
-    "note": "Cotización y costo a confirmar en la app; no son datos en vivo. Una salida local no presupone ingreso por MLC ni cumplimiento cambiario.",
+    "note": "El cambio automático usa referencia de mercado Cripto o MEP, no el precio neto de Wallbit. Los cargos sin referencia se marcan como no incluidos. La salida local en ARS no confirma ingreso por MLC ni cumplimiento cambiario.",
     "sources": [
       {
         "name": "Wallbit · Métodos de retiro",
@@ -180,7 +180,7 @@
     "rate": "1",
     "status": "partial",
     "reviewedAt": "2026-10-29",
-    "note": "Ingresá el costo total cotizado por Wise. Su tabla SWIFT es un componente y no equivale al costo total. El ejemplo USD24,95 es editable, no una tarifa vigente universal.",
+    "note": "Wise cotiza un costo total variable. La precarga USD24,95 es una estimación aportada, no un precio oficial universal. Su tabla de cargos SWIFT es solo un componente. Si tenés una cotización de tu cuenta, podés ajustarla opcionalmente.",
     "sources": [
       {
         "name": "Wise · Precio USD fuera de EE.UU.",
@@ -207,7 +207,7 @@
     "rate": "1",
     "status": "partial",
     "reviewedAt": "2026-10-29",
-    "note": "Ingresá el costo total cotizado por Wise. Su tabla SWIFT es un componente y no equivale al costo total. El ejemplo USD24,95 es editable, no una tarifa vigente universal.",
+    "note": "Wise cotiza un costo total variable. La precarga USD24,95 es una estimación aportada, no un precio oficial universal. Su tabla de cargos SWIFT es solo un componente. Si tenés una cotización de tu cuenta, podés ajustarla opcionalmente.",
     "sources": [
       {
         "name": "Wise · Precio USD fuera de EE.UU.",
@@ -234,7 +234,7 @@
     "rate": "1",
     "status": "partial",
     "reviewedAt": "2026-10-29",
-    "note": "Ingresá el costo total cotizado por Wise. Su tabla SWIFT es un componente y no equivale al costo total. El ejemplo USD24,95 es editable, no una tarifa vigente universal.",
+    "note": "Wise cotiza un costo total variable. La precarga USD24,95 es una estimación aportada, no un precio oficial universal. Su tabla de cargos SWIFT es solo un componente. Si tenés una cotización de tu cuenta, podés ajustarla opcionalmente.",
     "sources": [
       {
         "name": "Wise · Precio USD fuera de EE.UU.",
@@ -261,7 +261,7 @@
     "rate": "1",
     "status": "partial",
     "reviewedAt": "2026-10-29",
-    "note": "Ingresá el costo total cotizado por Wise. Su tabla SWIFT es un componente y no equivale al costo total. El ejemplo USD24,95 es editable, no una tarifa vigente universal.",
+    "note": "Wise cotiza un costo total variable. La precarga USD24,95 es una estimación aportada, no un precio oficial universal. Su tabla de cargos SWIFT es solo un componente. Si tenés una cotización de tu cuenta, podés ajustarla opcionalmente.",
     "sources": [
       {
         "name": "Wise · Precio USD fuera de EE.UU.",
@@ -409,6 +409,37 @@
       {
         "name": "Wallbit · Métodos de retiro",
         "url": "https://help.wallbit.io/es/articles/8062980-como-retiro-dinero-de-mi-cuenta-de-wallbit"
+      }
+    ]
+  },
+  {
+    "id": "wise-eur-usd",
+    "name": "Wise · EUR → USD",
+    "from": "wise",
+    "to": "wise",
+    "currencyIn": "EUR",
+    "currencyOut": "USD",
+    "method": "conversion",
+    "networkName": null,
+    "fees": {
+      "fixed": null,
+      "percent": null,
+      "network": "0",
+      "other": "0",
+      "receiving": "0"
+    },
+    "rate": null,
+    "status": "partial",
+    "reviewedAt": "2026-10-29",
+    "note": "Conversión simulada a referencia EUR/USD de mercado. La comisión de cambio Wise no está cotizada ni incluida; no se presenta como conversión gratuita. Confirmá el neto en tu cuenta.",
+    "sources": [
+      {
+        "name": "Wise · Costos de conversión",
+        "url": "https://wise.com/pricing/"
+      },
+      {
+        "name": "Frankfurter · Referencias EUR/USD",
+        "url": "https://frankfurter.dev/v1/"
       }
     ]
   }

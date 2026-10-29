@@ -1,0 +1,28 @@
+{
+  "reviewedAt": "2026-10-29",
+  "note": "Estimaciones de planificación aportadas en el diseño del simulador; no son tarifas actuales verificadas. Se aplican solo cuando falta un precio en el catálogo oficial.",
+  "entries": [
+    {
+      "tariffIds": [
+        "crypto-wallbit-usdc-erc20",
+        "crypto-wallbit-usdt-erc20"
+      ],
+      "field": "network",
+      "value": "5",
+      "label": "Red ERC20 estimada",
+      "source": "Ejemplo aportado por el autor; equivalente en USDC/USDT, no precio del gas en vivo."
+    },
+    {
+      "tariffIds": [
+        "wise-santander",
+        "wise-bbva",
+        "wise-galicia",
+        "wise-banco-ar"
+      ],
+      "field": "fixed",
+      "value": "24.95",
+      "label": "Costo Wise estimado",
+      "source": "Ejemplo aportado por el autor; Wise cotiza un costo total variable."
+    }
+  ]
+}

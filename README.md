@@ -3,7 +3,7 @@
 Guía comunitaria para devs argentinos que cobran servicios del exterior. Proyecto para **monotributodev.com.ar**; publicación inicial en GitHub Pages.
 
 - Selector plataforma → banco con instrucciones y fuentes por ruta.
-- Simulador por bloques: redes cripto, ACH, wire, SWIFT y conversiones, con tarifas fijas/porcentuales y costos externos separados. Ejemplos editables y referencias JSON con fuentes. La factura se refiere al servicio original, no al neto.
+- Simulador automático en pasos pequeños: monto y recorrido, costos precargados y referencias EUR/USD, MEP y cripto. Ajustes optativos y desglose sin cargos cero. La factura se refiere al servicio original, no al neto.
 - 899 registros de CUIT-país oficiales de ARCA, con buscador y tipo de sujeto.
 - Bancos, plataformas y provincias con estados documentado / parcial / sin info.
 - Casos cripto y cobros locales separados de la clasificación fiscal y del régimen cambiario.
@@ -38,4 +38,4 @@ Backend: `community-api/`, Worker `monotributodev-community` y D1 `monotributode
 
 El autor no es contador. La guía no constituye asesoramiento contable, impositivo, cambiario ni legal. Los procedimientos sin verificar están marcados. No se piden claves, CUIT personal ni extractos. Datos oficiales y contenidos de terceros conservan su procedencia; no se les atribuye una licencia propia. La elección de licencia del código queda pendiente del propietario.
 
-El simulador no consulta cotizaciones en vivo. Ver [catálogos, cálculo y límites](docs/simulator.md).
+El simulador precarga referencias EUR/USD (diarias), MEP y cripto, con respaldo fechado si falla una fuente. Los costos están precargados o se señalan como faltantes sin pedir carga obligatoria. Ver [catálogos, cálculo y límites](docs/simulator.md).

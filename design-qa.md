@@ -73,3 +73,9 @@ No quedan hallazgos P0/P1/P2 de diseño. P3: el raster usa marcas en los selecto
 - Validación final:27 pruebas de lógica/API/datos y4 de empaquetado aprobadas; build correcto. No quedan defectos importantes conocidos de esta actualización.
 
 - Publicación del simulador verificada:4094b48, Pages40934330258 success. Ejemplo público USD1965,07; captura docs/qa/simulator-blocks-public.png.
+
+
+## Simulador automático compacto — 29/10/2026
+Una entrada numérica visible y ajustes opcionales colapsados. Filas de118px en escritorio; móvil390×844 con scrollWidth=clientWidth=375. Dos pasos visibles y sin desborde. Gastos por tramo y detalle solo muestran importes mayores a cero; el resumen completo se oculta si no hay gastos positivos.
+Cotizaciones DolarApi/Frankfurter verificadas en navegador, fechas originales y fallback por par visibles; referencias de mercado diferenciadas de precios de plataforma. Tarifas desconocidas señalan neto parcial. Ajuste manual persiste tras actualizar.
+Revisión independiente: reset de paso personalizado corregido preservando topología; comprobado con2pasos. Suite37/37, empaquetado4/4 y build correctos. Capturas docs/qa/simulator-automatic-{desktop,mobile}.png.

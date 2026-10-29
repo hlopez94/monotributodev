@@ -1,0 +1,20 @@
+{
+  "eurusd": {
+    "name": "Frankfurter · EUR/USD diario",
+    "url": "https://api.frankfurter.dev/v1/latest?base=EUR&symbols=USD",
+    "docs": "https://frankfurter.dev/v1/",
+    "maxAgeHours": 96
+  },
+  "mep": {
+    "name": "DolarApi · MEP",
+    "url": "https://dolarapi.com/v1/dolares/bolsa",
+    "docs": "https://dolarapi.com/docs/argentina/operations/get-dolar-bolsa",
+    "maxAgeHours": 24
+  },
+  "crypto": {
+    "name": "DolarApi · Dólar cripto",
+    "url": "https://dolarapi.com/v1/dolares/cripto",
+    "docs": "https://dolarapi.com/docs/argentina/operations/get-dolar-cripto",
+    "maxAgeHours": 6
+  }
+}

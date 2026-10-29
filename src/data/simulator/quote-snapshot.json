@@ -1,0 +1,25 @@
+{
+  "eurusd": {
+    "source": "Frankfurter · EUR/USD diario",
+    "sourceUrl": "https://frankfurter.dev/v1/",
+    "status": "saved",
+    "rate": "1.113",
+    "asOf": "2026-10-29"
+  },
+  "mep": {
+    "source": "DolarApi · MEP",
+    "sourceUrl": "https://dolarapi.com/docs/argentina/operations/get-dolar-bolsa",
+    "status": "saved",
+    "buy": "1565.3",
+    "sell": "1567.6",
+    "asOf": "2026-10-29T19:00:00.000Z"
+  },
+  "crypto": {
+    "source": "DolarApi · Dólar cripto",
+    "sourceUrl": "https://dolarapi.com/docs/argentina/operations/get-dolar-cripto",
+    "status": "saved",
+    "buy": "1650.82",
+    "sell": "1652.48",
+    "asOf": "2026-10-29T19:00:00.000Z"
+  }
+}
