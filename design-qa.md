@@ -83,3 +83,6 @@ Revisión independiente: reset de paso personalizado corregido preservando topol
 
 ## Comunidad y secciones móviles — 29/10/2026
 Revisión visual en390×844: estrellas verdes con área táctil, estado agrupado, CTA claramente separado de documentación; selector con logos y búsqueda.320×740: navegación3×2,6secciones sin desborde de página (305px útiles). TablaCUIT con desplazamiento propio y contención de elemento absoluto. Formularios no enviados durante QA; cambios compatibles con API existente. Restaurado viewport de escritorio.
+
+## Diálogo de experiencia — 29/10/2026
+390×844: diálogo top8 con título y cierre visibles, scroll solo del cuerpo.320×740: ancho304 sin desborde. Cierre/Escape devuelve foco al invocador y desbloquea fondo. Radios/estrellas existentes conservados. Selector muestra14 entidades concretas y ninguna genérica; buscar cripto ofrece sin resultados. Reporte comprobado con fixture local; no se enviaron aportes.

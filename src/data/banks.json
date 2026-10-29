@@ -11,7 +11,8 @@
     "sources": [
       "santander",
       "santanderCobro"
-    ]
+    ],
+    "reviewable": true
   },
   {
     "id": "bbva",
@@ -25,7 +26,8 @@
     "detail": "Publica CBU, beneficiario y SWIFT. Si te piden corresponsal en USD: Standard Chartered Bank, New York; SWIFT SCBLUS33; ABA 026002561.",
     "sources": [
       "bbva"
-    ]
+    ],
+    "reviewable": true
   },
   {
     "id": "galicia",
@@ -37,7 +39,8 @@
     "detail": "Para fondos desde cuenta propia en el exterior, su grilla contempla extracto de la cuenta recaudadora. Obtené las coordenadas actuales en COMEX.",
     "sources": [
       "galicia"
-    ]
+    ],
+    "reviewable": true
   },
   {
     "id": "nacion",
@@ -46,7 +49,8 @@
     "swift": null,
     "channel": "Sin información documentada todavía.",
     "detail": "No tenemos un procedimiento actual verificado. Solicitá información o contanos cómo fue tu experiencia.",
-    "sources": []
+    "sources": [],
+    "reviewable": true
   },
   {
     "id": "icbc",
@@ -55,7 +59,8 @@
     "swift": null,
     "channel": "Sin información documentada todavía.",
     "detail": "No tenemos un procedimiento actual verificado. Solicitá información o contanos cómo fue tu experiencia.",
-    "sources": []
+    "sources": [],
+    "reviewable": true
   },
   {
     "id": "supervielle",
@@ -64,7 +69,8 @@
     "swift": null,
     "channel": "Sin información documentada todavía.",
     "detail": "No tenemos un procedimiento actual verificado. Solicitá información o contanos cómo fue tu experiencia.",
-    "sources": []
+    "sources": [],
+    "reviewable": true
   },
   {
     "id": "provincia",
@@ -73,7 +79,8 @@
     "swift": null,
     "channel": "Sin información documentada todavía.",
     "detail": "No tenemos un procedimiento actual verificado. Solicitá información o contanos cómo fue tu experiencia.",
-    "sources": []
+    "sources": [],
+    "reviewable": true
   },
   {
     "id": "macro",
@@ -82,7 +89,8 @@
     "swift": null,
     "channel": "Sin información documentada todavía.",
     "detail": "No tenemos un procedimiento actual verificado. Solicitá información o contanos cómo fue tu experiencia.",
-    "sources": []
+    "sources": [],
+    "reviewable": true
   },
   {
     "id": "otro",
@@ -91,6 +99,7 @@
     "swift": null,
     "channel": "Sin información documentada todavía.",
     "detail": "No tenemos un procedimiento actual verificado. Solicitá información o contanos cómo fue tu experiencia.",
-    "sources": []
+    "sources": [],
+    "reviewable": false
   }
 ]

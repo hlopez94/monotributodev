@@ -7,7 +7,8 @@
       "wise",
       "wiseFields"
     ],
-    "hint": "Retiro internacional en USD"
+    "hint": "Retiro internacional en USD",
+    "reviewable": true
   },
   {
     "id": "payoneer",
@@ -17,7 +18,8 @@
       "payoneer",
       "payoneerSteps"
     ],
-    "hint": "Verificá moneda y método de retiro"
+    "hint": "Verificá moneda y método de retiro",
+    "reviewable": true
   },
   {
     "id": "wallbit",
@@ -27,7 +29,8 @@
       "wallbit",
       "wallbitArs"
     ],
-    "hint": "SWIFT / exportador de servicios"
+    "hint": "SWIFT / exportador de servicios",
+    "reviewable": true
   },
   {
     "id": "deel",
@@ -36,7 +39,8 @@
     "sources": [
       "deel"
     ],
-    "hint": "Método Bank Transfer / SWIFT"
+    "hint": "Método Bank Transfer / SWIFT",
+    "reviewable": true
   },
   {
     "id": "directo",
@@ -45,7 +49,8 @@
     "sources": [
       "santander"
     ],
-    "hint": "El cliente transfiere al banco argentino"
+    "hint": "El cliente transfiere al banco argentino",
+    "reviewable": false
   },
   {
     "id": "nexo-ar",
@@ -54,34 +59,39 @@
     "sources": [
       "nexo"
     ],
-    "hint": "Ruta cripto: revisión profesional"
+    "hint": "Ruta cripto: revisión profesional",
+    "reviewable": true
   },
   {
     "id": "nexo-int",
     "name": "Nexo Internacional",
     "status": "missing",
     "sources": [],
-    "hint": "Aportá información de esta ruta"
+    "hint": "Aportá información de esta ruta",
+    "reviewable": true
   },
   {
     "id": "cripto",
     "name": "Cripto / otra billetera",
     "status": "missing",
     "sources": [],
-    "hint": "Aportá información de esta ruta"
+    "hint": "Aportá información de esta ruta",
+    "reviewable": false
   },
   {
     "id": "banco-usa",
     "name": "Cuenta bancaria en EE.UU.",
     "status": "missing",
     "sources": [],
-    "hint": "Aportá información de esta ruta"
+    "hint": "Aportá información de esta ruta",
+    "reviewable": false
   },
   {
     "id": "otro",
     "name": "Otra plataforma",
     "status": "missing",
     "sources": [],
-    "hint": "Aportá información de esta ruta"
+    "hint": "Aportá información de esta ruta",
+    "reviewable": false
   }
 ]

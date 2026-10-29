@@ -1,11 +1,9 @@
-import banks from '../../src/data/banks.json' with {type:'json'};
-import platforms from '../../src/data/platforms.json' with {type:'json'};
+import {isReviewableEntity} from '../../src/lib/review-entities.mjs';
 import routes from '../../src/data/routes.json' with {type:'json'};
-const entities=new Set([...banks,...platforms].filter(e=>e.id!=='otro').map(e=>e.id));
 const routeIds=new Set(routes.map(r=>r.origin+'-'+r.bank));
 const uuid=/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 export function validateReview(data){
- if(!data||typeof data!=='object'||!entities.has(data.entity))throw new Error('Elegí una entidad válida.');
+ if(!data||typeof data!=='object'||!isReviewableEntity(data.entity))throw new Error('Elegí una entidad válida.');
  if(data.route&&(!routeIds.has(data.route)||!data.route.split('-').includes(data.entity)))throw new Error('Ruta no válida para la entidad.');
  if(typeof data.date!=='string'||!/^\d{4}-\d{2}-\d{2}$/.test(data.date)||!Number.isFinite(Date.parse(data.date))||new Date(data.date).toISOString().slice(0,10)!==data.date||data.date>new Date().toISOString().slice(0,10)||data.date<'2020-01-01')throw new Error('La fecha de experiencia no es válida.');
  const out={entity:data.entity,route:data.route||null,date:data.date};let scores=0;
