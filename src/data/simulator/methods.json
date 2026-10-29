@@ -1,0 +1,30 @@
+[
+  {
+    "id": "crypto",
+    "name": "Red cripto"
+  },
+  {
+    "id": "ach",
+    "name": "ACH · EE.UU."
+  },
+  {
+    "id": "wire",
+    "name": "Wire · EE.UU."
+  },
+  {
+    "id": "swift",
+    "name": "SWIFT internacional"
+  },
+  {
+    "id": "local",
+    "name": "Transferencia local"
+  },
+  {
+    "id": "conversion",
+    "name": "Conversión interna"
+  },
+  {
+    "id": "custom",
+    "name": "Otro / personalizado"
+  }
+]

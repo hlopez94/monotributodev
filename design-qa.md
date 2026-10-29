@@ -62,3 +62,12 @@ No quedan hallazgos P0/P1/P2 de diseño. P3: el raster usa marcas en los selecto
 - 19 pruebas de lógica/API/catálogos y 4 de empaquetado aprobadas. Build frontend y bundle API en seco correctos.
 
 - Publicación de provincias verificada en GitHub Pages: fd4ee32, workflow 40925987737 success; captura docs/qa/provinces-public.png.
+
+## Simulador por movimientos (29/10/2026)
+
+- Constructor lineal con tarjetas de movimiento, selector de origen con logo, ejemplos rápidos y resultado acumulado en panel menta. Se preservan tipografía, verde, bordes y espaciado del sitio. Catálogo de15 referencias en detalle desplegable, con scroll local en tabla.
+- Desglose fijo/porcentaje/red/corresponsales, cotización y cargo receptor con moneda visible. Tarifas incompletas no producen resultado final hasta completar; los ejemplos se identifican y las fuentes aparecen por tramo.
+- Navegador: cuatro ejemplos y resultados comprobados, red aparte, armado manual ACH→SWIFT, cambio de método, restauración de referencia, cotización y navegación CUIT/volver. La resta original del servicio no se confunde con valuación fiscal.
+- Móvil390×844: contenido375, scrollWidth375; inputs y resultado legibles, sin scroll horizontal de página. Evidencia docs/qa/simulator-blocks-desktop.png y simulator-blocks-mobile.png. Se restableció viewport predeterminado.
+- Revisión independiente encontró doble redondeo en centavos: corregido con prueba RED→GREEN. El cálculo redondea directamente la fracción original a la precisión de moneda. Selector con marca también aplicado al destino manual.
+- Validación final:27 pruebas de lógica/API/datos y4 de empaquetado aprobadas; build correcto. No quedan defectos importantes conocidos de esta actualización.

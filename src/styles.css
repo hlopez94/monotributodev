@@ -52,3 +52,42 @@
 .national-checklist{border-top:1px solid var(--line);padding-top:20px;color:#4b596a;font-size:14px}
 .national-checklist summary{cursor:pointer;color:var(--green);font-weight:600;margin-bottom:15px}
 @media(max-width:760px){.province-grid{grid-template-columns:minmax(0,1fr);gap:30px}.province-procedure h3{font-size:21px}.province-warning{padding:18px 15px}.province-results>.entity-title h2{font-size:27px}}
+
+/* Constructor de recorridos: entrada, movimientos y saldo acumulado. */
+.scenario-buttons{display:flex;flex-wrap:wrap;gap:9px;margin:24px 0 12px}
+.scenario-buttons button{display:inline-flex;align-items:center;gap:10px;border:1px solid #cadbd2;background:#fff;border-radius:6px;padding:11px 13px;color:var(--dark-green);font-size:13px;min-height:43px}
+.scenario-buttons button:hover{background:var(--mint);border-color:var(--green)}
+.scenario-note{font-size:13px;line-height:1.6;color:#667486;margin:15px 0 28px;max-width:1000px}
+.journey-layout{display:grid;grid-template-columns:minmax(0,1.9fr) minmax(270px,1fr);gap:35px;align-items:start;margin:28px 0 35px}
+.journey-editor{min-width:0}.journey-start{border:1px solid var(--line);border-radius:8px;padding:23px;background:#fbfcfb}
+.journey-start .eyebrow{margin-bottom:15px;font-size:10px}.journey-start-fields{display:grid;grid-template-columns:1.4fr .8fr 1fr;gap:15px}
+.journey-start small{margin-top:13px}.journey-editor label{font-size:12px;gap:8px}.journey-editor input,.journey-editor select{font-size:14px;padding:12px;min-height:47px}
+.journey-connector{display:flex;align-items:center;justify-content:center;height:40px;color:#82a997}
+.transfer-block{border:1px solid #d5e1da;border-radius:8px;padding:23px;background:#fff;min-width:0}
+.transfer-heading{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:23px;font-size:17px}
+.transfer-heading .entity-logo{width:28px;height:28px}.transfer-heading>svg{color:#7d9388}.transfer-number{font-family:'IBM Plex Mono',monospace;background:#e9f7ef;color:var(--dark-green);width:27px;height:27px;display:flex;align-items:center;justify-content:center;border-radius:50%;font-size:12px;flex-shrink:0}
+.remove-stage{margin-left:auto;color:#798b82;min-width:35px;min-height:35px;justify-content:center}.remove-stage:hover{color:#a73535;background:#fff2f2;border-radius:5px}
+.transfer-meta{display:flex;align-items:center;flex-wrap:wrap;gap:10px 14px;margin:15px 0 20px;color:#637568;font-size:12px}
+.transfer-fees{display:grid;grid-template-columns:1fr 1fr;gap:17px 20px}.transfer-custom-fields{display:grid;grid-template-columns:1fr 1.2fr 1fr;gap:14px;margin-top:17px}
+.network-payment{max-width:410px;margin:19px 0 10px}.transfer-block>small{font-size:12px;margin:8px 0 17px}
+.transfer-conversion{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:center;background:#f6faf8;padding:16px;border-radius:6px;margin:20px 0}
+.transfer-conversion small{font-size:11px}.transfer-block>label:last-of-type{margin-top:16px}.receiving-free{font-size:12px;line-height:1.7;color:#51695c;background:#f4f9f6;padding:13px 15px;border-radius:5px;margin:19px 0}
+.transfer-output{display:flex;align-items:center;justify-content:space-between;gap:14px;border-top:1px solid var(--line);padding-top:18px;margin-top:20px;color:#64766b;font-size:11px}
+.transfer-output span{display:flex;flex-direction:column;gap:6px}.transfer-output strong{font-size:17px;color:var(--dark-green);letter-spacing:-.2px}.transfer-output>svg{flex-shrink:0;color:#8da99b}
+.transfer-details{margin-top:20px;padding-top:15px;border-top:1px solid #edf1ee;font-size:12px;color:#65766c}.transfer-details summary{cursor:pointer;color:var(--green);font-weight:600}.transfer-details p{font-size:12px;margin:15px 0 10px}.transfer-details small{font-size:11px}.transfer-details .text-button{font-size:12px}.transfer-details .sources a{font-size:11px}
+.add-movement{width:100%;border:1px dashed #8bb69f;border-radius:7px;padding:16px;background:#f7fbf9;color:var(--green);display:flex;align-items:center;justify-content:center;gap:12px;font-size:14px;font-weight:600;margin:24px 0 12px}
+.add-movement:hover:not(:disabled){background:#eaf6ef}.journey-summary{position:sticky;top:22px;background:var(--mint);padding:28px;border-radius:8px;min-width:0}
+.journey-summary .eyebrow{font-size:9px;letter-spacing:1.6px;margin-bottom:13px}.journey-summary h2{font-size:26px;margin-bottom:24px}.journey-path{display:flex;flex-direction:column;gap:10px}.journey-path>svg{color:#7ba58f;margin-left:6px}.journey-path p{display:flex;flex-direction:column;gap:3px;margin:0;font-size:14px}.journey-path p span{font-family:'IBM Plex Mono',monospace;font-size:13px;color:#506b5d;overflow-wrap:anywhere}
+.journey-total{border-top:1px solid #cfe4d7;margin-top:25px;padding-top:22px}.journey-final{font-size:clamp(23px,2.7vw,36px);letter-spacing:-1px;line-height:1.25;color:var(--green);font-weight:700;margin-bottom:20px;overflow-wrap:anywhere}
+.journey-total [role=alert]{font-size:13px;color:#8c4d24;background:#fff9ed;padding:13px;border-radius:5px}
+.journey-summary>small{font-size:11px;line-height:1.7}.summary-breakdown{border-top:1px solid #cfe4d7;padding:17px 0;margin-bottom:10px;font-size:12px;color:#496453}.summary-breakdown summary{cursor:pointer;color:var(--dark-green)}.summary-breakdown>div{margin-top:17px}.summary-breakdown p{font-size:11px;margin:6px 0 0;line-height:1.8}
+.receiving-eligibility{margin:15px 0;max-width:850px}.receiving-eligibility input{accent-color:var(--green)}
+@media(max-width:1000px){.journey-layout{grid-template-columns:minmax(0,1.7fr) minmax(250px,1fr);gap:23px}.journey-summary{padding:23px}.journey-start-fields{grid-template-columns:1fr 1fr}.journey-start-fields>label:first-child{grid-column:1/-1}.transfer-heading{font-size:15px}.transfer-heading .entity-logo{display:none}.transfer-output strong{font-size:15px}.transfer-custom-fields{grid-template-columns:1fr}}
+@media(max-width:760px){.journey-layout{grid-template-columns:minmax(0,1fr);gap:26px}.journey-summary{position:static;order:-1;padding:22px}.journey-summary h2{font-size:23px}.journey-path p{font-size:13px}.journey-path{gap:8px}.journey-final{font-size:31px}.journey-start,.transfer-block{padding:19px 16px}.transfer-heading{font-size:14px;gap:7px}.transfer-heading .entity-logo{display:flex;width:24px;height:24px}.transfer-number{width:23px;height:23px}.transfer-heading>strong{max-width:120px}.transfer-fees{gap:16px 12px}.transfer-conversion{grid-template-columns:minmax(0,1fr);gap:11px;padding:14px}.scenario-buttons{gap:8px}.scenario-buttons button{font-size:11px;padding:10px;gap:6px}.scenario-note{font-size:12px}.transfer-output strong{font-size:14px}.transfer-output span{min-width:0;overflow-wrap:anywhere}.transfer-meta .status{font-size:9px}.transfer-details .sources{gap:12px}}
+@media print{.journey-summary{position:static}.scenario-buttons,.add-movement,.remove-stage{display:none}.journey-layout{display:block}.transfer-block{break-inside:avoid}.journey-summary{margin-top:25px}}
+.simulator-catalog{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:17px 0;margin:22px 0;color:#53695c;font-size:13px}
+.simulator-catalog summary{cursor:pointer;font-weight:600;color:var(--green)}.simulator-catalog>p{font-size:12px;margin:17px 0}
+.simulator-catalog table{min-width:760px;font-size:12px}.simulator-catalog td{vertical-align:top;min-width:170px}.simulator-catalog td:nth-child(3){min-width:250px}.simulator-catalog small{font-size:11px;margin-top:9px;max-width:340px}.simulator-catalog .sources{margin-top:0}
+.journey-start-fields{align-items:end}.journey-editor .selector-label{font-size:12px}.journey-editor .entity-select-trigger{min-height:65px;padding:10px 12px}.journey-editor .entity-option-copy strong{font-size:14px}.journey-editor .entity-option-copy>span{font-size:11px}.journey-editor .entity-logo{width:30px;height:30px}
+@media(max-width:1000px){.journey-start-fields>.entity-select-control:first-child{grid-column:1/-1}}
+.transfer-fees{align-items:end}

@@ -25,3 +25,6 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 
 - Todos los catálogos editables son JSON legible con dos espacios, sin minimizar; temas separados y un archivo por provincia. Los módulos JS solo cargan datos o implementan reglas/UI.
 - Cada procedimiento provincial debe tener fuentes disponibles, fecha/alcance y aporte contextual; avisar que puede haber errores. No generalizar salida del unificado ni DDJJ mensual/cero a todos; discriminar régimen, ingresos mixtos y CM.
+
+- Simulador componible por tramos: separar método (ACH/wire/SWIFT/red/local), monedas y costos. Referencias JSON distintas de escenarios ilustrativos; desconocidos null, nunca cero implícito. Mantener fuentes, revisión y aporte.
+- Cálculos monetarios con BigInt y redondeo único a precisión de moneda; gas pagado aparte no reduce envío. Comisión propia receptora 0 solo para encuadre PH residente SWIFT/USD banco argentino, cargos extranjeros documentados separados.

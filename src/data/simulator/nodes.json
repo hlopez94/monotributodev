@@ -1,0 +1,122 @@
+[
+  {
+    "id": "cripto",
+    "name": "Billetera cripto",
+    "group": "wallet",
+    "currencies": [
+      "USDC",
+      "USDT"
+    ]
+  },
+  {
+    "id": "wise",
+    "name": "Wise",
+    "group": "platform",
+    "currencies": [
+      "USD",
+      "EUR"
+    ]
+  },
+  {
+    "id": "wallbit",
+    "name": "Wallbit",
+    "group": "platform",
+    "currencies": [
+      "USD"
+    ]
+  },
+  {
+    "id": "payoneer",
+    "name": "Payoneer",
+    "group": "platform",
+    "currencies": [
+      "USD",
+      "EUR"
+    ]
+  },
+  {
+    "id": "deel",
+    "name": "Deel",
+    "group": "platform",
+    "currencies": [
+      "USD",
+      "EUR"
+    ]
+  },
+  {
+    "id": "nexo-int",
+    "name": "Nexo Internacional",
+    "group": "platform",
+    "currencies": [
+      "USD",
+      "USDC",
+      "USDT"
+    ]
+  },
+  {
+    "id": "nexo-ar",
+    "name": "Nexo Argentina",
+    "group": "platform",
+    "currencies": [
+      "ARS",
+      "USDC",
+      "USDT"
+    ]
+  },
+  {
+    "id": "banco-usa",
+    "name": "Banco en EE.UU.",
+    "group": "bank-us",
+    "currencies": [
+      "USD"
+    ]
+  },
+  {
+    "id": "santander",
+    "name": "Santander",
+    "group": "bank-ar",
+    "currencies": [
+      "USD",
+      "ARS"
+    ]
+  },
+  {
+    "id": "bbva",
+    "name": "BBVA",
+    "group": "bank-ar",
+    "currencies": [
+      "USD",
+      "ARS"
+    ]
+  },
+  {
+    "id": "galicia",
+    "name": "Galicia",
+    "group": "bank-ar",
+    "currencies": [
+      "USD",
+      "ARS"
+    ]
+  },
+  {
+    "id": "banco-ar",
+    "name": "Otro banco argentino",
+    "group": "bank-ar",
+    "currencies": [
+      "USD",
+      "ARS"
+    ]
+  },
+  {
+    "id": "otro",
+    "name": "Otra plataforma / cuenta",
+    "group": "other",
+    "currencies": [
+      "USD",
+      "ARS",
+      "EUR",
+      "USDC",
+      "USDT"
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "reviewedAt": "2026-10-29",
+  "amount": "0",
+  "currency": "USD",
+  "method": "swift",
+  "destinationGroup": "bank-ar",
+  "conditions": "Persona humana residente que acredita divisas en su cuenta en moneda extranjera en una entidad local; confirmar encuadre de la operación.",
+  "note": "Comisión propia de acreditación del banco: 0. BCRA permite trasladar al costo cargos de entidades del exterior debidamente documentados. Cargalos en Otros / corresponsales y no los dupliques si ya están incluidos en el precio de la plataforma. No aplicar automáticamente a ARS u otras situaciones.",
+  "sources": [
+    {
+      "name": "BCRA · Exterior y Cambios 2.2.2.1 y 2.8",
+      "url": "https://www.bcra.gob.ar/Pdfs/Texord/t-excbio.pdf"
+    },
+    {
+      "name": "Santander · Comisión de acreditación",
+      "url": "https://ayuda.santander.com.ar/06AK356I2O-1/article/M1K68S3XF7-cuanto-me-van-cobrar-por-liquidacion-orden-pago-exterior/"
+    }
+  ]
+}

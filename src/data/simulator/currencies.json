@@ -1,0 +1,22 @@
+[
+  {
+    "id": "USD",
+    "decimals": 2
+  },
+  {
+    "id": "ARS",
+    "decimals": 2
+  },
+  {
+    "id": "EUR",
+    "decimals": 2
+  },
+  {
+    "id": "USDC",
+    "decimals": 6
+  },
+  {
+    "id": "USDT",
+    "decimals": 6
+  }
+]

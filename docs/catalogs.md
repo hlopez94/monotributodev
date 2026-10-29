@@ -50,3 +50,7 @@ Estados: `missing` = falta procedimiento; `partial` = hay información con lími
 4. Actualizá fecha y alcance; indicá qué no pudiste comprobar. No copies menús de una investigación sin contrastarlos.
 5. Ejecutá `npm test`, `npm run build` y `npm run test:sites`. Para cambios que afecten entidades/rutas de comunidad, comprobá también `npm run api:bundle`.
 6. Abrí una PR o usá los enlaces Aportá de cada sección. No adjuntes claves, CUIT personal, CBU ni documentos sin anonimizar.
+
+## Tarifas y escenarios del simulador
+
+Los archivos `src/data/simulator/*.json` separan monedas, nodos, métodos, referencias de tarifas, política de recepción y ejemplos. Ver [modelo y unidades](simulator.md) antes de editar: una tarifa fija se expresa en moneda de entrada; el costo receptor, en moneda de salida; `null` es desconocido. No cambies los ejemplos aportados por el usuario como si fueran precios oficiales. Cada referencia mantiene fuentes y fecha.

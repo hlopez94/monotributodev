@@ -1,0 +1,415 @@
+[
+  {
+    "id": "crypto-wallbit-usdc-erc20",
+    "name": "USDC → Wallbit · ERC20",
+    "from": "cripto",
+    "to": "wallbit",
+    "currencyIn": "USDC",
+    "currencyOut": "USD",
+    "method": "crypto",
+    "networkName": "ERC20",
+    "fees": {
+      "fixed": "0",
+      "percent": "0",
+      "network": null,
+      "other": "0",
+      "receiving": "0"
+    },
+    "rate": "1",
+    "status": "partial",
+    "reviewedAt": "2026-10-29",
+    "note": "Depósito sin comisión propia según Wallbit. Costo de red variable del emisor: completalo. El 1:1 cripto/USD es un supuesto editable. Confirmá activo, red, mínimos y monto neto en la app. Si el gas se paga en otro activo, ingresá su equivalente y marcá pago aparte.",
+    "sources": [
+      {
+        "name": "Wallbit · Redes y depósitos cripto",
+        "url": "https://help.wallbit.io/es/articles/11328049-enviar-y-recibir-usdc-y-usdt-con-tu-cuenta-wallbit"
+      }
+    ]
+  },
+  {
+    "id": "crypto-wallbit-usdc-polygon",
+    "name": "USDC → Wallbit · Polygon",
+    "from": "cripto",
+    "to": "wallbit",
+    "currencyIn": "USDC",
+    "currencyOut": "USD",
+    "method": "crypto",
+    "networkName": "Polygon",
+    "fees": {
+      "fixed": "0",
+      "percent": "0",
+      "network": null,
+      "other": "0",
+      "receiving": "0"
+    },
+    "rate": "1",
+    "status": "partial",
+    "reviewedAt": "2026-10-29",
+    "note": "Depósito sin comisión propia según Wallbit. Costo de red variable del emisor: completalo. El 1:1 cripto/USD es un supuesto editable. Confirmá activo, red, mínimos y monto neto en la app. Si el gas se paga en otro activo, ingresá su equivalente y marcá pago aparte.",
+    "sources": [
+      {
+        "name": "Wallbit · Redes y depósitos cripto",
+        "url": "https://help.wallbit.io/es/articles/11328049-enviar-y-recibir-usdc-y-usdt-con-tu-cuenta-wallbit"
+      }
+    ]
+  },
+  {
+    "id": "crypto-wallbit-usdc-base",
+    "name": "USDC → Wallbit · Base",
+    "from": "cripto",
+    "to": "wallbit",
+    "currencyIn": "USDC",
+    "currencyOut": "USD",
+    "method": "crypto",
+    "networkName": "Base",
+    "fees": {
+      "fixed": "0",
+      "percent": "0",
+      "network": null,
+      "other": "0",
+      "receiving": "0"
+    },
+    "rate": "1",
+    "status": "partial",
+    "reviewedAt": "2026-10-29",
+    "note": "Depósito sin comisión propia según Wallbit. Costo de red variable del emisor: completalo. El 1:1 cripto/USD es un supuesto editable. Confirmá activo, red, mínimos y monto neto en la app. Si el gas se paga en otro activo, ingresá su equivalente y marcá pago aparte.",
+    "sources": [
+      {
+        "name": "Wallbit · Redes y depósitos cripto",
+        "url": "https://help.wallbit.io/es/articles/11328049-enviar-y-recibir-usdc-y-usdt-con-tu-cuenta-wallbit"
+      }
+    ]
+  },
+  {
+    "id": "crypto-wallbit-usdt-erc20",
+    "name": "USDT → Wallbit · ERC20",
+    "from": "cripto",
+    "to": "wallbit",
+    "currencyIn": "USDT",
+    "currencyOut": "USD",
+    "method": "crypto",
+    "networkName": "ERC20",
+    "fees": {
+      "fixed": "0",
+      "percent": "0",
+      "network": null,
+      "other": "0",
+      "receiving": "0"
+    },
+    "rate": "1",
+    "status": "partial",
+    "reviewedAt": "2026-10-29",
+    "note": "Depósito sin comisión propia según Wallbit. Costo de red variable del emisor: completalo. El 1:1 cripto/USD es un supuesto editable. Confirmá activo, red, mínimos y monto neto en la app. Si el gas se paga en otro activo, ingresá su equivalente y marcá pago aparte.",
+    "sources": [
+      {
+        "name": "Wallbit · Redes y depósitos cripto",
+        "url": "https://help.wallbit.io/es/articles/11328049-enviar-y-recibir-usdc-y-usdt-con-tu-cuenta-wallbit"
+      }
+    ]
+  },
+  {
+    "id": "crypto-wallbit-usdt-trc20",
+    "name": "USDT → Wallbit · TRC20",
+    "from": "cripto",
+    "to": "wallbit",
+    "currencyIn": "USDT",
+    "currencyOut": "USD",
+    "method": "crypto",
+    "networkName": "TRC20",
+    "fees": {
+      "fixed": "0",
+      "percent": "0",
+      "network": null,
+      "other": "0",
+      "receiving": "0"
+    },
+    "rate": "1",
+    "status": "partial",
+    "reviewedAt": "2026-10-29",
+    "note": "Depósito sin comisión propia según Wallbit. Costo de red variable del emisor: completalo. El 1:1 cripto/USD es un supuesto editable. Confirmá activo, red, mínimos y monto neto en la app. Si el gas se paga en otro activo, ingresá su equivalente y marcá pago aparte.",
+    "sources": [
+      {
+        "name": "Wallbit · Redes y depósitos cripto",
+        "url": "https://help.wallbit.io/es/articles/11328049-enviar-y-recibir-usdc-y-usdt-con-tu-cuenta-wallbit"
+      }
+    ]
+  },
+  {
+    "id": "wallbit-ars",
+    "name": "Wallbit → banco argentino · ARS",
+    "from": "wallbit",
+    "to": "banco-ar",
+    "currencyIn": "USD",
+    "currencyOut": "ARS",
+    "method": "local",
+    "networkName": null,
+    "fees": {
+      "fixed": null,
+      "percent": "0",
+      "network": "0",
+      "other": "0",
+      "receiving": null
+    },
+    "rate": null,
+    "status": "partial",
+    "reviewedAt": "2026-10-29",
+    "note": "Cotización y costo a confirmar en la app; no son datos en vivo. Una salida local no presupone ingreso por MLC ni cumplimiento cambiario.",
+    "sources": [
+      {
+        "name": "Wallbit · Métodos de retiro",
+        "url": "https://help.wallbit.io/es/articles/8062980-como-retiro-dinero-de-mi-cuenta-de-wallbit"
+      }
+    ]
+  },
+  {
+    "id": "wise-santander",
+    "name": "Wise → Santander · USD SWIFT",
+    "from": "wise",
+    "to": "santander",
+    "currencyIn": "USD",
+    "currencyOut": "USD",
+    "method": "swift",
+    "networkName": null,
+    "fees": {
+      "fixed": null,
+      "percent": "0",
+      "network": "0",
+      "other": "0",
+      "receiving": null
+    },
+    "rate": "1",
+    "status": "partial",
+    "reviewedAt": "2026-10-29",
+    "note": "Ingresá el costo total cotizado por Wise. Su tabla SWIFT es un componente y no equivale al costo total. El ejemplo USD24,95 es editable, no una tarifa vigente universal.",
+    "sources": [
+      {
+        "name": "Wise · Precio USD fuera de EE.UU.",
+        "url": "https://wise.com/help/articles/2946451/how-much-does-it-cost-to-send-usd-to-countries-outside-the-us"
+      }
+    ]
+  },
+  {
+    "id": "wise-bbva",
+    "name": "Wise → BBVA · USD SWIFT",
+    "from": "wise",
+    "to": "bbva",
+    "currencyIn": "USD",
+    "currencyOut": "USD",
+    "method": "swift",
+    "networkName": null,
+    "fees": {
+      "fixed": null,
+      "percent": "0",
+      "network": "0",
+      "other": "0",
+      "receiving": null
+    },
+    "rate": "1",
+    "status": "partial",
+    "reviewedAt": "2026-10-29",
+    "note": "Ingresá el costo total cotizado por Wise. Su tabla SWIFT es un componente y no equivale al costo total. El ejemplo USD24,95 es editable, no una tarifa vigente universal.",
+    "sources": [
+      {
+        "name": "Wise · Precio USD fuera de EE.UU.",
+        "url": "https://wise.com/help/articles/2946451/how-much-does-it-cost-to-send-usd-to-countries-outside-the-us"
+      }
+    ]
+  },
+  {
+    "id": "wise-galicia",
+    "name": "Wise → Galicia · USD SWIFT",
+    "from": "wise",
+    "to": "galicia",
+    "currencyIn": "USD",
+    "currencyOut": "USD",
+    "method": "swift",
+    "networkName": null,
+    "fees": {
+      "fixed": null,
+      "percent": "0",
+      "network": "0",
+      "other": "0",
+      "receiving": null
+    },
+    "rate": "1",
+    "status": "partial",
+    "reviewedAt": "2026-10-29",
+    "note": "Ingresá el costo total cotizado por Wise. Su tabla SWIFT es un componente y no equivale al costo total. El ejemplo USD24,95 es editable, no una tarifa vigente universal.",
+    "sources": [
+      {
+        "name": "Wise · Precio USD fuera de EE.UU.",
+        "url": "https://wise.com/help/articles/2946451/how-much-does-it-cost-to-send-usd-to-countries-outside-the-us"
+      }
+    ]
+  },
+  {
+    "id": "wise-banco-ar",
+    "name": "Wise → Otro banco argentino · USD SWIFT",
+    "from": "wise",
+    "to": "banco-ar",
+    "currencyIn": "USD",
+    "currencyOut": "USD",
+    "method": "swift",
+    "networkName": null,
+    "fees": {
+      "fixed": null,
+      "percent": "0",
+      "network": "0",
+      "other": "0",
+      "receiving": null
+    },
+    "rate": "1",
+    "status": "partial",
+    "reviewedAt": "2026-10-29",
+    "note": "Ingresá el costo total cotizado por Wise. Su tabla SWIFT es un componente y no equivale al costo total. El ejemplo USD24,95 es editable, no una tarifa vigente universal.",
+    "sources": [
+      {
+        "name": "Wise · Precio USD fuera de EE.UU.",
+        "url": "https://wise.com/help/articles/2946451/how-much-does-it-cost-to-send-usd-to-countries-outside-the-us"
+      }
+    ]
+  },
+  {
+    "id": "wallbit-santander",
+    "name": "Wallbit → Santander · exportador de servicios",
+    "from": "wallbit",
+    "to": "santander",
+    "currencyIn": "USD",
+    "currencyOut": "USD",
+    "method": "swift",
+    "networkName": null,
+    "fees": {
+      "fixed": "0",
+      "percent": "1",
+      "network": "0",
+      "other": "0",
+      "receiving": null
+    },
+    "rate": "1",
+    "status": "partial",
+    "reviewedAt": "2026-10-29",
+    "note": "El instructivo oficial consultado publica 1% en esta modalidad. Confirmá comisión y disponibilidad en tu cuenta. El ejemplo aportado de 1,5% es un valor editable, no la referencia oficial.",
+    "sources": [
+      {
+        "name": "Wallbit · Circuito exportador con Santander",
+        "url": "https://help.wallbit.io/es/articles/12632940-como-registrar-cobros-del-exterior-con-santander"
+      }
+    ]
+  },
+  {
+    "id": "wise-wallbit-ach",
+    "name": "Wise → Wallbit · ACH",
+    "from": "wise",
+    "to": "wallbit",
+    "currencyIn": "USD",
+    "currencyOut": "USD",
+    "method": "ach",
+    "networkName": null,
+    "fees": {
+      "fixed": null,
+      "percent": "0",
+      "network": "0",
+      "other": "0",
+      "receiving": null
+    },
+    "rate": "1",
+    "status": "partial",
+    "reviewedAt": "2026-10-29",
+    "note": "Confirmá elegibilidad, datos y método ofrecido en tu cuenta. Sin tarifa total verificada para esta combinación.",
+    "sources": [
+      {
+        "name": "Wallbit · Fuentes de depósitos",
+        "url": "https://help.wallbit.io/es/articles/9089359-fuentes-aceptadas-para-depositos-y-retiros"
+      },
+      {
+        "name": "Wise · Precio USD fuera de EE.UU.",
+        "url": "https://wise.com/help/articles/2946451/how-much-does-it-cost-to-send-usd-to-countries-outside-the-us"
+      }
+    ]
+  },
+  {
+    "id": "wallbit-usa-ach",
+    "name": "Wallbit → banco EE.UU. · ACH",
+    "from": "wallbit",
+    "to": "banco-usa",
+    "currencyIn": "USD",
+    "currencyOut": "USD",
+    "method": "ach",
+    "networkName": null,
+    "fees": {
+      "fixed": null,
+      "percent": "0",
+      "network": "0",
+      "other": "0",
+      "receiving": null
+    },
+    "rate": "1",
+    "status": "partial",
+    "reviewedAt": "2026-10-29",
+    "note": "Método publicado; tarifa y recepción por confirmar según plan y cuenta. ACH y wire son métodos distintos.",
+    "sources": [
+      {
+        "name": "Wallbit · Métodos de retiro",
+        "url": "https://help.wallbit.io/es/articles/8062980-como-retiro-dinero-de-mi-cuenta-de-wallbit"
+      }
+    ]
+  },
+  {
+    "id": "wise-wallbit-wire",
+    "name": "Wise → Wallbit · WIRE",
+    "from": "wise",
+    "to": "wallbit",
+    "currencyIn": "USD",
+    "currencyOut": "USD",
+    "method": "wire",
+    "networkName": null,
+    "fees": {
+      "fixed": null,
+      "percent": "0",
+      "network": "0",
+      "other": "0",
+      "receiving": null
+    },
+    "rate": "1",
+    "status": "partial",
+    "reviewedAt": "2026-10-29",
+    "note": "Confirmá elegibilidad, datos y método ofrecido en tu cuenta. Sin tarifa total verificada para esta combinación.",
+    "sources": [
+      {
+        "name": "Wallbit · Fuentes de depósitos",
+        "url": "https://help.wallbit.io/es/articles/9089359-fuentes-aceptadas-para-depositos-y-retiros"
+      },
+      {
+        "name": "Wise · Precio USD fuera de EE.UU.",
+        "url": "https://wise.com/help/articles/2946451/how-much-does-it-cost-to-send-usd-to-countries-outside-the-us"
+      }
+    ]
+  },
+  {
+    "id": "wallbit-usa-wire",
+    "name": "Wallbit → banco EE.UU. · WIRE",
+    "from": "wallbit",
+    "to": "banco-usa",
+    "currencyIn": "USD",
+    "currencyOut": "USD",
+    "method": "wire",
+    "networkName": null,
+    "fees": {
+      "fixed": null,
+      "percent": "0",
+      "network": "0",
+      "other": "0",
+      "receiving": null
+    },
+    "rate": "1",
+    "status": "partial",
+    "reviewedAt": "2026-10-29",
+    "note": "Método publicado; tarifa y recepción por confirmar según plan y cuenta. ACH y wire son métodos distintos.",
+    "sources": [
+      {
+        "name": "Wallbit · Métodos de retiro",
+        "url": "https://help.wallbit.io/es/articles/8062980-como-retiro-dinero-de-mi-cuenta-de-wallbit"
+      }
+    ]
+  }
+]

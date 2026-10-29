@@ -6,7 +6,7 @@ export function EntityLogo({entity,kind='platform'}){
  const [failed,setFailed]=useState(false);
  const brand=entity.id.startsWith('nexo-')?'nexo':entity.id;
  const asset=brandSources.assets.find(a=>a.id===brand&&a.file);
- const Icon=kind==='bank'?Bank:Wallet;
+ const Icon=kind==='bank'||entity.group?.startsWith('bank')?Bank:Wallet;
  return <span className="entity-logo" aria-hidden="true">{asset&&!failed?<img key={asset.file} src={`${import.meta.env.BASE_URL}brands/${asset.file}`} alt="" onError={()=>setFailed(true)}/>:<Icon size={23}/>}</span>;
 }
 
