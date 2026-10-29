@@ -12,7 +12,7 @@ Guía comunitaria para devs argentinos que cobran servicios del exterior. Proyec
 
 ## Ejecutar
 
-Requiere Node.js 24 y npm. `npm ci`, copiar `.env.example` a `.env.local` y ejecutar `npm run dev`. `npm test` ejecuta pruebas de dominio, API con SQLite y empaquetado. `npm run build` genera `dist/client` para Pages y conserva el empaquetado compatible con Sites.
+Requiere Node.js 24 y npm. `npm ci`, copiar `.env.example` a `.env.local` y ejecutar `npm run dev`. `npm test` ejecuta pruebas de dominio y API con SQLite. Después de compilar, `npm run test:sites` verifica el empaquetado. `npm run build` genera `dist/client` para Pages y conserva el empaquetado compatible con Sites.
 
 El frontend no requiere secretos. Los valores `VITE_*` del ejemplo son públicos. Las claves Turnstile y HMAC pertenecen exclusivamente al backend y nunca deben agregarse a Git.
 
