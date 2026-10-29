@@ -1,0 +1,12 @@
+{
+ "$schema":"../node_modules/wrangler/config-schema.json",
+ "name":"monotributodev-community",
+ "account_id":"04974f8a5de68938d72e117bfa94777a",
+ "main":"src/index.js",
+ "compatibility_date":"2026-10-29",
+ "compatibility_flags":["nodejs_compat"],
+ "workers_dev":true,
+ "observability":{"enabled":true,"head_sampling_rate":0.1},
+ "vars":{"ALLOWED_ORIGINS":"https://hlopez94.github.io,https://monotributodev.com.ar,https://www.monotributodev.com.ar"},
+ "d1_databases":[{"binding":"DB","database_name":"monotributodev-community","database_id":"209a4c5a-8f54-40fe-a388-84d4f2dc1d62","migrations_dir":"migrations"}]
+}

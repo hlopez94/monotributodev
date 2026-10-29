@@ -1,0 +1,8 @@
+{
+  "url": "https://servicioscf.afip.gob.ar/publico/FE-lista-paises/paises.aspx",
+  "linkedFrom": "https://www.arca.gob.ar/fe/ayuda/tablas.asp",
+  "checkedAt": "2026-10-29",
+  "format": "xlsx",
+  "sha256": "2fc177ccd7fdc8115590ac68975df513bc0ab9d3152549a75fcb7c21480a61d9",
+  "worksheetRowsIncludingHeader": 900
+}

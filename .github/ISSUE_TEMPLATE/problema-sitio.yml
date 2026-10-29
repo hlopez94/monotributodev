@@ -1,0 +1,46 @@
+name: Reportar problema del sitio
+description: Ayudanos a reproducir un error del sitio.
+body:
+  - type: markdown
+    attributes:
+      value: "Gracias por aportar. No publiques CUIT personal, CBU, cuentas, claves ni extractos sin anonimizar. Las experiencias no reemplazan una fuente normativa."
+  - type: input
+    id: ruta
+    attributes:
+      label: Banco, plataforma o ruta
+      placeholder: Wise → Santander
+    validations:
+      required: true
+  - type: input
+    id: fecha
+    attributes:
+      label: Fecha de la experiencia o del cambio
+      placeholder: AAAA-MM-DD
+  - type: dropdown
+    id: canal
+    attributes:
+      label: Canal utilizado
+      options:
+        - Online
+        - Presencial
+        - Mixto
+        - No corresponde
+  - type: textarea
+    id: detalle
+    attributes:
+      label: Qué pasó y qué información aportás o necesitás
+      description: Incluí pasos, requisitos y demoras si corresponde. Para errores del sitio, indicá dispositivo y cómo reproducirlo.
+    validations:
+      required: true
+  - type: textarea
+    id: fuente
+    attributes:
+      label: Fuentes públicas
+      description: Links del banco, plataforma, organismo o norma. No subas datos privados.
+  - type: checkboxes
+    id: privacidad
+    attributes:
+      label: Antes de enviar
+      options:
+        - label: Revisé que mi aporte no incluye datos privados propios ni de terceros.
+          required: true

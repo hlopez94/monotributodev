@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.env*
+.dev.vars
+.wrangler/
+.superpowers/
+*.log
+
+.monotributodev-api-bundle/
