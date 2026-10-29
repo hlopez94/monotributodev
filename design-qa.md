@@ -32,8 +32,8 @@ final result: passed
 - Buscar CUIT de EEUU 55000002126: persona jurídica, contrastada con fuente oficial.
 - Navegar a CUIT y volver preserva ruta y paso; simulador permanece montado en memoria.
 - Enlaces de fuentes y contribución tienen destinos reales y no adjuntan datos financieros.
-- La API pública devuelve colección vacía real, no opiniones de ejemplo. Pruebas de envío, moderación, idempotencia y límites con SQLite real; validación del formulario público protegida pendiente de la prueba postdespliegue.
-- Consola: se observó un error HMR transitorio durante creación de archivos, anterior al build final. Sin errores de compilación actuales. El navegador de producción se verificará tras publicación.
+- La API pública devuelve colección vacía real, no opiniones de ejemplo. Pruebas de envío, moderación, idempotencia y límites con SQLite real. En GitHub Pages se completó un envío protegido por Turnstile: confirmación visible y fila pending en D1; la prueba sintética se marcó rejected y se verificaron colección vacía y promedios nulos.
+- Consola: se observó un error HMR transitorio durante creación de archivos, anterior al build final. Sin errores de compilación actuales. Producción verificada: formulario, navegación y lectura de opiniones funcionales. El iframe de Turnstile emite mensajes propios en consola; no se observaron errores de ejecución de la aplicación. Captura: docs/qa/public-site.png.
 
 ## Pendientes menores
 

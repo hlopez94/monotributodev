@@ -1,6 +1,6 @@
 # MonotributoDev: diseño propuesto
 
-Estado: recorrido aprobado por el usuario con ampliaciones incorporadas el 29/10/2026; pendiente plan de ejecución. Todavía sin implementación.
+Estado: primera versión implementada y publicada en GitHub Pages el 29/10/2026. Opiniones en Cloudflare. Las fichas y rutas no verificadas conservan su estado explícito.
 
 ## Propósito y decisiones del usuario
 
