@@ -71,3 +71,5 @@ No quedan hallazgos P0/P1/P2 de diseño. P3: el raster usa marcas en los selecto
 - Móvil390×844: contenido375, scrollWidth375; inputs y resultado legibles, sin scroll horizontal de página. Evidencia docs/qa/simulator-blocks-desktop.png y simulator-blocks-mobile.png. Se restableció viewport predeterminado.
 - Revisión independiente encontró doble redondeo en centavos: corregido con prueba RED→GREEN. El cálculo redondea directamente la fracción original a la precisión de moneda. Selector con marca también aplicado al destino manual.
 - Validación final:27 pruebas de lógica/API/datos y4 de empaquetado aprobadas; build correcto. No quedan defectos importantes conocidos de esta actualización.
+
+- Publicación del simulador verificada:4094b48, Pages40934330258 success. Ejemplo público USD1965,07; captura docs/qa/simulator-blocks-public.png.

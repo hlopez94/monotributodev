@@ -18,4 +18,4 @@
 - [x] Tests RED de motor, redondeo, gastos aparte, invalidez y catálogos.
 - [x] Catálogos JSON y motor GREEN.
 - [x] UI bloques y ejemplos editables, desgloses, fuentes y aportes.
-- [ ] Tests, build/empaquetado, navegador y revisión independiente; publicar Pages.
+- [x] Tests, build/empaquetado, navegador y revisión independiente; publicar Pages.
