@@ -41,6 +41,15 @@
       "value": "0.289",
       "label": "Conversión Wise estimada · USD-EUR",
       "source": "Autor, 29/10/2026: 2,89 USD por cada1000 USD. Aproximación proporcional; la tarifa real puede incluir mínimos, componentes fijos y descuentos por volumen."
+    },
+    {
+      "tariffIds": [
+        "payoneer-wallbit-ach"
+      ],
+      "field": "percent",
+      "value": "1.5",
+      "label": "Payoneer → Wallbit ACH · estimación de Wallbit",
+      "source": "Comparativa Wallbit del 10/09/2026: 1,5% Payoneer ACH. Payoneer publica precios por perfil/región; confirmá el total en tu cuenta."
     }
   ]
 }

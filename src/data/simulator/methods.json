@@ -34,5 +34,13 @@
   {
     "id": "bank",
     "name": "Retiro bancario · vía a confirmar"
+  },
+  {
+    "id": "sepa",
+    "name": "SEPA · EUR"
+  },
+  {
+    "id": "local-usd-ar",
+    "name": "Transferencia USD · Argentina"
   }
 ]

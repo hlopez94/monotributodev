@@ -3,6 +3,7 @@ import {Plus,ArrowRight,Info} from '@phosphor-icons/react';
 import nodes from '../data/simulator/nodes.json';
 import methods from '../data/simulator/methods.json';
 import tariffs from '../data/simulator/tariffs.json';
+import {availableMovements} from '../lib/movements.mjs';
 import scenarios from '../data/simulator/scenarios.json';
 import receivingPolicy from '../data/simulator/receiving-policy.json';
 import quoteSources from '../data/simulator/quote-sources.json';
@@ -15,12 +16,12 @@ import {SimulatorCatalog} from './SimulatorCatalog.jsx';
 import {EntityLogo,EntitySelect} from './EntitySelect.jsx';
 import {Sources,Contribution} from './Shared.jsx';
 const node=id=>nodes.find(n=>n.id===id);
-const makeStage=tariff=>({...stageFromTariff(tariff),overrides:{}});
+const makeStage=tariff=>({...stageFromTariff(tariff),reference:tariff,overrides:{}});
 const loadScenario=scenario=>({...scenario,stages:scenario.stages.map(s=>makeStage(tariffs.find(t=>t.id===s.tariffId)))});
 const blankStage=(from,currency)=>({from,currencyIn:currency,to:'otro',currencyOut:currency,method:'custom',rate:'1',fixed:'',percent:'',network:'0',other:'0',receiving:'',networkSeparate:false,tariffId:'',overrides:{}});
 
 export function Simulator({active=true}){
- const [journey,setJourney]=useState(()=>loadScenario(scenarios[0])),[eligible,setEligible]=useState(true),[basis,setBasis]=useState('crypto'),[adding,setAdding]=useState(false);
+ const [journey,setJourney]=useState(()=>loadScenario(scenarios[0])),[eligible,setEligible]=useState(true),[basis,setBasis]=useState('crypto'),[adding,setAdding]=useState(false),[destinationSearch,setDestinationSearch]=useState('');
  const {book,loading,refresh}=useQuotes(active);
  const resolved=journey.stages.map(raw=>resolveAutomaticStage(raw,{quotes:book,basis,eligible,nodes}));
  const partials=[];let result,error;
@@ -33,7 +34,8 @@ export function Simulator({active=true}){
  }catch(e){error=e.message;result=null;}
  const omissionCount=resolved.reduce((count,r)=>count+r.omissions.length,0),estimated=resolved.some(r=>r.assumptions.length);
  const end=journey.stages.at(-1),context={from:end?.to??journey.origin,currency:end?.currencyOut??journey.currency};
- const suggestions=tariffs.filter(t=>tariffMatches(t,context));
+ const suggestions=availableMovements(context);
+ const visibleSuggestions=suggestions.filter(t=>(node(t.to).name+' '+t.method+' '+(t.asset??'')+' '+t.currencyOut).toLocaleLowerCase().includes(destinationSearch.toLocaleLowerCase().trim()));
  const replaceStage=(index,next,preserve=false)=>setJourney(current=>({...current,stages:[...current.stages.slice(0,index),next,...(preserve?current.stages.slice(index+1):[])]}));
  const changeField=(index,key,value)=>setJourney(current=>({...current,stages:current.stages.map((s,i)=>i===index?{...s,overrides:{...s.overrides,[key]:value}}:s)}));
  const changeStart=(key,value)=>{setAdding(false);setJourney(current=>({...current,[key]:value,...(key==='origin'?{currency:node(value).currencies[0]}:{}),stages:[]}));};
@@ -47,12 +49,12 @@ export function Simulator({active=true}){
    <div className="automatic-builder">
     <div className="automatic-start"><EntitySelect label="Dónde empezás" value={journey.origin} onChange={value=>changeStart('origin',value)} options={nodes.map(n=>({...n,subtitle:n.currencies.join(' · ')}))}/><label>Moneda<select aria-label="Moneda inicial" value={journey.currency} onChange={e=>changeStart('currency',e.target.value)}>{node(journey.origin).currencies.map(c=><option key={c}>{c}</option>)}</select></label><label>Cuánto recibís<input type="text" inputMode="decimal" aria-label="Cuánto recibís" maxLength={24} value={journey.amount} onChange={e=>setJourney({...journey,amount:e.target.value})}/></label></div>
     <div className="automatic-steps">{journey.stages.map((raw,index)=><SimulatorStep key={`${journey.id??'custom'}-${index}`} raw={raw} resolved={resolved[index]} index={index} calculated={partials[index]} eligible={eligible}
-     onMovement={value=>replaceStage(index,value==='custom'?blankStage(raw.from,raw.currencyIn):makeStage(tariffs.find(t=>t.id===value)))}
+     onMovement={value=>replaceStage(index,value==='custom'?blankStage(raw.from,raw.currencyIn):makeStage(availableMovements({from:raw.from,currency:raw.currencyIn}).find(t=>t.id===value)))}
      onCustomTopology={patch=>replaceStage(index,{...blankStage(raw.from,raw.currencyIn),to:raw.to,currencyOut:raw.currencyOut,method:raw.method,...patch})}
-     onField={(key,value)=>changeField(index,key,value)} onReset={()=>replaceStage(index,resetAutomaticStage(raw,tariffs.find(t=>t.id===raw.tariffId)),true)}
+     onField={(key,value)=>changeField(index,key,value)} onReset={()=>replaceStage(index,raw.reference?makeStage(raw.reference):resetAutomaticStage(raw,tariffs.find(t=>t.id===raw.tariffId)),true)}
      onRemove={()=>setJourney({...journey,stages:journey.stages.slice(0,index)})}/>)}</div>
-    <button type="button" className="automatic-add" aria-expanded={adding} disabled={journey.stages.length>=8} onClick={()=>setAdding(!adding)}><Plus size={17}/>Agregar paso</button>
-    {adding&&<div className="automatic-options" aria-label="Movimientos disponibles">{suggestions.map(t=><button type="button" key={t.id} onClick={()=>add(t)}><EntityLogo entity={node(t.to)}/><span><strong>{node(t.to).name}</strong><small>{methods.find(m=>m.id===t.method)?.name}{t.networkName?' · '+t.networkName:''} · {t.currencyOut}</small></span><ArrowRight size={16}/></button>)}<button type="button" onClick={()=>add(null)}><Plus size={20}/><span><strong>Otro movimiento</strong><small>Ajuste avanzado opcional</small></span></button></div>}
+    <button type="button" className="automatic-add" aria-expanded={adding} disabled={journey.stages.length>=8} onClick={()=>{setAdding(!adding);setDestinationSearch('');}}><Plus size={17}/>Agregar paso</button>
+    {adding&&<div className="automatic-options" aria-label="Movimientos disponibles"><p className="automatic-options-context">Desde {node(context.from).name} · {context.currency}. Destinos según métodos de envío y recepción; confirmá disponibilidad en ambas cuentas.</p><label className="automatic-destination-search">Buscar destino<input type="search" aria-label="Buscar destino compatible" value={destinationSearch} onChange={e=>setDestinationSearch(e.target.value)} placeholder="Wise, Lemon, banco…"/></label>{!suggestions.length&&<p className="automatic-options-context">Todavía no tenemos capacidades de salida documentadas para este origen y moneda. Podés configurar otro movimiento.</p>}{visibleSuggestions.map(t=><button type="button" key={t.id} onClick={()=>add(t)}><EntityLogo entity={node(t.to)}/><span><strong>{node(t.to).name}</strong><small>{methods.find(m=>m.id===t.method)?.name}{t.asset?' · '+t.asset:''}{t.networkName?' · '+t.networkName:''} · {t.currencyOut}</small></span><ArrowRight size={16}/></button>)}<button type="button" onClick={()=>add(null)}><Plus size={20}/><span><strong>Otro movimiento</strong><small>Ajuste avanzado opcional</small></span></button></div>}
     <small className="automatic-hint">Cambiar destino, método u origen reemplaza los pasos siguientes. Cambiar el monto conserva el recorrido.</small>
    </div>
    <aside className="automatic-result"><p className="eyebrow">{omissionCount?'ESTIMACIÓN PARCIAL':'RESULTADO APROXIMADO'}</p><div aria-live="polite">{error?<p role="alert">{error}</p>:journey.stages.length?<><p className="automatic-final">{formatAmount(result.finalAmount,result.finalCurrency)}</p><p className="automatic-destination">en {node(result.finalNode).name}</p></>:<p>Sumá un paso para calcular el saldo.</p>}</div>

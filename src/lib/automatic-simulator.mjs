@@ -3,6 +3,11 @@ import {parseDecimal,receivingIsFree,stageFromTariff} from './simulator.mjs';
 const decimal=value=>{const whole=value/1000000n;const fraction=(value%1000000n).toString().padStart(6,'0').replace(/0+$/,'');return whole.toString()+(fraction?'.'+fraction:'');};
 const inverse=value=>decimal((1000000000000n+parseDecimal(value)/2n)/parseDecimal(value));
 export function marketRate(input,output,quotes,basis='crypto'){
+ if(['USDC','USDT'].includes(input)&&['USDC','USDT'].includes(output)&&input!==output)return {rate:'1',kind:'assumption',label:'Stablecoins 1:1 supuesto; confirmar conversión del receptor'};
+ if(['USDC','USDT'].includes(input)&&output==='ARS')return marketRate('USD','ARS',quotes,basis);
+ if(input==='EUR'&&output==='EURx')return {rate:'1',kind:'assumption',label:'EUR/EURx 1:1 referencia de saldo interno; confirmar acreditación'};
+ if(input==='EURx'&&output==='EURC')return {rate:'1',kind:'assumption',label:'EURx/EURC 1:1 supuesto de swap; precio efectivo por confirmar'};
+ if((input==='EUR'&&output==='EURC')||(input==='EURC'&&output==='EUR'))return {rate:'1',kind:'assumption',label:'EUR/EURC 1:1 supuesto; confirmar precio efectivo'};
  if(input===output)return {rate:'1',kind:'same',label:'Misma moneda'};
  if(['USDC','USDT'].includes(input)&&output==='USD')return {rate:'1',kind:'assumption',label:'Stablecoin/USD 1:1 supuesto'};
  if(input==='USD'&&['USDC','USDT'].includes(output))return {rate:'1',kind:'assumption',label:'USD/stablecoin 1:1 supuesto'};

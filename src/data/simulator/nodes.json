@@ -50,7 +50,9 @@
     "currencies": [
       "USD",
       "USDC",
-      "USDT"
+      "USDT",
+      "EURx",
+      "EURC"
     ]
   },
   {
@@ -60,7 +62,9 @@
     "currencies": [
       "ARS",
       "USDC",
-      "USDT"
+      "USDT",
+      "EURx",
+      "EURC"
     ]
   },
   {
@@ -117,6 +121,39 @@
       "EUR",
       "USDC",
       "USDT"
+    ]
+  },
+  {
+    "id": "banco-exterior",
+    "name": "Banco del exterior",
+    "group": "bank-int",
+    "currencies": [
+      "USD"
+    ]
+  },
+  {
+    "id": "banco-europa",
+    "name": "Banco en Europa",
+    "group": "bank-eu",
+    "currencies": [
+      "EUR"
+    ]
+  },
+  {
+    "id": "lemon",
+    "name": "Lemon",
+    "group": "platform",
+    "currencies": [
+      "USDT",
+      "ARS"
+    ]
+  },
+  {
+    "id": "takenos",
+    "name": "Takenos · USD digital",
+    "group": "platform",
+    "currencies": [
+      "USD"
     ]
   }
 ]

@@ -18,5 +18,13 @@
   {
     "id": "USDT",
     "decimals": 6
+  },
+  {
+    "id": "EURC",
+    "decimals": 6
+  },
+  {
+    "id": "EURx",
+    "decimals": 2
   }
 ]

@@ -58,3 +58,15 @@ test('Payoneer y Deel separan rangos, mínimos de retiro y mínimos de comisión
  const swift=resolve('deel-santander');assert.ok(swift.omissions.some(o=>o.field==='fixed'));assert.throws(()=>calculateJourney({amount:'99',currency:'USD',origin:'deel',stages:[swift.stage]}),/mínimo.*100/);
  const wise=resolve('deel-wise');assert.equal(wise.stage.fixed,'0');assert.equal(wise.stage.percent,'0');assert.equal(wise.partial,true);
 });
+test('salidas Payo y Deel encadenan Wallbit y SWIFT distingue exterior de Argentina',async()=>{
+ const {resolveAutomaticStage}=await load();const {stageFromTariff,calculateJourney,tariffMatches}=await import('../src/lib/simulator.mjs');
+ const {default:tariffs}=await import('../src/data/simulator/tariffs.json',{with:{type:'json'}});const {default:nodes}=await import('../src/data/simulator/nodes.json',{with:{type:'json'}});
+ const resolve=id=>{const t=tariffs.find(t=>t.id===id);assert.ok(t,`Falta ${id}`);return resolveAutomaticStage(stageFromTariff(t),{quotes,eligible:true,nodes});};
+ const payo=resolve('payoneer-wallbit-ach');assert.equal(payo.stage.receiving,'0');assert.equal(payo.stage.percent,'1.5');assert.ok(payo.assumptions.length);
+ const deel=resolve('deel-wallbit-ach');assert.equal(deel.stage.fixed,'5');assert.equal(deel.stage.receiving,'0');
+ const swift=resolve('wallbit-exterior-swift');assert.equal(swift.stage.percentMinimum,'25');assert.ok(swift.omissions.some(o=>o.field==='receiving'));assert.equal(swift.partial,true);
+ const run=calculateJourney({amount:'1000',origin:'payoneer',currency:'USD',stages:[payo.stage,swift.stage]});assert.equal(run.finalAmount,960000000n);
+ assert.equal(resolve('wallbit-bbva-swift').stage.receiving,'0');assert.equal(resolve('wallbit-bbva-swift').stage.percentMinimum,'25');
+ for(const origin of ['deel','payoneer'])assert.ok(tariffs.some(t=>tariffMatches(t,{from:origin,currency:'EUR'})&&t.to==='banco-europa'));
+ assert.ok(tariffs.some(t=>t.from==='wallbit'&&t.to==='banco-usa'&&t.method==='swift'));
+});

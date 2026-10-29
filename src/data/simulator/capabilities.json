@@ -1,0 +1,980 @@
+{
+  "reviewedAt": "2026-10-29",
+  "note": "Capacidades orientativas: confirmar cuenta, país, titular, activo y red. Wallbit checking no recibe SWIFT. Takenos USD representa saldo digital. Lemon consolida stablecoins en USDT.",
+  "platforms": [
+    {
+      "id": "wallbit",
+      "send": [
+        {
+          "method": "ach",
+          "currency": "USD",
+          "currencyIn": "USD",
+          "fees": {
+            "fixed": "0",
+            "percent": "1",
+            "network": "0",
+            "other": "0",
+            "percentMinimum": "5"
+          },
+          "condition": "Tarifa de referencia Classic. Pro/Max pueden tener otras comisiones; no incluye suscripción mensual."
+        },
+        {
+          "method": "wire",
+          "currency": "USD",
+          "currencyIn": "USD",
+          "fees": {
+            "fixed": "0",
+            "percent": "1",
+            "network": "0",
+            "other": "0",
+            "percentMinimum": "25"
+          },
+          "condition": "Tarifa de referencia Classic. Pro/Max pueden tener otras comisiones; no incluye suscripción mensual."
+        },
+        {
+          "method": "swift",
+          "currency": "USD",
+          "currencyIn": "USD",
+          "fees": {
+            "fixed": "0",
+            "percent": "1",
+            "network": "0",
+            "other": null,
+            "percentMinimum": "25"
+          }
+        },
+        {
+          "method": "local",
+          "currency": "ARS",
+          "currencyIn": "USD",
+          "fees": {
+            "fixed": null,
+            "percent": "0",
+            "network": "0",
+            "other": "0"
+          }
+        },
+        {
+          "method": "sepa",
+          "currency": "EUR",
+          "currencyIn": "USD",
+          "fees": {
+            "fixed": "0",
+            "percent": null,
+            "network": "0",
+            "other": "0"
+          }
+        },
+        {
+          "method": "crypto",
+          "currency": "USDC",
+          "currencyIn": "USD",
+          "networks": [
+            "ERC20",
+            "Polygon",
+            "Base",
+            "Arbitrum",
+            "Solana"
+          ],
+          "fees": {
+            "fixed": "0",
+            "percent": null,
+            "network": null,
+            "other": "0"
+          }
+        },
+        {
+          "method": "crypto",
+          "currency": "USDT",
+          "currencyIn": "USD",
+          "networks": [
+            "ERC20",
+            "TRC20",
+            "Solana"
+          ],
+          "fees": {
+            "fixed": "0",
+            "percent": null,
+            "network": null,
+            "other": "0"
+          }
+        }
+      ],
+      "receive": [
+        {
+          "method": "ach",
+          "currency": "USD",
+          "currencyOut": "USD",
+          "receiving": "0"
+        },
+        {
+          "method": "wire",
+          "currency": "USD",
+          "currencyOut": "USD",
+          "receiving": "0"
+        },
+        {
+          "method": "local-usd-ar",
+          "currency": "USD",
+          "currencyOut": "USD",
+          "receiving": "0"
+        },
+        {
+          "method": "local",
+          "currency": "ARS",
+          "currencyOut": "USD",
+          "receiving": "0"
+        },
+        {
+          "method": "sepa",
+          "currency": "EUR",
+          "currencyOut": "USD",
+          "receiving": "0"
+        },
+        {
+          "method": "crypto",
+          "currency": "USDC",
+          "currencyOut": "USD",
+          "networks": [
+            "ERC20",
+            "Polygon",
+            "Base",
+            "Arbitrum",
+            "Solana"
+          ],
+          "receiving": "0"
+        },
+        {
+          "method": "crypto",
+          "currency": "USDT",
+          "currencyOut": "USD",
+          "networks": [
+            "ERC20",
+            "TRC20",
+            "Solana"
+          ],
+          "receiving": "0"
+        }
+      ],
+      "sources": [
+        {
+          "name": "wallbit · Capacidades",
+          "url": "https://help.wallbit.io/es/articles/9089359-fuentes-aceptadas-para-depositos-y-retiros"
+        },
+        {
+          "name": "Wallbit · Precios Classic y otros planes",
+          "url": "https://www.wallbit.io/es/pricing"
+        },
+        {
+          "name": "Wallbit · SWIFT y mínimo",
+          "url": "https://help.wallbit.io/es/articles/16056671-deposito-y-retiro-swift-con-wallbit"
+        }
+      ]
+    },
+    {
+      "id": "wise",
+      "send": [
+        {
+          "method": "ach",
+          "currency": "USD",
+          "currencyIn": "USD",
+          "fees": {
+            "fixed": null,
+            "percent": "0",
+            "network": "0",
+            "other": "0"
+          }
+        },
+        {
+          "method": "wire",
+          "currency": "USD",
+          "currencyIn": "USD",
+          "fees": {
+            "fixed": null,
+            "percent": "0",
+            "network": "0",
+            "other": "0"
+          }
+        },
+        {
+          "method": "swift",
+          "currency": "USD",
+          "currencyIn": "USD",
+          "fees": {
+            "fixed": null,
+            "percent": "0",
+            "network": "0",
+            "other": null
+          }
+        },
+        {
+          "method": "sepa",
+          "currency": "EUR",
+          "currencyIn": "EUR",
+          "fees": {
+            "fixed": null,
+            "percent": "0",
+            "network": "0",
+            "other": "0"
+          }
+        }
+      ],
+      "receive": [
+        {
+          "method": "ach",
+          "currency": "USD",
+          "currencyOut": "USD",
+          "receiving": "0"
+        },
+        {
+          "method": "wire",
+          "currency": "USD",
+          "currencyOut": "USD",
+          "receiving": "6.11"
+        },
+        {
+          "method": "swift",
+          "currency": "USD",
+          "currencyOut": "USD",
+          "receiving": "6.11"
+        },
+        {
+          "method": "sepa",
+          "currency": "EUR",
+          "currencyOut": "EUR",
+          "receiving": "0"
+        },
+        {
+          "method": "swift",
+          "currency": "EUR",
+          "currencyOut": "EUR",
+          "receiving": "2.39"
+        }
+      ],
+      "sources": [
+        {
+          "name": "wise · Capacidades",
+          "url": "https://wise.com/help/articles/5zoKjEdRMag0F7IsGBA8sK/how-your-wise-account-details-work"
+        },
+        {
+          "name": "Wise · Precios de recepción",
+          "url": "https://wise.com/es/pricing/receive"
+        }
+      ]
+    },
+    {
+      "id": "payoneer",
+      "send": [
+        {
+          "method": "ach",
+          "currency": "USD",
+          "currencyIn": "USD",
+          "fees": {
+            "fixed": null,
+            "percent": null,
+            "network": "0",
+            "other": "0"
+          },
+          "condition": "Aprobar cuenta de destino y confirmar ACH disponible en Payoneer."
+        }
+      ],
+      "receive": [],
+      "sources": [
+        {
+          "name": "payoneer · Capacidades",
+          "url": "https://www.payoneer.com/es/about/pricing/"
+        }
+      ]
+    },
+    {
+      "id": "deel",
+      "send": [
+        {
+          "method": "ach",
+          "currency": "USD",
+          "currencyIn": "USD",
+          "minimumAmount": "10",
+          "fees": {
+            "fixed": "5",
+            "percent": "0",
+            "network": "0",
+            "other": null
+          },
+          "condition": "Residente argentino: cargo transfronterizo incluido en total del proveedor; no duplicarlo."
+        }
+      ],
+      "receive": [],
+      "sources": [
+        {
+          "name": "deel · Capacidades",
+          "url": "https://help.letsdeel.com/hc/en-gb/articles/14391381019537-About-Withdrawal-Fees-and-Withdrawal-Minimums"
+        }
+      ]
+    },
+    {
+      "id": "santander",
+      "send": [
+        {
+          "method": "local",
+          "currency": "ARS",
+          "currencyIn": "ARS",
+          "fees": {
+            "fixed": null,
+            "percent": "0",
+            "network": "0",
+            "other": "0"
+          }
+        },
+        {
+          "method": "local-usd-ar",
+          "currency": "USD",
+          "currencyIn": "USD",
+          "fees": {
+            "fixed": null,
+            "percent": "0",
+            "network": "0",
+            "other": "0"
+          }
+        }
+      ],
+      "receive": [
+        {
+          "method": "swift",
+          "currency": "USD",
+          "currencyOut": "USD",
+          "receiving": null
+        },
+        {
+          "method": "local",
+          "currency": "ARS",
+          "currencyOut": "ARS",
+          "receiving": null
+        }
+      ],
+      "sources": [
+        {
+          "name": "santander · Capacidades",
+          "url": "https://help.wallbit.io/es/articles/9089359-fuentes-aceptadas-para-depositos-y-retiros"
+        }
+      ]
+    },
+    {
+      "id": "bbva",
+      "send": [
+        {
+          "method": "local",
+          "currency": "ARS",
+          "currencyIn": "ARS",
+          "fees": {
+            "fixed": null,
+            "percent": "0",
+            "network": "0",
+            "other": "0"
+          }
+        },
+        {
+          "method": "local-usd-ar",
+          "currency": "USD",
+          "currencyIn": "USD",
+          "fees": {
+            "fixed": null,
+            "percent": "0",
+            "network": "0",
+            "other": "0"
+          }
+        }
+      ],
+      "receive": [
+        {
+          "method": "swift",
+          "currency": "USD",
+          "currencyOut": "USD",
+          "receiving": null
+        },
+        {
+          "method": "local",
+          "currency": "ARS",
+          "currencyOut": "ARS",
+          "receiving": null
+        }
+      ],
+      "sources": [
+        {
+          "name": "bbva · Capacidades",
+          "url": "https://help.wallbit.io/es/articles/9089359-fuentes-aceptadas-para-depositos-y-retiros"
+        }
+      ]
+    },
+    {
+      "id": "galicia",
+      "send": [
+        {
+          "method": "local",
+          "currency": "ARS",
+          "currencyIn": "ARS",
+          "fees": {
+            "fixed": null,
+            "percent": "0",
+            "network": "0",
+            "other": "0"
+          }
+        },
+        {
+          "method": "local-usd-ar",
+          "currency": "USD",
+          "currencyIn": "USD",
+          "fees": {
+            "fixed": null,
+            "percent": "0",
+            "network": "0",
+            "other": "0"
+          }
+        }
+      ],
+      "receive": [
+        {
+          "method": "swift",
+          "currency": "USD",
+          "currencyOut": "USD",
+          "receiving": null
+        },
+        {
+          "method": "local",
+          "currency": "ARS",
+          "currencyOut": "ARS",
+          "receiving": null
+        }
+      ],
+      "sources": [
+        {
+          "name": "galicia · Capacidades",
+          "url": "https://help.wallbit.io/es/articles/9089359-fuentes-aceptadas-para-depositos-y-retiros"
+        }
+      ]
+    },
+    {
+      "id": "banco-ar",
+      "send": [
+        {
+          "method": "local",
+          "currency": "ARS",
+          "currencyIn": "ARS",
+          "fees": {
+            "fixed": null,
+            "percent": "0",
+            "network": "0",
+            "other": "0"
+          }
+        },
+        {
+          "method": "local-usd-ar",
+          "currency": "USD",
+          "currencyIn": "USD",
+          "fees": {
+            "fixed": null,
+            "percent": "0",
+            "network": "0",
+            "other": "0"
+          }
+        }
+      ],
+      "receive": [
+        {
+          "method": "swift",
+          "currency": "USD",
+          "currencyOut": "USD",
+          "receiving": null
+        },
+        {
+          "method": "local",
+          "currency": "ARS",
+          "currencyOut": "ARS",
+          "receiving": null
+        }
+      ],
+      "sources": [
+        {
+          "name": "banco-ar · Capacidades",
+          "url": "https://help.wallbit.io/es/articles/9089359-fuentes-aceptadas-para-depositos-y-retiros"
+        }
+      ]
+    },
+    {
+      "id": "banco-usa",
+      "send": [
+        {
+          "method": "ach",
+          "currency": "USD",
+          "currencyIn": "USD",
+          "fees": {
+            "fixed": null,
+            "percent": "0",
+            "network": "0",
+            "other": null
+          }
+        },
+        {
+          "method": "wire",
+          "currency": "USD",
+          "currencyIn": "USD",
+          "fees": {
+            "fixed": null,
+            "percent": "0",
+            "network": "0",
+            "other": null
+          }
+        },
+        {
+          "method": "swift",
+          "currency": "USD",
+          "currencyIn": "USD",
+          "fees": {
+            "fixed": null,
+            "percent": "0",
+            "network": "0",
+            "other": null
+          }
+        }
+      ],
+      "receive": [
+        {
+          "method": "ach",
+          "currency": "USD",
+          "currencyOut": "USD",
+          "receiving": null
+        },
+        {
+          "method": "wire",
+          "currency": "USD",
+          "currencyOut": "USD",
+          "receiving": null
+        },
+        {
+          "method": "swift",
+          "currency": "USD",
+          "currencyOut": "USD",
+          "receiving": null
+        }
+      ],
+      "sources": [
+        {
+          "name": "banco-usa · Capacidades",
+          "url": "https://help.wallbit.io/es/articles/9089359-fuentes-aceptadas-para-depositos-y-retiros"
+        }
+      ]
+    },
+    {
+      "id": "banco-exterior",
+      "send": [],
+      "receive": [
+        {
+          "method": "swift",
+          "currency": "USD",
+          "currencyOut": "USD",
+          "receiving": null
+        }
+      ],
+      "sources": [
+        {
+          "name": "banco-exterior · Capacidades",
+          "url": "https://help.wallbit.io/es/articles/9089359-fuentes-aceptadas-para-depositos-y-retiros"
+        }
+      ]
+    },
+    {
+      "id": "banco-europa",
+      "send": [
+        {
+          "method": "sepa",
+          "currency": "EUR",
+          "currencyIn": "EUR",
+          "fees": {
+            "fixed": null,
+            "percent": "0",
+            "network": "0",
+            "other": "0"
+          }
+        }
+      ],
+      "receive": [
+        {
+          "method": "sepa",
+          "currency": "EUR",
+          "currencyOut": "EUR",
+          "receiving": null
+        }
+      ],
+      "sources": [
+        {
+          "name": "banco-europa · Capacidades",
+          "url": "https://help.wallbit.io/es/articles/9089359-fuentes-aceptadas-para-depositos-y-retiros"
+        }
+      ]
+    },
+    {
+      "id": "cripto",
+      "send": [
+        {
+          "method": "crypto",
+          "currency": "USDC",
+          "currencyIn": "USDC",
+          "networks": [
+            "ERC20",
+            "Polygon",
+            "Base",
+            "BEP20",
+            "Arbitrum",
+            "Solana"
+          ],
+          "fees": {
+            "fixed": "0",
+            "percent": "0",
+            "network": null,
+            "other": "0"
+          }
+        },
+        {
+          "method": "crypto",
+          "currency": "USDT",
+          "currencyIn": "USDT",
+          "networks": [
+            "ERC20",
+            "TRC20",
+            "BEP20",
+            "Polygon",
+            "Solana"
+          ],
+          "fees": {
+            "fixed": "0",
+            "percent": "0",
+            "network": null,
+            "other": "0"
+          }
+        }
+      ],
+      "receive": [
+        {
+          "method": "crypto",
+          "currency": "USDC",
+          "currencyOut": "USDC",
+          "networks": [
+            "ERC20",
+            "Polygon",
+            "Base",
+            "BEP20",
+            "Arbitrum",
+            "Solana"
+          ],
+          "receiving": null
+        },
+        {
+          "method": "crypto",
+          "currency": "USDT",
+          "currencyOut": "USDT",
+          "networks": [
+            "ERC20",
+            "TRC20",
+            "BEP20",
+            "Polygon",
+            "Solana"
+          ],
+          "receiving": null
+        }
+      ],
+      "sources": [
+        {
+          "name": "cripto · Capacidades",
+          "url": "https://help.wallbit.io/es/articles/9089359-fuentes-aceptadas-para-depositos-y-retiros"
+        }
+      ]
+    },
+    {
+      "id": "takenos",
+      "send": [
+        {
+          "method": "ach",
+          "currency": "USD",
+          "currencyIn": "USD",
+          "fees": {
+            "fixed": "0",
+            "percent": "3",
+            "network": "0",
+            "other": "0"
+          }
+        },
+        {
+          "method": "wire",
+          "currency": "USD",
+          "currencyIn": "USD",
+          "fees": {
+            "fixed": "25",
+            "percent": "0",
+            "network": "0",
+            "other": "0"
+          }
+        },
+        {
+          "method": "swift",
+          "currency": "USD",
+          "currencyIn": "USD",
+          "fees": {
+            "fixed": "35",
+            "percent": "0",
+            "network": "0",
+            "other": null
+          }
+        },
+        {
+          "method": "local",
+          "currency": "ARS",
+          "currencyIn": "USD",
+          "fees": {
+            "fixed": "0",
+            "percent": "0",
+            "network": "0",
+            "other": "0"
+          }
+        },
+        {
+          "method": "sepa",
+          "currency": "EUR",
+          "currencyIn": "USD",
+          "fees": {
+            "fixed": "0",
+            "percent": "0",
+            "network": "0",
+            "other": "0"
+          }
+        },
+        {
+          "method": "crypto",
+          "currency": "USDT",
+          "currencyIn": "USD",
+          "networks": null,
+          "fees": {
+            "fixed": "0",
+            "percent": "1",
+            "network": null,
+            "other": "0"
+          },
+          "condition": "Confirmar red de salida. Descuento por origen de fondos no aplicado automáticamente."
+        }
+      ],
+      "receive": [
+        {
+          "method": "ach",
+          "currency": "USD",
+          "currencyOut": "USD",
+          "receiving": "0"
+        },
+        {
+          "method": "wire",
+          "currency": "USD",
+          "currencyOut": "USD",
+          "receiving": "25"
+        },
+        {
+          "method": "swift",
+          "currency": "USD",
+          "currencyOut": "USD",
+          "receiving": "35",
+          "minimumAmount": "100"
+        },
+        {
+          "method": "sepa",
+          "currency": "EUR",
+          "currencyOut": "USD",
+          "receiving": "0"
+        },
+        {
+          "method": "local",
+          "currency": "ARS",
+          "currencyOut": "USD",
+          "receiving": "0"
+        },
+        {
+          "method": "crypto",
+          "currency": "USDC",
+          "currencyOut": "USD",
+          "networks": [
+            "ERC20",
+            "Polygon",
+            "BEP20"
+          ],
+          "receiving": "0"
+        },
+        {
+          "method": "crypto",
+          "currency": "USDT",
+          "currencyOut": "USD",
+          "networks": [
+            "ERC20",
+            "Polygon",
+            "BEP20"
+          ],
+          "receiving": "0"
+        }
+      ],
+      "sources": [
+        {
+          "name": "takenos · Capacidades",
+          "url": "https://help.takenos.com/en/articles/9981728-en-que-monedas-puedo-recibir-dinero-en-takenos"
+        },
+        {
+          "name": "Takenos · Envíos",
+          "url": "https://help.takenos.com/en/articles/9820507-cuanto-cuesta-enviar-fondos-en-takenos"
+        }
+      ]
+    },
+    {
+      "id": "lemon",
+      "send": [
+        {
+          "method": "crypto",
+          "currency": "USDC",
+          "currencyIn": "USDT",
+          "networks": [
+            "Base"
+          ],
+          "fees": {
+            "fixed": "0",
+            "percent": null,
+            "network": null,
+            "other": "0"
+          }
+        },
+        {
+          "method": "crypto",
+          "currency": "USDT",
+          "currencyIn": "USDT",
+          "networks": null,
+          "fees": {
+            "fixed": "0",
+            "percent": null,
+            "network": null,
+            "other": "0"
+          }
+        },
+        {
+          "method": "local",
+          "currency": "ARS",
+          "currencyIn": "USDT",
+          "fees": {
+            "fixed": null,
+            "percent": "0",
+            "network": "0",
+            "other": "0"
+          },
+          "condition": "Venta y cambio efectivo por confirmar en Lemon."
+        }
+      ],
+      "receive": [
+        {
+          "method": "crypto",
+          "currency": "USDC",
+          "currencyOut": "USDT",
+          "networks": [
+            "Base"
+          ],
+          "receiving": null
+        },
+        {
+          "method": "crypto",
+          "currency": "USDT",
+          "currencyOut": "USDT",
+          "networks": null,
+          "receiving": null,
+          "condition": "Confirmar redes en Lemon Argentina; no inferir redes de otras regiones."
+        }
+      ],
+      "sources": [
+        {
+          "name": "lemon · Capacidades",
+          "url": "https://help.lemon.me/es/articles/5473779-como-ingreso-crypto-en-lemon"
+        },
+        {
+          "name": "Lemon Argentina · USDC Base",
+          "url": "https://wiki.lemon.me/es-ar/novedades/que-es-base-y-como-funciona"
+        },
+        {
+          "name": "Lemon Argentina · Saldo digital",
+          "url": "https://wiki.lemon.me/es-ar/dolar-digital/que-es-dolar-digital"
+        },
+        {
+          "name": "Lemon · Envíos",
+          "url": "https://help.lemon.me/es/articles/15048328-como-envio-o-retiro-dolar-digital-usdt"
+        }
+      ]
+    },
+    {
+      "id": "nexo-int",
+      "send": [],
+      "receive": [
+        {
+          "method": "sepa",
+          "currency": "EUR",
+          "currencyOut": "EURx",
+          "receiving": null,
+          "condition": "IBAN identifica la cuenta. SEPA/SEPA Instant ingresa EUR y acredita EURx; no EURC. Confirmá habilitación de cuenta y condiciones. La compra de EURC es un swap separado."
+        },
+        {
+          "method": "crypto",
+          "currency": "EURC",
+          "currencyOut": "EURC",
+          "networks": null,
+          "receiving": null,
+          "condition": "EURC es un token distinto de EUR/EURx. Red de depósito y habilitación por confirmar en Nexo."
+        }
+      ],
+      "sources": [
+        {
+          "name": "Nexo · Transferencias y fondeo",
+          "url": "https://nexo.com/en-ar"
+        },
+        {
+          "name": "Nexo · EURC",
+          "url": "https://nexo.com/en-ar/earn-crypto/eurocoin-eurc"
+        },
+        {
+          "name": "Nexo · Saldo EURx",
+          "url": "https://nexo.com/es-es/buy-eurx"
+        }
+      ]
+    },
+    {
+      "id": "nexo-ar",
+      "send": [],
+      "receive": [
+        {
+          "method": "sepa",
+          "currency": "EUR",
+          "currencyOut": "EURx",
+          "receiving": null,
+          "condition": "IBAN identifica la cuenta. SEPA/SEPA Instant ingresa EUR y acredita EURx; no EURC. Confirmá habilitación de cuenta y condiciones. La compra de EURC es un swap separado."
+        },
+        {
+          "method": "crypto",
+          "currency": "EURC",
+          "currencyOut": "EURC",
+          "networks": null,
+          "receiving": null,
+          "condition": "EURC es un token distinto de EUR/EURx. Red de depósito y habilitación por confirmar en Nexo."
+        }
+      ],
+      "sources": [
+        {
+          "name": "Nexo · Transferencias y fondeo",
+          "url": "https://nexo.com/en-ar"
+        },
+        {
+          "name": "Nexo · EURC",
+          "url": "https://nexo.com/en-ar/earn-crypto/eurocoin-eurc"
+        },
+        {
+          "name": "Nexo · Saldo EURx",
+          "url": "https://nexo.com/es-es/buy-eurx"
+        }
+      ]
+    }
+  ]
+}

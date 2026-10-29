@@ -944,5 +944,441 @@
       }
     ],
     "minimumAmount": "100"
+  },
+  {
+    "id": "payoneer-wallbit-ach",
+    "name": "Payoneer → Wallbit · USD/USD · ACH",
+    "from": "payoneer",
+    "to": "wallbit",
+    "currencyIn": "USD",
+    "currencyOut": "USD",
+    "method": "ach",
+    "networkName": null,
+    "fees": {
+      "fixed": "0",
+      "percent": null,
+      "network": "0",
+      "other": "0",
+      "receiving": "0"
+    },
+    "rate": "1",
+    "status": "partial",
+    "reviewedAt": "2026-10-29",
+    "pricingNotice": "ACH: referencia estimada 1,5%; confirmá el total en Payoneer.",
+    "note": "Usá los datos de tu cuenta estadounidense de Wallbit, a tu nombre. El 1,5% figura en la comparativa de Wallbit y no es una tarifa universal garantizada por Payoneer.",
+    "sources": [
+      {
+        "name": "Wallbit · Retirar Payoneer a Wallbit",
+        "url": "https://www.wallbit.io/es/blog/withdraw-money-from-payoneer-argentina"
+      },
+      {
+        "name": "Payoneer · Tarifas según cuenta y región",
+        "url": "https://www.payoneer.com/es/about/pricing/"
+      }
+    ]
+  },
+  {
+    "id": "payoneer-usa-bank",
+    "name": "Payoneer → Banco en EE.UU. · USD/USD · BANK",
+    "from": "payoneer",
+    "to": "banco-usa",
+    "currencyIn": "USD",
+    "currencyOut": "USD",
+    "method": "bank",
+    "networkName": null,
+    "fees": {
+      "fixed": null,
+      "percent": null,
+      "network": "0",
+      "other": null,
+      "receiving": null
+    },
+    "rate": "1",
+    "status": "partial",
+    "reviewedAt": "2026-10-29",
+    "pricingNotice": "Retiro USD a banco de EE.UU.: comisión y vía según perfil.",
+    "note": "Sujeto a aprobación de la cuenta propia. No asignamos USD1,50 a un perfil argentino ni presuponemos ACH. Revisá el total, mínimo y vía ofrecidos en Payoneer.",
+    "sources": [
+      {
+        "name": "Payoneer · Tarifas según cuenta y región",
+        "url": "https://www.payoneer.com/es/about/pricing/"
+      }
+    ]
+  },
+  {
+    "id": "payoneer-eur-bank",
+    "name": "Payoneer → Banco en Europa · EUR/EUR · BANK",
+    "from": "payoneer",
+    "to": "banco-europa",
+    "currencyIn": "EUR",
+    "currencyOut": "EUR",
+    "method": "bank",
+    "networkName": null,
+    "fees": {
+      "fixed": null,
+      "percent": null,
+      "network": "0",
+      "other": null,
+      "receiving": null
+    },
+    "rate": "1",
+    "status": "partial",
+    "reviewedAt": "2026-10-29",
+    "pricingNotice": "EUR a cuenta bancaria: vía, comisión y mínimo por confirmar.",
+    "note": "Cuenta propia en EUR; disponibilidad según perfil, país y proveedor. No se asigna automáticamente SEPA, un mínimo en USD ni una tarifa local de otra región.",
+    "sources": [
+      {
+        "name": "Payoneer · Tarifas según cuenta y región",
+        "url": "https://www.payoneer.com/es/about/pricing/"
+      }
+    ]
+  },
+  {
+    "id": "deel-eur-bank",
+    "name": "Deel → Banco en Europa · EUR/EUR · BANK",
+    "from": "deel",
+    "to": "banco-europa",
+    "currencyIn": "EUR",
+    "currencyOut": "EUR",
+    "method": "bank",
+    "networkName": null,
+    "fees": {
+      "fixed": null,
+      "percent": null,
+      "network": "0",
+      "other": null,
+      "receiving": null
+    },
+    "rate": "1",
+    "status": "partial",
+    "reviewedAt": "2026-10-29",
+    "pricingNotice": "EUR a cuenta bancaria: vía, comisión y mínimo por confirmar.",
+    "note": "Cuenta propia en EUR; disponibilidad según perfil, país y proveedor. No se asigna automáticamente SEPA, un mínimo en USD ni una tarifa local de otra región.",
+    "sources": [
+      {
+        "name": "Deel · Comisiones y mínimos",
+        "url": "https://help.letsdeel.com/hc/en-gb/articles/14391381019537-About-Withdrawal-Fees-and-Withdrawal-Minimums"
+      },
+      {
+        "name": "Deel · Monedas y métodos admitidos",
+        "url": "https://help.letsdeel.com/hc/en-gb/articles/8743763526929-Frequently-Asked-Questions-about-Withdrawals"
+      }
+    ]
+  },
+  {
+    "id": "deel-wallbit-ach",
+    "name": "Deel → Wallbit · USD/USD · ACH",
+    "from": "deel",
+    "to": "wallbit",
+    "currencyIn": "USD",
+    "currencyOut": "USD",
+    "method": "ach",
+    "networkName": null,
+    "fees": {
+      "fixed": "5",
+      "percent": "0",
+      "network": "0",
+      "other": null,
+      "receiving": "0"
+    },
+    "rate": "1",
+    "status": "partial",
+    "reviewedAt": "2026-10-29",
+    "pricingNotice": "ACH a EE.UU. desde Argentina: USD 5 transfronterizos; otros cargos sin cotizar.",
+    "note": "Deel describe el cargo transfronterizo como incluido en la tarifa del proveedor: no se suma dos veces. Verificá el total en Deel. Para Wallbit: Bank Transfer → United States → ACH, con titular coincidente. La recepción sin cargo propio de Wallbit no vuelve gratuito el envío.",
+    "sources": [
+      {
+        "name": "Deel · Comisiones y mínimos",
+        "url": "https://help.letsdeel.com/hc/en-gb/articles/14391381019537-About-Withdrawal-Fees-and-Withdrawal-Minimums"
+      },
+      {
+        "name": "Wallbit · Cobrar desde Deel por ACH",
+        "url": "https://help.wallbit.io/es/articles/14806064-cobrar-por-deel-con-wallbit"
+      }
+    ],
+    "minimumAmount": "10"
+  },
+  {
+    "id": "deel-usa-ach",
+    "name": "Deel → Banco en EE.UU. · USD/USD · ACH",
+    "from": "deel",
+    "to": "banco-usa",
+    "currencyIn": "USD",
+    "currencyOut": "USD",
+    "method": "ach",
+    "networkName": null,
+    "fees": {
+      "fixed": "5",
+      "percent": "0",
+      "network": "0",
+      "other": null,
+      "receiving": null
+    },
+    "rate": "1",
+    "status": "partial",
+    "reviewedAt": "2026-10-29",
+    "pricingNotice": "ACH a EE.UU. desde Argentina: USD 5 transfronterizos; otros cargos sin cotizar.",
+    "note": "Deel describe el cargo transfronterizo como incluido en la tarifa del proveedor: no se suma dos veces. Verificá el total en Deel. Para Wallbit: Bank Transfer → United States → ACH, con titular coincidente. La recepción sin cargo propio de Wallbit no vuelve gratuito el envío.",
+    "sources": [
+      {
+        "name": "Deel · Comisiones y mínimos",
+        "url": "https://help.letsdeel.com/hc/en-gb/articles/14391381019537-About-Withdrawal-Fees-and-Withdrawal-Minimums"
+      },
+      {
+        "name": "Wallbit · Cobrar desde Deel por ACH",
+        "url": "https://help.wallbit.io/es/articles/14806064-cobrar-por-deel-con-wallbit"
+      }
+    ],
+    "minimumAmount": "10"
+  },
+  {
+    "id": "deel-ars-local",
+    "name": "Deel → Otro banco argentino · USD/ARS · LOCAL",
+    "from": "deel",
+    "to": "banco-ar",
+    "currencyIn": "USD",
+    "currencyOut": "ARS",
+    "method": "local",
+    "networkName": null,
+    "fees": {
+      "fixed": "0",
+      "percent": "0",
+      "network": "0",
+      "other": null,
+      "receiving": null
+    },
+    "rate": null,
+    "status": "partial",
+    "reviewedAt": "2026-10-29",
+    "pricingNotice": "Deel publica USD 0 de comisión propia local; proveedor y cambio sin cotizar.",
+    "note": "Solo si Deel ofrece retiro local ARS para tu cuenta. La referencia MEP/cripto no es el cambio de Deel; pueden existir cargos del proveedor. No equivale a SWIFT/MLC.",
+    "sources": [
+      {
+        "name": "Deel · Comisiones y mínimos",
+        "url": "https://help.letsdeel.com/hc/en-gb/articles/14391381019537-About-Withdrawal-Fees-and-Withdrawal-Minimums"
+      }
+    ],
+    "minimumAmount": "10"
+  },
+  {
+    "id": "wallbit-bbva-swift",
+    "name": "Wallbit → BBVA · USD/USD · SWIFT",
+    "from": "wallbit",
+    "to": "bbva",
+    "currencyIn": "USD",
+    "currencyOut": "USD",
+    "method": "swift",
+    "networkName": null,
+    "fees": {
+      "fixed": "0",
+      "percent": "1",
+      "network": "0",
+      "other": null,
+      "receiving": null,
+      "percentMinimum": "25"
+    },
+    "rate": "1",
+    "status": "partial",
+    "reviewedAt": "2026-10-29",
+    "pricingNotice": "SWIFT internacional: 1%, mínimo USD 25; corresponsales sin cotizar.",
+    "note": "Desde checking: Retirar → Dólares → Internacional → Nuevo destinatario. Ingresá SWIFT, cuenta, banco y titular. Se admiten cuentas propias, terceros y empresas sujetos a validación. Confirmá país/banco disponible. El mínimo es el piso de la comisión; no se suma al 1%. El circuito específico de Santander conserva su referencia diferenciada.",
+    "sources": [
+      {
+        "name": "Wallbit · SWIFT internacional",
+        "url": "https://help.wallbit.io/es/articles/16056671-deposito-y-retiro-swift-con-wallbit"
+      },
+      {
+        "name": "Wallbit · Tabla de comisiones",
+        "url": "https://help.wallbit.io/es/articles/9156314-listado-de-tarifas-y-comisiones"
+      }
+    ]
+  },
+  {
+    "id": "wallbit-galicia-swift",
+    "name": "Wallbit → Galicia · USD/USD · SWIFT",
+    "from": "wallbit",
+    "to": "galicia",
+    "currencyIn": "USD",
+    "currencyOut": "USD",
+    "method": "swift",
+    "networkName": null,
+    "fees": {
+      "fixed": "0",
+      "percent": "1",
+      "network": "0",
+      "other": null,
+      "receiving": null,
+      "percentMinimum": "25"
+    },
+    "rate": "1",
+    "status": "partial",
+    "reviewedAt": "2026-10-29",
+    "pricingNotice": "SWIFT internacional: 1%, mínimo USD 25; corresponsales sin cotizar.",
+    "note": "Desde checking: Retirar → Dólares → Internacional → Nuevo destinatario. Ingresá SWIFT, cuenta, banco y titular. Se admiten cuentas propias, terceros y empresas sujetos a validación. Confirmá país/banco disponible. El mínimo es el piso de la comisión; no se suma al 1%. El circuito específico de Santander conserva su referencia diferenciada.",
+    "sources": [
+      {
+        "name": "Wallbit · SWIFT internacional",
+        "url": "https://help.wallbit.io/es/articles/16056671-deposito-y-retiro-swift-con-wallbit"
+      },
+      {
+        "name": "Wallbit · Tabla de comisiones",
+        "url": "https://help.wallbit.io/es/articles/9156314-listado-de-tarifas-y-comisiones"
+      }
+    ]
+  },
+  {
+    "id": "wallbit-banco-ar-swift",
+    "name": "Wallbit → Otro banco argentino · USD/USD · SWIFT",
+    "from": "wallbit",
+    "to": "banco-ar",
+    "currencyIn": "USD",
+    "currencyOut": "USD",
+    "method": "swift",
+    "networkName": null,
+    "fees": {
+      "fixed": "0",
+      "percent": "1",
+      "network": "0",
+      "other": null,
+      "receiving": null,
+      "percentMinimum": "25"
+    },
+    "rate": "1",
+    "status": "partial",
+    "reviewedAt": "2026-10-29",
+    "pricingNotice": "SWIFT internacional: 1%, mínimo USD 25; corresponsales sin cotizar.",
+    "note": "Desde checking: Retirar → Dólares → Internacional → Nuevo destinatario. Ingresá SWIFT, cuenta, banco y titular. Se admiten cuentas propias, terceros y empresas sujetos a validación. Confirmá país/banco disponible. El mínimo es el piso de la comisión; no se suma al 1%. El circuito específico de Santander conserva su referencia diferenciada.",
+    "sources": [
+      {
+        "name": "Wallbit · SWIFT internacional",
+        "url": "https://help.wallbit.io/es/articles/16056671-deposito-y-retiro-swift-con-wallbit"
+      },
+      {
+        "name": "Wallbit · Tabla de comisiones",
+        "url": "https://help.wallbit.io/es/articles/9156314-listado-de-tarifas-y-comisiones"
+      }
+    ]
+  },
+  {
+    "id": "wallbit-exterior-swift",
+    "name": "Wallbit → Banco del exterior · USD/USD · SWIFT",
+    "from": "wallbit",
+    "to": "banco-exterior",
+    "currencyIn": "USD",
+    "currencyOut": "USD",
+    "method": "swift",
+    "networkName": null,
+    "fees": {
+      "fixed": "0",
+      "percent": "1",
+      "network": "0",
+      "other": null,
+      "receiving": null,
+      "percentMinimum": "25"
+    },
+    "rate": "1",
+    "status": "partial",
+    "reviewedAt": "2026-10-29",
+    "pricingNotice": "SWIFT internacional: 1%, mínimo USD 25; corresponsales sin cotizar.",
+    "note": "Desde checking: Retirar → Dólares → Internacional → Nuevo destinatario. Ingresá SWIFT, cuenta, banco y titular. Se admiten cuentas propias, terceros y empresas sujetos a validación. Confirmá país/banco disponible. El mínimo es el piso de la comisión; no se suma al 1%. El circuito específico de Santander conserva su referencia diferenciada.",
+    "sources": [
+      {
+        "name": "Wallbit · SWIFT internacional",
+        "url": "https://help.wallbit.io/es/articles/16056671-deposito-y-retiro-swift-con-wallbit"
+      },
+      {
+        "name": "Wallbit · Tabla de comisiones",
+        "url": "https://help.wallbit.io/es/articles/9156314-listado-de-tarifas-y-comisiones"
+      }
+    ]
+  },
+  {
+    "id": "wallbit-banco-usa-swift",
+    "name": "Wallbit → Banco en EE.UU. · USD/USD · SWIFT",
+    "from": "wallbit",
+    "to": "banco-usa",
+    "currencyIn": "USD",
+    "currencyOut": "USD",
+    "method": "swift",
+    "networkName": null,
+    "fees": {
+      "fixed": "0",
+      "percent": "1",
+      "network": "0",
+      "other": null,
+      "receiving": null,
+      "percentMinimum": "25"
+    },
+    "rate": "1",
+    "status": "partial",
+    "reviewedAt": "2026-10-29",
+    "pricingNotice": "SWIFT internacional: 1%, mínimo USD 25; corresponsales sin cotizar.",
+    "note": "Desde checking: Retirar → Dólares → Internacional → Nuevo destinatario. Ingresá SWIFT, cuenta, banco y titular. Se admiten cuentas propias, terceros y empresas sujetos a validación. Confirmá país/banco disponible. El mínimo es el piso de la comisión; no se suma al 1%. El circuito específico de Santander conserva su referencia diferenciada.",
+    "sources": [
+      {
+        "name": "Wallbit · SWIFT internacional",
+        "url": "https://help.wallbit.io/es/articles/16056671-deposito-y-retiro-swift-con-wallbit"
+      },
+      {
+        "name": "Wallbit · Tabla de comisiones",
+        "url": "https://help.wallbit.io/es/articles/9156314-listado-de-tarifas-y-comisiones"
+      }
+    ]
+  },
+  {
+    "id": "nexo-int-eur-eurc",
+    "name": "Nexo · EURx → EURC (swap manual)",
+    "from": "nexo-int",
+    "to": "nexo-int",
+    "currencyIn": "EURx",
+    "currencyOut": "EURC",
+    "method": "conversion",
+    "networkName": null,
+    "fees": {
+      "fixed": null,
+      "percent": null,
+      "network": "0",
+      "other": "0",
+      "receiving": "0"
+    },
+    "rate": null,
+    "status": "partial",
+    "reviewedAt": "2026-10-29",
+    "pricingNotice": "Compra de EURC separada del depósito SEPA. Comisión y precio por confirmar.",
+    "note": "Swap opcional luego del ingreso SEPA a EURx. La equivalencia 1:1 EURx/EURC se usa solo para planificar; comisión y precio efectivo por confirmar. No se incluyen rendimientos ni se garantizan intereses.",
+    "sources": [
+      {
+        "name": "Nexo · Comprar EURC",
+        "url": "https://nexo.com/es-la/buy-eurocoin-eurc"
+      }
+    ]
+  },
+  {
+    "id": "nexo-ar-eur-eurc",
+    "name": "Nexo · EURx → EURC (swap manual)",
+    "from": "nexo-ar",
+    "to": "nexo-ar",
+    "currencyIn": "EURx",
+    "currencyOut": "EURC",
+    "method": "conversion",
+    "networkName": null,
+    "fees": {
+      "fixed": null,
+      "percent": null,
+      "network": "0",
+      "other": "0",
+      "receiving": "0"
+    },
+    "rate": null,
+    "status": "partial",
+    "reviewedAt": "2026-10-29",
+    "pricingNotice": "Compra de EURC separada del depósito SEPA. Comisión y precio por confirmar.",
+    "note": "Swap opcional luego del ingreso SEPA a EURx. La equivalencia 1:1 EURx/EURC se usa solo para planificar; comisión y precio efectivo por confirmar. No se incluyen rendimientos ni se garantizan intereses.",
+    "sources": [
+      {
+        "name": "Nexo · Comprar EURC",
+        "url": "https://nexo.com/es-la/buy-eurocoin-eurc"
+      }
+    ]
   }
 ]

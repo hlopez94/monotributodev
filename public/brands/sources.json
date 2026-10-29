@@ -79,6 +79,18 @@
       "file": "santander.png",
       "url": "https://www.santander.com/content/dam/santander-com/resources/favicon/apple-touch-icon.png",
       "bytes": 6501
+    },
+    {
+      "id": "lemon",
+      "file": "lemon.png",
+      "url": "https://framerusercontent.com/images/OvIZIalBpLCoB7ZBtsPgUsT3ic.png",
+      "bytes": 5266
+    },
+    {
+      "id": "takenos",
+      "file": "takenos.png",
+      "url": "https://framerusercontent.com/images/yMENRR3qZy8FCvgnzjwDFMH3U.png",
+      "bytes": 2745
     }
   ]
 }

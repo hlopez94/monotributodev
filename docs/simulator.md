@@ -55,3 +55,13 @@ Las pruebas cubren BigInt/encadenamiento, referencias compra/venta, precarga, aj
 Wallbit: retiros ACH/Wire precargados para Classic,1% con mínimosUSD5/USD25 respectivamente. `fees.percentMinimum` es el piso de la comisión porcentual: se aplica el mayor, no se suma. Puede ajustarse en el detalle; no incluye suscripción ni cargos desconocidos del banco destino. Pro/Max se documentan en notas, sin aplicar sus beneficios automáticamente. Depósitos Wallbit sin cargo propio; FX local pendiente de cotización real. Fuente: https://www.wallbit.io/es/pricing.
 
 Payoneer y Deel: `pricingNotice` mantiene visibles rangos y condiciones; `minimumAmount` limita el importe de entrada de cada tramo, separado de `fees.percentMinimum`. Retiros sin vía confirmada usan método bancario genérico, las integraciones de plataformas tienen método propio. Rangos sin tarifa exacta permanecen null y producen cálculo parcial. Investigación: docs/research/payoneer-deel-2026-10-29.md.
+
+## Destinos dinámicos
+
+`capabilities.json` registra `send`/`receive` por entidad. `currencyIn` es el saldo inicial, `currency` la moneda/activo enviado por la red y `currencyOut` lo acreditado por el receptor. `movements.mjs` cruza método y activo, intersecta redes conocidas y conserva las tarifas explícitas por firma. Los IDs generados son estables; el paso guarda la referencia para fuentes, ajustes y restauración.
+
+Si falta la red, se etiqueta A confirmar; no se presume una red compatible. Las tarifas desconocidas permanecen null. Se excluyen conversiones fiat dobles con moneda intermedia oculta (USD→ARS→USD), y SWIFT conserva corresponsales desconocidos. El resultado y los campos usan la moneda acreditada: TakenosUSD digital, LemonUSDT, NexoEURx. Referencias estables1:1 son supuestos, no precios garantizados.
+
+Wallbit: ACH/Wire, salida SWIFT, SEPA, ARS y stablecoins. Checking recibe ACH/Wire, USD local argentino, ARS, SEPA y cripto; no SWIFT. Payoneer/Deel incorporan WallbitACH y otros destinos documentados. LemonArgentinaUSDCBase confirmado; otras redes pendientes de revisar en la app. Takenos recibe por ACH/Wire/SWIFT/SEPA y redes de stablecoins documentadas; no se aplican descuentos promocionales automáticamente.
+
+Nexo Internacional/Argentina: EUR→SEPA→EURx, luego swap opcional aEURC con costos desconocidos. IBAN identifica cuenta, SEPA/Instant es la red. No se incluyen rendimientos. Fuentes oficiales: https://nexo.com/es-es/buy-eurx y https://nexo.com/es-la/buy-eurocoin-eurc.

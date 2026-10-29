@@ -32,3 +32,5 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Simulador principal automático y compacto: solo monto/plataforma/recorrido; tasas y costos precargados. Edición numérica adicional opcional en Ajustar. Desglose omite todo gasto cero.
 - Referencias de mercado EUR/USD diario, USD/ARS MEP/cripto con fuente/fecha, compra/venta correctos y fallback fechado. No presentar referencia de mercado como cotización de plataforma. No enviar montos ni recorrido a APIs.
 - Desconocidos se mantienen null en catálogo; si no hay estimación explícita, resultado parcial con cargos no incluidos visibles. Nunca obligar a llenar tarifas para usar los recorridos sugeridos.
+
+- Simulador dinámico: cruzar capacidades de envío/recepción por moneda disponible, método y activo/red. Tarifas conocidas prevalecen; nuevas combinaciones no garantizan habilitación de cuenta. Cripto no se propone a receptores solo fiat. Wallbit checking excluye SWIFT entrante (usuario confirmó inversiones). Nexo SEPA acredita EURx; EURC requiere swap aparte.
