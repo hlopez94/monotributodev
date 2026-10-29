@@ -33,3 +33,4 @@ Solicitud del usuario seguida con cambios acotados sobre el diseño existente. P
 Final: minor (deferred): typeahead del selector no recorre coincidencias al repetir letras ni permite búsqueda por palabras con espacios.
 Final: minor (deferred): combinación Cliente directo + cuenta propia menciona resumen de Cliente directo en vez de identificar el proveedor de cuenta externa; verificar con COMEX y usar cuenta real.
 Final: minor (deferred): teclado/foco/cierre del combobox comprobados manualmente, pendiente automatización del navegador.
+Publicación: commit 144b4d2, workflow Pages 40910187839 finalizado success. Navegador de producción confirma combobox, campos y carga de los ocho logos de bancos; captura docs/qa/selectors-public.png.

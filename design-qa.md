@@ -49,3 +49,4 @@ No quedan hallazgos P0/P1/P2 de diseño. P3: el raster usa marcas en los selecto
 - Paso 4 Wallbit → Santander: cuenta espejo muestra extracto + factura; cliente muestra factura al cliente; plataforma muestra conciliación y vínculo. Ayuda oficial de Wallbit sobre cierre mensual/solicitud a soporte enlazada.
 - Revisión independiente sin hallazgos Critical/Important. Mejoras menores diferidas: búsqueda por teclado con letras repetidas/espacios; redacción del caso poco común Cliente directo + cuenta propia; automatizar comprobaciones de foco/cierre que se validaron manualmente.
 - Pruebas: 16 de lógica/API + 4 de empaquetado aprobadas, build correcto.
+- Producción verificada: Pages workflow 40910187839 exitoso (144b4d2); ocho marcas de bancos cargadas desde ./brands sin errores de imagen. Captura final: docs/qa/selectors-public.png.
