@@ -1,6 +1,7 @@
 export const checkedAt='29 de octubre de 2026';
 export const sources={
  arca:{name:'ARCA · Exportación de servicios',url:'https://www.arca.gob.ar/monotributo/exportacion-servicios/'},
+ cuitTipos:{name:'ARCA · CUIT-país y tipo de sujeto',url:'https://arca.gob.ar/inversiones-bienes-uso/documentos/CUIT-pais.pdf'},
  cuit:{name:'ARCA · CUIT por país',url:'https://servicioscf.afip.gob.ar/publico/FE-lista-paises/paises.aspx'},
  bcra:{name:'BCRA · Exterior y Cambios, sección 2.2',url:'https://www.bcra.gob.ar/Pdfs/Texord/t-excbio.pdf'},
  santander:{name:'Santander · Datos para recibir fondos',url:'https://ayuda.santander.com.ar/06AK356I2O-1/article/KPLFB397X1-que-datos-necesitas-para-recibir-fondos-exterior/'},

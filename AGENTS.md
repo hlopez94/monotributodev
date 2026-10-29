@@ -7,3 +7,14 @@ Before making substantial visual changes, use the Product Design plugin's `get-c
 When implementing from a selected generated mock, treat that image as the source of truth for layout, component anatomy, density, spacing, color, typography, visible content, and hierarchy.
 
 Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts/prepare-sites-build.mjs`, and `tests/sites-worker.test.mjs` intact so the same local prototype can be handed to Sites. Before a Sites handoff, run `npm run build` and `npm run test:sites`; the build must leave `dist/client/index.html`, `dist/server/index.js`, and `dist/.openai/hosting.json`.
+
+## Decisiones del producto
+
+- Diseño elegido: opción 2, superficie clara, verde, tool-first. Visual refinado en docs/design-reference.png.
+- Entrada principal: plataforma de cobro + banco de destino; guía específica por combinación.
+- Exportaciones de servicios: Factura E con fuente ARCA; no ofrecer C como alternativa por ausencia de SWIFT.
+- Factura del servicio original, costos separados; estado del wizard y simulador en memoria al navegar.
+- Puntuaciones directas en servicio separado Cloudflare, no fake data. Moderación vía panel autenticado.
+- Mantener tabla CUIT con la leyenda oficial, no inferir clase de sujeto por prefijo.
+- Los huecos se marcan SIN INFO · APORTÁ y enlazan a Issue Forms.
+- Repositorio público hlopez94/monotributodev; GitHub Pages como primer destino, dominio propio pendiente DNS.

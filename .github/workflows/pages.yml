@@ -1,0 +1,42 @@
+name: Publicar sitio en GitHub Pages
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - run: npm test
+      - run: npm run build
+        env:
+          VITE_COMMUNITY_API: https://monotributodev-community.her3814.workers.dev
+          VITE_TURNSTILE_SITEKEY: 0x4AAAAAAFrRvmOiXD_guinA
+      - run: npm run test:sites
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: dist/client
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/configure-pages@v6
+      - uses: actions/deploy-pages@v5
+        id: deployment
