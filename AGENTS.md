@@ -34,3 +34,5 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Desconocidos se mantienen null en catálogo; si no hay estimación explícita, resultado parcial con cargos no incluidos visibles. Nunca obligar a llenar tarifas para usar los recorridos sugeridos.
 
 - Simulador dinámico: cruzar capacidades de envío/recepción por moneda disponible, método y activo/red. Tarifas conocidas prevalecen; nuevas combinaciones no garantizan habilitación de cuenta. Cripto no se propone a receptores solo fiat. Wallbit checking excluye SWIFT entrante (usuario confirmó inversiones). Nexo SEPA acredita EURx; EURC requiere swap aparte.
+
+- Selectores de entidades: A–Z con Otro al final; buscar al abrir si hay más de5 opciones, sin coincidencias ofrecer Otro. Comunidad reutiliza logos/selector. Puntajes con estrellas1–5 y estado con radios agrupados. CTA de opiniones destacado a la derecha, fuentes secundarias. Móvil: seis secciones visibles en grilla3×2, pasos de guía2×2, sin desborde de página; tablas desplazan dentro de su contenedor.

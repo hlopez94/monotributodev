@@ -9,4 +9,4 @@
 - [x] Tests RED: WallbitUSD→WiseACH/Wire; crypto solo activos/redes comunes; Wise no cripto; moneda disponible filtra; tarifas existentes prevalecen; desconocidos parciales; Wallbitchecking noSWIFTentrante.
 - [x] Generador GREEN con ID estable, tarifas por dirección/método/monedas/red, estimaciones heredadas solo con evidencia. Cambios de recorrido invalidan posteriores como hoy.
 - [x] UI integrar catálogo dinámico en agregar/selector/reset/fuentes. Mostrar origen y compatibilidad por confirmar. Lemon/Takenos reciben stablecoins; costos no confirmados null. Activos nuevos conservan identidad real al acreditar.
-- [ ] Verificar tests/build/empaquetado, navegador, publicar y comprobar sitio público.
+- [x] Verificar tests/build/empaquetado, navegador, publicar y comprobar sitio público.

@@ -79,3 +79,7 @@ No quedan hallazgos P0/P1/P2 de diseño. P3: el raster usa marcas en los selecto
 Una entrada numérica visible y ajustes opcionales colapsados. Filas de118px en escritorio; móvil390×844 con scrollWidth=clientWidth=375. Dos pasos visibles y sin desborde. Gastos por tramo y detalle solo muestran importes mayores a cero; el resumen completo se oculta si no hay gastos positivos.
 Cotizaciones DolarApi/Frankfurter verificadas en navegador, fechas originales y fallback por par visibles; referencias de mercado diferenciadas de precios de plataforma. Tarifas desconocidas señalan neto parcial. Ajuste manual persiste tras actualizar.
 Revisión independiente: reset de paso personalizado corregido preservando topología; comprobado con2pasos. Suite37/37, empaquetado4/4 y build correctos. Capturas docs/qa/simulator-automatic-{desktop,mobile}.png.
+
+
+## Comunidad y secciones móviles — 29/10/2026
+Revisión visual en390×844: estrellas verdes con área táctil, estado agrupado, CTA claramente separado de documentación; selector con logos y búsqueda.320×740: navegación3×2,6secciones sin desborde de página (305px útiles). TablaCUIT con desplazamiento propio y contención de elemento absoluto. Formularios no enviados durante QA; cambios compatibles con API existente. Restaurado viewport de escritorio.
