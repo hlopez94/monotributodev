@@ -15,7 +15,7 @@ Una respuesta inválida, timeout o error conserva el snapshot por par, con su fe
 ## Costos conocidos, estimados y faltantes
 
 1. Usar el catálogo cuando hay referencia (p.ej. el instructivo Wallbit/Santander publica1%).
-2. Para los ejemplos aportados, usar una estimación separada: Wise USD24,95 y ERC20 equivalente a5USDC/USDT. No son precios oficiales vigentes ni datos del gas en vivo.
+2. Para los ejemplos aportados, usar una estimación separada: Wise USD7,28 desde saldo USD por SWIFT (referencia aportada, sujeta a corresponsales) y ERC20 equivalente a5USDC/USDT. No son precios universales ni datos del gas en vivo. Conversiones Wise: estimación proporcional EUR→USD0,458% y USD→EUR0,289%; los mínimos/componentes fijos pueden variar.
 3. Si no hay referencia ni estimación, no pedir carga obligatoria. El resultado se presenta como **Estimación parcial**, identifica los cargos sin cotizar y aclara que el saldo todavía no los descuenta. El dato sigue siendo `null` en el catálogo; el cero interno usado para calcular antes de cargos desconocidos nunca se presenta como tarifa gratuita.
 
 Los gastos de valor cero se ocultan en la línea de cada paso y en el desglose. También se omiten pasos sin gastos positivos del desglose; no se muestra un detalle vacío. Los campos de edición en cero permanecen accesibles dentro de Ajustar.

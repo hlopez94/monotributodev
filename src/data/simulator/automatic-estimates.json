@@ -1,6 +1,6 @@
 {
   "reviewedAt": "2026-10-29",
-  "note": "Estimaciones de planificación aportadas en el diseño del simulador; no son tarifas actuales verificadas. Se aplican solo cuando falta un precio en el catálogo oficial.",
+  "note": "Referencias de planificación aportadas por el autor, fechadas; no son cotizaciones universales. Se aplican cuando falta una tarifa oficial total para la operación.",
   "entries": [
     {
       "tariffIds": [
@@ -20,9 +20,27 @@
         "wise-banco-ar"
       ],
       "field": "fixed",
-      "value": "24.95",
-      "label": "Costo Wise estimado",
-      "source": "Ejemplo aportado por el autor; Wise cotiza un costo total variable."
+      "value": "7.28",
+      "label": "Wise USD → Argentina USD · referencia aportada",
+      "source": "Autor, 29/10/2026: envío desde saldo USD Wise por SWIFT. La ayuda oficial ilustra USD7,28 sin corresponsales previstos; el total depende de destino, monto y forma de pago."
+    },
+    {
+      "tariffIds": [
+        "wise-eur-usd"
+      ],
+      "field": "percent",
+      "value": "0.458",
+      "label": "Conversión Wise estimada · EUR-USD",
+      "source": "Autor, 29/10/2026: 4,58 EUR por cada1000 EUR. Aproximación proporcional; la tarifa real puede incluir mínimos, componentes fijos y descuentos por volumen."
+    },
+    {
+      "tariffIds": [
+        "wise-usd-eur"
+      ],
+      "field": "percent",
+      "value": "0.289",
+      "label": "Conversión Wise estimada · USD-EUR",
+      "source": "Autor, 29/10/2026: 2,89 USD por cada1000 USD. Aproximación proporcional; la tarifa real puede incluir mínimos, componentes fijos y descuentos por volumen."
     }
   ]
 }

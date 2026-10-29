@@ -180,11 +180,15 @@
     "rate": "1",
     "status": "partial",
     "reviewedAt": "2026-10-29",
-    "note": "Wise cotiza un costo total variable. La precarga USD24,95 es una estimación aportada, no un precio oficial universal. Su tabla de cargos SWIFT es solo un componente. Si tenés una cotización de tu cuenta, podés ajustarla opcionalmente.",
+    "note": "Referencia aportada: USD7,28 desde saldo USD Wise a cuenta argentina USD. No es tarifa universal: Wise muestra USD7,28 como ejemplo sin corresponsales previstos y publica USD13,47 de componente SWIFT para Argentina si prevé esos cargos, sin incluir todos los cargos de financiación/conversión. Consultá el total para tu cuenta y operación; no sumes otra vez corresponsales ya incluidos.",
     "sources": [
       {
         "name": "Wise · Precio USD fuera de EE.UU.",
         "url": "https://wise.com/help/articles/2946451/how-much-does-it-cost-to-send-usd-to-countries-outside-the-us"
+      },
+      {
+        "name": "Wise · Simulador de envío",
+        "url": "https://wise.com/es/pricing/send-money"
       }
     ]
   },
@@ -207,11 +211,15 @@
     "rate": "1",
     "status": "partial",
     "reviewedAt": "2026-10-29",
-    "note": "Wise cotiza un costo total variable. La precarga USD24,95 es una estimación aportada, no un precio oficial universal. Su tabla de cargos SWIFT es solo un componente. Si tenés una cotización de tu cuenta, podés ajustarla opcionalmente.",
+    "note": "Referencia aportada: USD7,28 desde saldo USD Wise a cuenta argentina USD. No es tarifa universal: Wise muestra USD7,28 como ejemplo sin corresponsales previstos y publica USD13,47 de componente SWIFT para Argentina si prevé esos cargos, sin incluir todos los cargos de financiación/conversión. Consultá el total para tu cuenta y operación; no sumes otra vez corresponsales ya incluidos.",
     "sources": [
       {
         "name": "Wise · Precio USD fuera de EE.UU.",
         "url": "https://wise.com/help/articles/2946451/how-much-does-it-cost-to-send-usd-to-countries-outside-the-us"
+      },
+      {
+        "name": "Wise · Simulador de envío",
+        "url": "https://wise.com/es/pricing/send-money"
       }
     ]
   },
@@ -234,11 +242,15 @@
     "rate": "1",
     "status": "partial",
     "reviewedAt": "2026-10-29",
-    "note": "Wise cotiza un costo total variable. La precarga USD24,95 es una estimación aportada, no un precio oficial universal. Su tabla de cargos SWIFT es solo un componente. Si tenés una cotización de tu cuenta, podés ajustarla opcionalmente.",
+    "note": "Referencia aportada: USD7,28 desde saldo USD Wise a cuenta argentina USD. No es tarifa universal: Wise muestra USD7,28 como ejemplo sin corresponsales previstos y publica USD13,47 de componente SWIFT para Argentina si prevé esos cargos, sin incluir todos los cargos de financiación/conversión. Consultá el total para tu cuenta y operación; no sumes otra vez corresponsales ya incluidos.",
     "sources": [
       {
         "name": "Wise · Precio USD fuera de EE.UU.",
         "url": "https://wise.com/help/articles/2946451/how-much-does-it-cost-to-send-usd-to-countries-outside-the-us"
+      },
+      {
+        "name": "Wise · Simulador de envío",
+        "url": "https://wise.com/es/pricing/send-money"
       }
     ]
   },
@@ -261,11 +273,15 @@
     "rate": "1",
     "status": "partial",
     "reviewedAt": "2026-10-29",
-    "note": "Wise cotiza un costo total variable. La precarga USD24,95 es una estimación aportada, no un precio oficial universal. Su tabla de cargos SWIFT es solo un componente. Si tenés una cotización de tu cuenta, podés ajustarla opcionalmente.",
+    "note": "Referencia aportada: USD7,28 desde saldo USD Wise a cuenta argentina USD. No es tarifa universal: Wise muestra USD7,28 como ejemplo sin corresponsales previstos y publica USD13,47 de componente SWIFT para Argentina si prevé esos cargos, sin incluir todos los cargos de financiación/conversión. Consultá el total para tu cuenta y operación; no sumes otra vez corresponsales ya incluidos.",
     "sources": [
       {
         "name": "Wise · Precio USD fuera de EE.UU.",
         "url": "https://wise.com/help/articles/2946451/how-much-does-it-cost-to-send-usd-to-countries-outside-the-us"
+      },
+      {
+        "name": "Wise · Simulador de envío",
+        "url": "https://wise.com/es/pricing/send-money"
       }
     ]
   },
@@ -422,7 +438,7 @@
     "method": "conversion",
     "networkName": null,
     "fees": {
-      "fixed": null,
+      "fixed": "0",
       "percent": null,
       "network": "0",
       "other": "0",
@@ -431,7 +447,7 @@
     "rate": null,
     "status": "partial",
     "reviewedAt": "2026-10-29",
-    "note": "Conversión simulada a referencia EUR/USD de mercado. La comisión de cambio Wise no está cotizada ni incluida; no se presenta como conversión gratuita. Confirmá el neto en tu cuenta.",
+    "note": "Estimación aportada el29/10/2026: EUR4,58 cadaEUR1000, modelada como0,458% total aproximado (sin sumar otro fijo). No implica tarifa proporcional universal. Cambio automático de mercado; la observación puntual del autor fue1EUR=1,1164USD y no reemplaza la cotización actual. Confirmá el neto en Wise.",
     "sources": [
       {
         "name": "Wise · Costos de conversión",
@@ -440,6 +456,107 @@
       {
         "name": "Frankfurter · Referencias EUR/USD",
         "url": "https://frankfurter.dev/v1/"
+      },
+      {
+        "name": "Wise · Simulador de envío",
+        "url": "https://wise.com/es/pricing/send-money"
+      }
+    ]
+  },
+  {
+    "id": "wise-usd-eur",
+    "name": "Wise · USD → EUR",
+    "from": "wise",
+    "to": "wise",
+    "currencyIn": "USD",
+    "currencyOut": "EUR",
+    "method": "conversion",
+    "networkName": null,
+    "fees": {
+      "fixed": "0",
+      "percent": null,
+      "network": "0",
+      "other": "0",
+      "receiving": "0"
+    },
+    "rate": null,
+    "status": "partial",
+    "reviewedAt": "2026-10-29",
+    "note": "Estimación aportada el29/10/2026: USD2,89 cadaUSD1000, modelada como0,289% total aproximado (sin sumar otro fijo). No implica tarifa proporcional universal. Cambio automático inverso USD/EUR de mercado; confirmá precio y neto en Wise.",
+    "sources": [
+      {
+        "name": "Wise · Costos de conversión",
+        "url": "https://wise.com/pricing/"
+      },
+      {
+        "name": "Frankfurter · Referencias EUR/USD",
+        "url": "https://frankfurter.dev/v1/"
+      },
+      {
+        "name": "Wise · Simulador de envío",
+        "url": "https://wise.com/es/pricing/send-money"
+      }
+    ]
+  },
+  {
+    "id": "receive-wise-usd-swift",
+    "name": "Recibir en Wise · USD SWIFT",
+    "from": "otro",
+    "to": "wise",
+    "currencyIn": "USD",
+    "currencyOut": "USD",
+    "method": "swift",
+    "networkName": null,
+    "fees": {
+      "fixed": null,
+      "percent": "0",
+      "network": "0",
+      "other": null,
+      "receiving": "6.11"
+    },
+    "rate": "1",
+    "status": "partial",
+    "reviewedAt": "2026-10-29",
+    "note": "Wise publica recepción SWIFT de 6.11 USD, cobrada en la moneda recibida. Origen genérico: faltan costos del emisor y posibles corresponsales; no se presumen gratuitos. No aplicar a ACH, transferencias locales o entre contactos Wise. Disponibilidad y vigencia según región/cuenta.",
+    "sources": [
+      {
+        "name": "Wise · Cargos por recibir SWIFT",
+        "url": "https://wise.com/help/articles/3EsxRDF4uNpQncdgH480os/fees-for-receiving-money-by-swift"
+      },
+      {
+        "name": "Wise · Precios de recepción",
+        "url": "https://wise.com/es/pricing/receive"
+      }
+    ]
+  },
+  {
+    "id": "receive-wise-eur-swift",
+    "name": "Recibir en Wise · EUR SWIFT",
+    "from": "otro",
+    "to": "wise",
+    "currencyIn": "EUR",
+    "currencyOut": "EUR",
+    "method": "swift",
+    "networkName": null,
+    "fees": {
+      "fixed": null,
+      "percent": "0",
+      "network": "0",
+      "other": null,
+      "receiving": "2.39"
+    },
+    "rate": "1",
+    "status": "partial",
+    "reviewedAt": "2026-10-29",
+    "note": "Wise publica recepción SWIFT de 2.39 EUR, cobrada en la moneda recibida. Origen genérico: faltan costos del emisor y posibles corresponsales; no se presumen gratuitos. No aplicar a ACH, transferencias locales o entre contactos Wise. Disponibilidad y vigencia según región/cuenta.",
+    "sources": [
+      {
+        "name": "Wise · Cargos por recibir SWIFT",
+        "url": "https://wise.com/help/articles/3EsxRDF4uNpQncdgH480os/fees-for-receiving-money-by-swift"
+      },
+      {
+        "name": "Wise · Precios de recepción",
+        "url": "https://wise.com/es/pricing/receive"
       }
     ]
   }

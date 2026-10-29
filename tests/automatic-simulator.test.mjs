@@ -36,3 +36,15 @@ test('volver a automático en un paso personalizado conserva el recorrido poster
  const next={from:'wallbit',to:'santander',currencyIn:'USD',currencyOut:'USD',method:'swift',rate:'1',fixed:'0',percent:'1',network:'0',other:'0',receiving:'0'};
  const {calculateJourney}=await import('../src/lib/simulator.mjs');assert.doesNotThrow(()=>calculateJourney({amount:'2000',currency:'USD',origin:'wise',stages:[first.stage,next]}));
 });
+test('Wise distingue envío USD SWIFT, conversión direccional y recepción sin duplicar cargos',async()=>{
+ const {resolveAutomaticStage}=await load();const {stageFromTariff,calculateJourney}=await import('../src/lib/simulator.mjs');
+ const {default:tariffs}=await import('../src/data/simulator/tariffs.json',{with:{type:'json'}});
+ const {default:nodes}=await import('../src/data/simulator/nodes.json',{with:{type:'json'}});
+ const resolve=id=>{const tariff=tariffs.find(t=>t.id===id);assert.ok(tariff,`Falta ${id}`);return resolveAutomaticStage(stageFromTariff(tariff),{quotes:{...quotes,eurusd:{rate:'1.1164'}},eligible:true,nodes});};
+ const swift=resolve('wise-santander');assert.equal(swift.stage.fixed,'7.28');assert.equal(swift.stage.receiving,'0');
+ const eur=resolve('wise-eur-usd');assert.equal(eur.stage.percent,'0.458');assert.equal(eur.partial,false);
+ const result=calculateJourney({amount:'1000',origin:'wise',currency:'EUR',stages:[eur.stage,swift.stage]});assert.equal(result.finalAmount,1104010000n);
+ const usd=resolve('wise-usd-eur');assert.equal(usd.stage.percent,'0.289');assert.equal(usd.partial,false);assert.notEqual(usd.stage.rate,eur.stage.rate);
+ assert.equal(resolve('receive-wise-usd-swift').stage.receiving,'6.11');assert.equal(resolve('receive-wise-eur-swift').stage.receiving,'2.39');
+ assert.equal(resolve('receive-wise-usd-swift').partial,true);
+});
