@@ -48,3 +48,13 @@ test('Wise distingue envío USD SWIFT, conversión direccional y recepción sin 
  assert.equal(resolve('receive-wise-usd-swift').stage.receiving,'6.11');assert.equal(resolve('receive-wise-eur-swift').stage.receiving,'2.39');
  assert.equal(resolve('receive-wise-usd-swift').partial,true);
 });
+test('Payoneer y Deel separan rangos, mínimos de retiro y mínimos de comisión',async()=>{
+ const {resolveAutomaticStage}=await load();const {stageFromTariff,calculateJourney}=await import('../src/lib/simulator.mjs');
+ const {default:tariffs}=await import('../src/data/simulator/tariffs.json',{with:{type:'json'}});const {default:nodes}=await import('../src/data/simulator/nodes.json',{with:{type:'json'}});
+ const resolve=id=>{const t=tariffs.find(t=>t.id===id);assert.ok(t,`Falta ${id}`);return resolveAutomaticStage(stageFromTariff(t),{quotes,eligible:true,nodes});};
+ const payo=resolve('payoneer-banco-ar');assert.equal(payo.partial,true);assert.ok(payo.omissions.some(o=>o.field==='percent'));assert.notEqual(payo.stage.fixed,'1.50');assert.equal(resolve('payoneer-santander').stage.percent,'3.3');
+ const conversion=resolve('payoneer-eur-usd');assert.equal(conversion.stage.percent,'0.5');assert.equal(conversion.partial,false);
+ const deel=resolve('deel-payoneer');const run=amount=>calculateJourney({amount,currency:'USD',origin:'deel',stages:[deel.stage]});assert.throws(()=>run('49.99'),/mínimo.*50/);assert.equal(run('50').stages[0].percentFee,12000000n);assert.equal(run('2000').stages[0].percentFee,20000000n);
+ const swift=resolve('deel-santander');assert.ok(swift.omissions.some(o=>o.field==='fixed'));assert.throws(()=>calculateJourney({amount:'99',currency:'USD',origin:'deel',stages:[swift.stage]}),/mínimo.*100/);
+ const wise=resolve('deel-wise');assert.equal(wise.stage.fixed,'0');assert.equal(wise.stage.percent,'0');assert.equal(wise.partial,true);
+});

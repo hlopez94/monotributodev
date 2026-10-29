@@ -605,5 +605,344 @@
         "url": "https://wise.com/es/pricing/receive"
       }
     ]
+  },
+  {
+    "id": "payoneer-santander",
+    "name": "Payoneer → Santander · USD",
+    "from": "payoneer",
+    "to": "santander",
+    "currencyIn": "USD",
+    "currencyOut": "USD",
+    "method": "bank",
+    "networkName": null,
+    "fees": {
+      "fixed": "0",
+      "percent": "3.3",
+      "network": "0",
+      "other": "0",
+      "receiving": "0"
+    },
+    "rate": "1",
+    "status": "partial",
+    "reviewedAt": "2026-10-29",
+    "pricingNotice": "Referencia específica publicada: 3,3% de punta a punta.",
+    "note": "Referencia de la campaña Argentina; confirmá el total en tu cuenta. La página no identifica la red ni garantiza SWIFT/MLC. No sumamos nuevamente cargos incluidos en el precio de punta a punta.",
+    "sources": [
+      {
+        "name": "Payoneer · Retiros en Argentina",
+        "url": "https://pages.payoneer.com/es/withdrawal-of-funds/"
+      },
+      {
+        "name": "Payoneer · Tarifas",
+        "url": "https://www.payoneer.com/es/about/pricing/"
+      },
+      {
+        "name": "Payoneer · Cómo se calculan",
+        "url": "https://www.payoneer.com/es/resources/how-to-use-payoneer/como-calcula-payoneer-las-tarifas-de-transferencias/"
+      }
+    ]
+  },
+  {
+    "id": "payoneer-banco-ar",
+    "name": "Payoneer → banco argentino · USD",
+    "from": "payoneer",
+    "to": "banco-ar",
+    "currencyIn": "USD",
+    "currencyOut": "USD",
+    "method": "bank",
+    "networkName": null,
+    "fees": {
+      "fixed": null,
+      "percent": null,
+      "network": "0",
+      "other": null,
+      "receiving": null
+    },
+    "rate": "1",
+    "status": "partial",
+    "reviewedAt": "2026-10-29",
+    "pricingNotice": "Referencia general: 1–4%; tarifa exacta y posible mínimo sin confirmar.",
+    "note": "Retiro en moneda no local, sujeto a disponibilidad. No aplicar USD1,50: requiere coincidencia de país del perfil, banco y moneda local. Vía de pago y cargos finales por confirmar.",
+    "sources": [
+      {
+        "name": "Payoneer · Tarifas",
+        "url": "https://www.payoneer.com/es/about/pricing/"
+      },
+      {
+        "name": "Payoneer · Cómo se calculan",
+        "url": "https://www.payoneer.com/es/resources/how-to-use-payoneer/como-calcula-payoneer-las-tarifas-de-transferencias/"
+      }
+    ]
+  },
+  {
+    "id": "payoneer-ars",
+    "name": "Payoneer → banco argentino · ARS",
+    "from": "payoneer",
+    "to": "banco-ar",
+    "currencyIn": "USD",
+    "currencyOut": "ARS",
+    "method": "local",
+    "networkName": null,
+    "fees": {
+      "fixed": null,
+      "percent": null,
+      "network": "0",
+      "other": "0",
+      "receiving": null
+    },
+    "rate": null,
+    "status": "partial",
+    "reviewedAt": "2026-10-29",
+    "pricingNotice": "Referencia general: 1–4%; cambio final y tarifa sin cotizar.",
+    "note": "No se precarga un punto arbitrario del rango. La referencia MEP/cripto no es el precio de Payoneer ni incluye necesariamente su spread.",
+    "sources": [
+      {
+        "name": "Payoneer · Tarifas",
+        "url": "https://www.payoneer.com/es/about/pricing/"
+      },
+      {
+        "name": "Payoneer · Cómo se calculan",
+        "url": "https://www.payoneer.com/es/resources/how-to-use-payoneer/como-calcula-payoneer-las-tarifas-de-transferencias/"
+      }
+    ]
+  },
+  {
+    "id": "payoneer-eur-usd",
+    "name": "Payoneer · EUR → USD",
+    "from": "payoneer",
+    "to": "payoneer",
+    "currencyIn": "EUR",
+    "currencyOut": "USD",
+    "method": "conversion",
+    "networkName": null,
+    "fees": {
+      "fixed": "0",
+      "percent": "0.5",
+      "network": "0",
+      "other": "0",
+      "receiving": "0"
+    },
+    "rate": null,
+    "status": "partial",
+    "reviewedAt": "2026-10-29",
+    "pricingNotice": "",
+    "note": "Conversión interna entre balances, no retiro. Usa referencia de mercado; verificá el precio efectivo en tu cuenta.",
+    "sources": [
+      {
+        "name": "Payoneer · Tarifas",
+        "url": "https://www.payoneer.com/es/about/pricing/"
+      },
+      {
+        "name": "Payoneer · Cómo se calculan",
+        "url": "https://www.payoneer.com/es/resources/how-to-use-payoneer/como-calcula-payoneer-las-tarifas-de-transferencias/"
+      }
+    ]
+  },
+  {
+    "id": "payoneer-usd-eur",
+    "name": "Payoneer · USD → EUR",
+    "from": "payoneer",
+    "to": "payoneer",
+    "currencyIn": "USD",
+    "currencyOut": "EUR",
+    "method": "conversion",
+    "networkName": null,
+    "fees": {
+      "fixed": "0",
+      "percent": "0.5",
+      "network": "0",
+      "other": "0",
+      "receiving": "0"
+    },
+    "rate": null,
+    "status": "partial",
+    "reviewedAt": "2026-10-29",
+    "pricingNotice": "",
+    "note": "Conversión interna entre balances, no retiro. Usa referencia de mercado; verificá el precio efectivo en tu cuenta.",
+    "sources": [
+      {
+        "name": "Payoneer · Tarifas",
+        "url": "https://www.payoneer.com/es/about/pricing/"
+      },
+      {
+        "name": "Payoneer · Cómo se calculan",
+        "url": "https://www.payoneer.com/es/resources/how-to-use-payoneer/como-calcula-payoneer-las-tarifas-de-transferencias/"
+      }
+    ]
+  },
+  {
+    "id": "deel-payoneer",
+    "name": "Deel → Payoneer · USD",
+    "from": "deel",
+    "to": "payoneer",
+    "currencyIn": "USD",
+    "currencyOut": "USD",
+    "method": "platform",
+    "networkName": null,
+    "fees": {
+      "fixed": "0",
+      "percent": "1",
+      "network": "0",
+      "other": "0",
+      "receiving": null,
+      "percentMinimum": "12"
+    },
+    "rate": "1",
+    "status": "partial",
+    "reviewedAt": "2026-10-29",
+    "pricingNotice": "Comisión 1%, mínimo USD 12 · retiro mínimo USD 50.",
+    "note": "Recepción del proveedor por confirmar. Si aparece un cargo transfronterizo, revisá su inclusión en el total para evitar duplicarlo.",
+    "sources": [
+      {
+        "name": "Deel · Comisiones y mínimos",
+        "url": "https://help.letsdeel.com/hc/en-gb/articles/14391381019537-About-Withdrawal-Fees-and-Withdrawal-Minimums"
+      }
+    ],
+    "minimumAmount": "50"
+  },
+  {
+    "id": "deel-wise",
+    "name": "Deel → Wise · USD",
+    "from": "deel",
+    "to": "wise",
+    "currencyIn": "USD",
+    "currencyOut": "USD",
+    "method": "platform",
+    "networkName": null,
+    "fees": {
+      "fixed": "0",
+      "percent": "0",
+      "network": "0",
+      "other": null,
+      "receiving": null
+    },
+    "rate": "1",
+    "status": "partial",
+    "reviewedAt": "2026-10-29",
+    "pricingNotice": "Deel publica USD 0 para Wise; posibles cargos adicionales sin cotizar.",
+    "note": "Integración sujeta a disponibilidad. No presupone recepción ACH ni SWIFT gratuita. Consultá el total y posible cargo transfronterizo antes de confirmar.",
+    "sources": [
+      {
+        "name": "Deel · Comisiones y mínimos",
+        "url": "https://help.letsdeel.com/hc/en-gb/articles/14391381019537-About-Withdrawal-Fees-and-Withdrawal-Minimums"
+      }
+    ],
+    "minimumAmount": "5"
+  },
+  {
+    "id": "deel-santander",
+    "name": "Deel → Santander · USD SWIFT",
+    "from": "deel",
+    "to": "santander",
+    "currencyIn": "USD",
+    "currencyOut": "USD",
+    "method": "swift",
+    "networkName": null,
+    "fees": {
+      "fixed": null,
+      "percent": "0",
+      "network": "0",
+      "other": null,
+      "receiving": null
+    },
+    "rate": "1",
+    "status": "partial",
+    "reviewedAt": "2026-10-29",
+    "pricingNotice": "SWIFT variable: USD 5–10 · retiro mínimo USD 100.",
+    "note": "Disponibilidad por cuenta/destino. Tarifa exacta y corresponsales desconocidos: cálculo parcial. El cargo transfronterizo se describe como incluido en el cargo del proveedor; no se suma otra vez.",
+    "sources": [
+      {
+        "name": "Deel · Comisiones y mínimos",
+        "url": "https://help.letsdeel.com/hc/en-gb/articles/14391381019537-About-Withdrawal-Fees-and-Withdrawal-Minimums"
+      }
+    ],
+    "minimumAmount": "100"
+  },
+  {
+    "id": "deel-bbva",
+    "name": "Deel → Bbva · USD SWIFT",
+    "from": "deel",
+    "to": "bbva",
+    "currencyIn": "USD",
+    "currencyOut": "USD",
+    "method": "swift",
+    "networkName": null,
+    "fees": {
+      "fixed": null,
+      "percent": "0",
+      "network": "0",
+      "other": null,
+      "receiving": null
+    },
+    "rate": "1",
+    "status": "partial",
+    "reviewedAt": "2026-10-29",
+    "pricingNotice": "SWIFT variable: USD 5–10 · retiro mínimo USD 100.",
+    "note": "Disponibilidad por cuenta/destino. Tarifa exacta y corresponsales desconocidos: cálculo parcial. El cargo transfronterizo se describe como incluido en el cargo del proveedor; no se suma otra vez.",
+    "sources": [
+      {
+        "name": "Deel · Comisiones y mínimos",
+        "url": "https://help.letsdeel.com/hc/en-gb/articles/14391381019537-About-Withdrawal-Fees-and-Withdrawal-Minimums"
+      }
+    ],
+    "minimumAmount": "100"
+  },
+  {
+    "id": "deel-galicia",
+    "name": "Deel → Galicia · USD SWIFT",
+    "from": "deel",
+    "to": "galicia",
+    "currencyIn": "USD",
+    "currencyOut": "USD",
+    "method": "swift",
+    "networkName": null,
+    "fees": {
+      "fixed": null,
+      "percent": "0",
+      "network": "0",
+      "other": null,
+      "receiving": null
+    },
+    "rate": "1",
+    "status": "partial",
+    "reviewedAt": "2026-10-29",
+    "pricingNotice": "SWIFT variable: USD 5–10 · retiro mínimo USD 100.",
+    "note": "Disponibilidad por cuenta/destino. Tarifa exacta y corresponsales desconocidos: cálculo parcial. El cargo transfronterizo se describe como incluido en el cargo del proveedor; no se suma otra vez.",
+    "sources": [
+      {
+        "name": "Deel · Comisiones y mínimos",
+        "url": "https://help.letsdeel.com/hc/en-gb/articles/14391381019537-About-Withdrawal-Fees-and-Withdrawal-Minimums"
+      }
+    ],
+    "minimumAmount": "100"
+  },
+  {
+    "id": "deel-banco-ar",
+    "name": "Deel → Banco-Ar · USD SWIFT",
+    "from": "deel",
+    "to": "banco-ar",
+    "currencyIn": "USD",
+    "currencyOut": "USD",
+    "method": "swift",
+    "networkName": null,
+    "fees": {
+      "fixed": null,
+      "percent": "0",
+      "network": "0",
+      "other": null,
+      "receiving": null
+    },
+    "rate": "1",
+    "status": "partial",
+    "reviewedAt": "2026-10-29",
+    "pricingNotice": "SWIFT variable: USD 5–10 · retiro mínimo USD 100.",
+    "note": "Disponibilidad por cuenta/destino. Tarifa exacta y corresponsales desconocidos: cálculo parcial. El cargo transfronterizo se describe como incluido en el cargo del proveedor; no se suma otra vez.",
+    "sources": [
+      {
+        "name": "Deel · Comisiones y mínimos",
+        "url": "https://help.letsdeel.com/hc/en-gb/articles/14391381019537-About-Withdrawal-Fees-and-Withdrawal-Minimums"
+      }
+    ],
+    "minimumAmount": "100"
   }
 ]

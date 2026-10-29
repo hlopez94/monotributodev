@@ -26,5 +26,13 @@
   {
     "id": "custom",
     "name": "Otro / personalizado"
+  },
+  {
+    "id": "platform",
+    "name": "Integración de plataforma"
+  },
+  {
+    "id": "bank",
+    "name": "Retiro bancario · vía a confirmar"
   }
 ]

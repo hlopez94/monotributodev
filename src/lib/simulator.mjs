@@ -15,6 +15,7 @@ export function calculateJourney({amount,currency,origin,stages}){
  const initialAmount=balance;let node=origin,currentCurrency=currency;const results=[];
  for(const [index,s] of stages.entries()){
   try{
+   if(s.minimumAmount&&balance<parseDecimal(s.minimumAmount,precision(currentCurrency)))throw new Error(`El retiro mínimo es ${s.minimumAmount} ${currentCurrency}.`);
    if(s.from!==node||s.currencyIn!==currentCurrency)throw new Error('El origen o la moneda no coinciden con la salida anterior.');
    if(!s.to||!currencies.includes(s.currencyOut))throw new Error('Completá destino y moneda de salida.');
    const rate=parseDecimal(s.rate);if(rate===0n)throw new Error('La cotización debe ser mayor que cero.');
@@ -45,5 +46,5 @@ export function formatAmount(value,currency){
 export function tariffMatches(tariff,{from,currency}){return tariff.from===from&&tariff.currencyIn===currency;}
 export function receivingIsFree(stage,eligible,nodes){return Boolean(eligible&&stage.method==='swift'&&stage.currencyOut==='USD'&&nodes.find(n=>n.id===stage.to)?.group==='bank-ar');}
 export function stageFromTariff(tariff,overrides={},mode='reference'){
- return {tariffId:tariff.id,from:tariff.from,to:tariff.to,currencyIn:tariff.currencyIn,currencyOut:tariff.currencyOut,method:tariff.method,networkName:tariff.networkName??'',rate:tariff.rate??'',...Object.fromEntries(Object.entries(tariff.fees).map(([key,value])=>[key,value??''])),networkSeparate:false,...overrides,mode};
+ return {tariffId:tariff.id,from:tariff.from,to:tariff.to,currencyIn:tariff.currencyIn,currencyOut:tariff.currencyOut,method:tariff.method,minimumAmount:tariff.minimumAmount,pricingNotice:tariff.pricingNotice,networkName:tariff.networkName??'',rate:tariff.rate??'',...Object.fromEntries(Object.entries(tariff.fees).map(([key,value])=>[key,value??''])),networkSeparate:false,...overrides,mode};
 }
