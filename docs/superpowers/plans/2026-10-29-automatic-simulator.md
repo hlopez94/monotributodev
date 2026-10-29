@@ -19,4 +19,4 @@
 - [x] Tests RED parsing/caché-fallback/auto-precios/parcialidad/cero oculto.
 - [x] JSON de fuentes/snapshot/estimaciones y resolver automático GREEN; EUR→USD.
 - [x] Interfaz compacta, detalles optativos, precios activos solo en simulador, privacidad.
-- [ ] Tests/build/empaquetado, navegador/revisión, publicar y verificar Pages.
+- [x] Tests/build/empaquetado, navegador/revisión, publicar y verificar Pages.
