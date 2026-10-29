@@ -19,4 +19,4 @@
 - [x] Convertir catálogos a JSON, actualizar imports y eliminar catálogos JS.
 - [x] Contrastar material, escribir cinco fichas y guía CM; documentar divergencias y cómo aportar.
 - [x] Presentar tres bloques con enlaces/aportes, régimen/actividad y aviso de errores; verificar tests/navegador/revisión.
-- [ ] Publicar en Pages y verificar versión pública.
+- [x] Publicar en Pages y verificar versión pública.

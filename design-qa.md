@@ -60,3 +60,5 @@ No quedan hallazgos P0/P1/P2 de diseño. P3: el raster usa marcas en los selecto
 - Catálogos de cobros comparados como objetos contra la versión anterior por revisor independiente: idénticos. Revisadas referencias, IDs, los 24 archivos provinciales y fuentes/aportes.
 - Revisión independiente json_provinces_review sin defectos Critical/Important ni minor concreto. Límite: algunos PDF y páginas oficiales no se pudieron revalidar de nuevo; la cobertura y los bloqueos están documentados en las fichas y la investigación.
 - 19 pruebas de lógica/API/catálogos y 4 de empaquetado aprobadas. Build frontend y bundle API en seco correctos.
+
+- Publicación de provincias verificada en GitHub Pages: fd4ee32, workflow 40925987737 success; captura docs/qa/provinces-public.png.
