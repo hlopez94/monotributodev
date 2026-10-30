@@ -1,6 +1,6 @@
 # MonotributoDev
 
-Guía comunitaria para devs argentinos que cobran servicios del exterior. Proyecto para **monotributodev.com.ar**; publicación inicial en GitHub Pages.
+Guía comunitaria para devs argentinos que cobran servicios del exterior. Publicado en **https://monotributo.dev** mediante GitHub Pages. El dominio monotributodev.com.ar redirige al principal.
 
 - Selector plataforma → banco con instrucciones y fuentes por ruta.
 - Simulador automático en pasos pequeños: monto y recorrido, costos precargados y referencias EUR/USD, MEP y cripto. Ajustes optativos y desglose sin cargos cero. La factura se refiere al servicio original, no al neto.

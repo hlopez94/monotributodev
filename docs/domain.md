@@ -1,70 +1,86 @@
-# Dominio propio
+# Dominios del sitio
 
-Dominio principal: `monotributodev.com.ar`. Configurado el 30 de octubre de 2026.
+Principal desde el 30 de octubre de 2026: **https://monotributo.dev**.
+GitHub Pages (hlopez94/monotributodev, publicación por workflow) tiene
+monotributo.dev como dominio personalizado y «Enforce HTTPS» activado.
 
-El sitio sigue publicado mediante el workflow de GitHub Pages del repositorio
-`hlopez94/monotributodev`. En Settings → Pages, el dominio personalizado es
-`monotributodev.com.ar`. Al usar un workflow, GitHub no requiere un archivo CNAME.
+## Cloudflare DNS
 
-## DNS
+Ambas zonas están activas en la cuenta personal. Servidores de nombres:
+konnor.ns.cloudflare.com y rihana.ns.cloudflare.com.
 
-Zona de Cloudflare de la cuenta personal, con registros «Solo DNS»:
+### monotributo.dev
 
-| Tipo | Nombre | Valor | TTL |
-| --- | --- | --- | --- |
-| A | @ | 185.199.108.153 | 300 |
-| A | @ | 185.199.109.153 | 300 |
-| A | @ | 185.199.110.153 | 300 |
-| A | @ | 185.199.111.153 | 300 |
-| AAAA | @ | 2606:50c0:8000::153 | 300 |
-| AAAA | @ | 2606:50c0:8001::153 | 300 |
-| AAAA | @ | 2606:50c0:8002::153 | 300 |
-| AAAA | @ | 2606:50c0:8003::153 | 300 |
-| CNAME | www | hlopez94.github.io | 300 |
+Zona 2a4c6afaddd3ea101ae5044bda57b2c8.
 
-GitHub redirige `www` al dominio principal. No agregar el nombre del repositorio
-al destino CNAME. No activar un proxy durante la emisión del certificado de GitHub.
+| Tipo | Nombre | Valor | Proxy | TTL |
+| --- | --- | --- | --- | --- |
+| A | @ | 185.199.108.153 | Solo DNS | 300 |
+| A | @ | 185.199.109.153 | Solo DNS | 300 |
+| A | @ | 185.199.110.153 | Solo DNS | 300 |
+| A | @ | 185.199.111.153 | Solo DNS | 300 |
+| CNAME | www | hlopez94.github.io | Activado | Automático |
 
-## HTTPS y opiniones
+El principal usa el certificado aprobado de GitHub. www redirige en el edge de
+Cloudflare al principal y usa el certificado universal activo de Cloudflare.
+La regla de esta zona **solo** debe capturar www.monotributo.dev, nunca enviar
+el principal al dominio anterior.
 
-GitHub aprobó el certificado para el dominio principal y `www` el 30 de octubre
-de 2026 y se activó «Enforce HTTPS» en Settings → Pages. Se verificaron HTTPS 200
-en el dominio principal y las redirecciones de HTTP y `www` hacia HTTPS.
-La emisión y la propagación pueden demorar al cambiar los DNS; revisar el estado
-del certificado allí antes de modificar registros correctos.
+### monotributodev.com.ar
 
-El API de opiniones ya permite los orígenes HTTPS del dominio principal y `www`.
-Turnstile admite `monotributodev.com.ar` y sus subdominios. Las URLs relativas del
-frontend permiten servir los mismos archivos desde la raíz del dominio.
+Zona a7814503fc336389c4067c6eec77fdbe.
 
-Referencia: [configuración oficial de dominios de GitHub Pages](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site).
+Se conservan los cuatro A de GitHub Pages (185.199.108–111.153), los cuatro AAAA
+2606:50c0:8000–8003::153 y el CNAME de www a hlopez94.github.io.
+Todos están proxied para ejecutar la redirección en Cloudflare, con TTL automático.
+El certificado universal de Cloudflare está activo para el apex y sus subdominios.
 
-## Dominio secundario monotributo.dev — migración en curso
+## Redirecciones
 
-Preparado el 30 de octubre de 2026 en la misma cuenta de Cloudflare, zona
-`2a4c6afaddd3ea101ae5044bda57b2c8`. El dominio principal de GitHub Pages sigue
-siendo `monotributodev.com.ar`.
+- monotributodev.com.ar → https://monotributo.dev
+- www.monotributodev.com.ar → https://monotributo.dev
+- www.monotributo.dev → https://monotributo.dev
 
-- Registros A proxied de `monotributo.dev` y `www.monotributo.dev` hacia
-  `192.0.2.0`, dirección reservada para redirecciones sin servidor de origen.
-- Regla de redirección 301 de ambos nombres hacia
-  `https://monotributodev.com.ar`, conservando ruta y query string.
-- Servidores asignados: `konnor.ns.cloudflare.com` y `rihana.ns.cloudflare.com`.
-- Spaceship todavía delega en `launch1.spaceship.net` y `launch2.spaceship.net`.
-  No había registros personalizados en su panel.
-- Se autorizó y desactivó temporalmente DNSSEC en Spaceship, con compromiso de
-  reactivarlo con Cloudflare al completar la migración. A las 14:55 UTC el panel
-  confirmó «Deshabilitado», pero el registro .dev aún publicaba el DS anterior,
-  clave 44011, algoritmo 13, digest 2. Su TTL era 1800 segundos.
+Reglas 301 en la fase http_request_dynamic_redirect, con destino:
+concat("https://monotributo.dev", http.request.uri.path) y
+preserve_query_string: true. El navegador conserva el fragmento cuando la
+respuesta no lo reemplaza: se verificó #bancos junto con la query en un navegador.
 
-El registro padre dejó de publicar el DS a las 14:56 UTC (11:56 de Argentina).
-Esperar hasta después de las 15:26 UTC (12:26 de Argentina) antes de cambiar los
-servidores, por la caché de 1800 segundos de la firma anterior.
+Si un navegador conserva una redirección 301 anterior de .dev a .com.ar, limpiar
+su caché de navegación o probar con una query nueva. No volver a crear la regla
+inversa: provocaría un bucle entre ambos dominios.
 
-Pendiente: dejar vencer ese TTL, cambiar la delegación a Cloudflare y comprobar activación, certificado HTTPS y
-redirección (incluidos parámetros y fragmentos del navegador). Después de vencer
-la caché de la delegación anterior (TTL observado 10800 segundos), habilitar
-DNSSEC en Cloudflare y publicar su DS en Spaceship. Verificar la cadena DNSSEC.
-No publicar las claves nuevas mientras sigan resolviéndose servidores anteriores.
+## Opiniones
 
-[Migración DNSSEC según Cloudflare](https://developers.cloudflare.com/dns/dnssec/).
+ALLOWED_ORIGINS del API incluye HTTPS del principal y www, además de los orígenes
+anteriores. Turnstile admite monotributo.dev y sus subdominios. Se conservaron las
+claves secretas y la base D1; no se migraron ni eliminaron opiniones.
+Se verificaron la consulta al API con Origin del principal y la carga de las
+puntuaciones desde el navegador después de la redirección.
+
+## DNSSEC — pendiente del último paso en Spaceship
+
+La migración se autorizó con desactivación temporal de DNSSEC en Spaceship.
+El registro padre dejó de publicar el DS anterior el 30/10 a las 14:56 UTC
+(11:56 Argentina); el DS anterior tenía TTL de 1800 segundos.
+
+Al retomar a las 15:16 UTC (12:16 Argentina), la delegación ya estaba cambiada
+a Cloudflare. El TTL de los NS anteriores era 10800 segundos. Para no romper
+resolutores que aún conserven esa delegación, esperar hasta después de las
+18:20 UTC (15:20 Argentina) antes de publicar el DS nuevo en Spaceship.
+
+Cloudflare ya firma la zona; su estado es pending hasta publicar este DS:
+
+- Key tag: 2371
+- Algoritmo: 13
+- Tipo de digest: 2 (SHA-256)
+- Digest: 73669FF7EA4A6642C2BE7B318C58F2134F99304E27418666A656AAF074554F0A
+
+Estos son datos públicos. Antes de publicarlos, volver a consultar el DS de
+Cloudflare y confirmar que no cambió. Después, comprobar DNSSEC activo y una
+respuesta DNS validada. No declarar DNSSEC completo mientras siga pendiente.
+
+Referencias:
+[GitHub Pages](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site),
+[redirecciones Cloudflare](https://developers.cloudflare.com/rules/url-forwarding/),
+[migración DNSSEC](https://developers.cloudflare.com/dns/dnssec/).

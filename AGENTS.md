@@ -17,7 +17,7 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Puntuaciones directas en servicio separado Cloudflare, no fake data. Moderación vía panel autenticado.
 - Mantener tabla CUIT con la leyenda oficial, no inferir clase de sujeto por prefijo.
 - Los huecos se marcan SIN INFO · APORTÁ y enlazan a Issue Forms.
-- Repositorio público hlopez94/monotributodev; GitHub Pages como primer destino, dominio propio monotributodev.com.ar en Cloudflare DNS y GitHub Pages.
+- Repositorio público hlopez94/monotributodev; GitHub Pages como primer destino, dominio principal monotributo.dev en GitHub Pages y Cloudflare DNS; monotributodev.com.ar y variantes www redirigen al principal.
 
 - Selectores de plataforma/banco con logos reales locales (public/brands/sources.json), lista con estilo propio y teclado. No usar marcas generadas ni dibujadas.
 - Guía SWIFT: coordenadas por banco incluso sin ruta documentada; pasos 2/3 comunes. Falta de coordenadas explícita con aporte.
