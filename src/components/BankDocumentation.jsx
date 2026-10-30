@@ -6,6 +6,7 @@ export function BankDocumentation({bank,platform,sender,onSenderChange,routeSour
  const docs=payoutDocumentation(platform.id,sender);
  return <>
  <h3>Presentá los respaldos en {bank.name}</h3><p>{bank.detail}</p>
+ {bank.collectionSteps?.length>0&&<><h4>Cómo solicitar el cobro</h4><ol className="instructions">{bank.collectionSteps.map(text=><li key={text}>{text}</li>)}</ol><small>Revisado el {bank.checkedAt}. Las pantallas pueden cambiar; consultá las fuentes del banco.</small></>}
  <fieldset className="sender-options"><legend>¿Quién figura como ordenante del SWIFT?</legend><p className="sender-help">Confirmalo en la orden de pago o con COMEX. La sugerencia por plataforma es orientativa: no reemplaza los datos de tu transferencia.</p>{[
   ['own','Yo · cuenta propia o cuenta espejo'],['payer','Mi cliente · pagador del servicio'],['platform','La plataforma u otra empresa'],['unknown','Todavía no lo sé']
  ].map(([value,label])=><label key={value}><input type="radio" name="swift-sender" value={value} checked={sender===value} onChange={()=>onSenderChange(value)}/>{label}</label>)}</fieldset>

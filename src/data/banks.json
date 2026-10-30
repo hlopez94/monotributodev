@@ -33,14 +33,24 @@
     "id": "galicia",
     "name": "Galicia",
     "status": "partial",
-    "swift": null,
-    "legalName": "Banco de Galicia y Buenos Aires",
-    "channel": "Requisitos documentales publicados; guía completa pendiente.",
-    "detail": "Para fondos desde cuenta propia en el exterior, su grilla contempla extracto de la cuenta recaudadora. Obtené las coordenadas actuales en COMEX.",
+    "swift": "GABAARBA",
+    "legalName": "Banco de Galicia y Buenos Aires SA",
+    "channel": "Cobro desde App Galicia u Online Banking, con Token Galicia activo.",
+    "detail": "Compartí tu nombre, número de cuenta y SWIFT GABAARBA; Galicia no requiere IBAN. Al llegar los fondos, el banco avisa por correo y debés solicitar la acreditación. Para exportación de servicios, prepará los respaldos según el concepto; una transferencia entre cuentas propias no convierte el cobro en ahorros.",
     "sources": [
+      "galiciaCobro",
+      "galiciaServicios",
       "galicia"
     ],
-    "reviewable": true
+    "reviewable": true,
+    "accountField": "Número de tu caja de ahorro o cuenta corriente en Galicia, correspondiente a la cuenta de destino",
+    "checkedAt": "2026-10-30",
+    "collectionSteps": [
+      "App Galicia: Más → Transferencias internacionales → Recibir dinero del exterior. Abrí el menú de tres puntos de la transferencia y elegí Solicitar cobro.",
+      "Online Banking: Transferencias → Más opciones → Recibir dinero del exterior. Desde el menú de la operación, solicitá el cobro.",
+      "Indicá titularidad de la cuenta de origen, concepto real del ingreso, monto parcial o total y cuenta de acreditación. Mantené Token Galicia activo.",
+      "Para servicios al exterior, elegí el concepto correspondiente y adjuntá los respaldos de su grilla. S13 corresponde a servicios de informática; confirmá el encuadre de tu actividad con COMEX."
+    ]
   },
   {
     "id": "nacion",

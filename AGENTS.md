@@ -40,3 +40,5 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Comunidad: solo entidades reales con reviewable:true en catálogos compartidos con el API. Excluir directo, cripto genérica, banco-usa genérico y otro (incluido Otro banco); no ofrecer genéricos ni como fallback de búsqueda en opiniones. El formulario abre en diálogo modal visible, con scroll interno, Escape/cierre y retorno de foco. Los reportes tienen confirmación/verificación dentro del diálogo.
 
 - Directorio Bancos: mostrar solo bancos y plataformas reales, con puntajes por dimensión y cantidad de opiniones aprobadas. Compartir experiencia abre el diálogo directamente sobre la tarjeta, sin cambiar de sección; Comunidad conserva lectura detallada/reportes. Entidades faltantes se solicitan por issues, sin tarjetas de medios genéricos.
+
+- Navegación principal: cinco accesos, sin Comunidad duplicada. Conservar #comunidad para enlaces previos y lectura desde tarjetas, con retorno a Bancos. Menú móvil en dos filas equilibradas (tres y dos).

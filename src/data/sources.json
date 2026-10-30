@@ -86,5 +86,13 @@
   "recategorizacion": {
     "name": "ARCA · Recategorización",
     "url": "https://serviciosweb.arca.gob.ar/genericos/guiasPasoPaso/VerGuia.aspx?id=515"
+  },
+  "galiciaCobro": {
+    "name": "Galicia · Recibir y cobrar una transferencia del exterior",
+    "url": "https://ayuda.bancogalicia.com.ar/n4/que-necesito-para-recibir-y-cobrar-una-transferencia-del-exterior"
+  },
+  "galiciaServicios": {
+    "name": "Galicia · Cobrar servicios en tu cuenta en dólares",
+    "url": "https://ayuda.bancogalicia.com.ar/n4/puedo-cobrar-servicios-que-preste-en-el-exterior-en-mi-cuenta-en-dolares"
   }
 }

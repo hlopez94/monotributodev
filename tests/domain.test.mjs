@@ -44,7 +44,7 @@ test('las coordenadas dependen del banco incluso sin ruta documentada',async()=>
  const field=(id,label)=>bankFields(banks.find(b=>b.id===id)).find(f=>f.label===label).value;
  assert.equal(field('santander','SWIFT / BIC'),'BSCHARBAXXX');
  assert.equal(field('bbva','SWIFT / BIC'),'BFRPARBA');
- assert.equal(field('galicia','SWIFT / BIC'),null);
+ assert.equal(field('galicia','SWIFT / BIC'),'GABAARBA');
  assert.equal(field('icbc','SWIFT / BIC'),null);
  assert.match(field('bbva','Cuenta del beneficiario'),/CBU/);
  assert.match(field('bbva','Banco corresponsal en USD'),/SCBLUS33/);
