@@ -17,7 +17,7 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Puntuaciones directas en servicio separado Cloudflare, no fake data. Moderación vía panel autenticado.
 - Mantener tabla CUIT con la leyenda oficial, no inferir clase de sujeto por prefijo.
 - Los huecos se marcan SIN INFO · APORTÁ y enlazan a Issue Forms.
-- Repositorio público hlopez94/monotributodev; GitHub Pages como primer destino, dominio propio pendiente DNS.
+- Repositorio público hlopez94/monotributodev; GitHub Pages como primer destino, dominio propio monotributodev.com.ar en Cloudflare DNS y GitHub Pages.
 
 - Selectores de plataforma/banco con logos reales locales (public/brands/sources.json), lista con estilo propio y teclado. No usar marcas generadas ni dibujadas.
 - Guía SWIFT: coordenadas por banco incluso sin ruta documentada; pasos 2/3 comunes. Falta de coordenadas explícita con aporte.
@@ -38,3 +38,5 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Selectores de entidades: A–Z con Otro al final; buscar al abrir si hay más de5 opciones, sin coincidencias ofrecer Otro. Comunidad reutiliza logos/selector. Puntajes con estrellas1–5 y estado con radios agrupados. CTA de opiniones destacado a la derecha, fuentes secundarias. Móvil: seis secciones visibles en grilla3×2, pasos de guía2×2, sin desborde de página; tablas desplazan dentro de su contenedor.
 
 - Comunidad: solo entidades reales con reviewable:true en catálogos compartidos con el API. Excluir directo, cripto genérica, banco-usa genérico y otro (incluido Otro banco); no ofrecer genéricos ni como fallback de búsqueda en opiniones. El formulario abre en diálogo modal visible, con scroll interno, Escape/cierre y retorno de foco. Los reportes tienen confirmación/verificación dentro del diálogo.
+
+- Directorio Bancos: mostrar solo bancos y plataformas reales, con puntajes por dimensión y cantidad de opiniones aprobadas. Compartir experiencia abre el diálogo directamente sobre la tarjeta, sin cambiar de sección; Comunidad conserva lectura detallada/reportes. Entidades faltantes se solicitan por issues, sin tarjetas de medios genéricos.
