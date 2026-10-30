@@ -38,3 +38,33 @@ Turnstile admite `monotributodev.com.ar` y sus subdominios. Las URLs relativas d
 frontend permiten servir los mismos archivos desde la raíz del dominio.
 
 Referencia: [configuración oficial de dominios de GitHub Pages](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site).
+
+## Dominio secundario monotributo.dev — migración en curso
+
+Preparado el 30 de octubre de 2026 en la misma cuenta de Cloudflare, zona
+`2a4c6afaddd3ea101ae5044bda57b2c8`. El dominio principal de GitHub Pages sigue
+siendo `monotributodev.com.ar`.
+
+- Registros A proxied de `monotributo.dev` y `www.monotributo.dev` hacia
+  `192.0.2.0`, dirección reservada para redirecciones sin servidor de origen.
+- Regla de redirección 301 de ambos nombres hacia
+  `https://monotributodev.com.ar`, conservando ruta y query string.
+- Servidores asignados: `konnor.ns.cloudflare.com` y `rihana.ns.cloudflare.com`.
+- Spaceship todavía delega en `launch1.spaceship.net` y `launch2.spaceship.net`.
+  No había registros personalizados en su panel.
+- Se autorizó y desactivó temporalmente DNSSEC en Spaceship, con compromiso de
+  reactivarlo con Cloudflare al completar la migración. A las 14:55 UTC el panel
+  confirmó «Deshabilitado», pero el registro .dev aún publicaba el DS anterior,
+  clave 44011, algoritmo 13, digest 2. Su TTL era 1800 segundos.
+
+El registro padre dejó de publicar el DS a las 14:56 UTC (11:56 de Argentina).
+Esperar hasta después de las 15:26 UTC (12:26 de Argentina) antes de cambiar los
+servidores, por la caché de 1800 segundos de la firma anterior.
+
+Pendiente: dejar vencer ese TTL, cambiar la delegación a Cloudflare y comprobar activación, certificado HTTPS y
+redirección (incluidos parámetros y fragmentos del navegador). Después de vencer
+la caché de la delegación anterior (TTL observado 10800 segundos), habilitar
+DNSSEC en Cloudflare y publicar su DS en Spaceship. Verificar la cadena DNSSEC.
+No publicar las claves nuevas mientras sigan resolviéndose servidores anteriores.
+
+[Migración DNSSEC según Cloudflare](https://developers.cloudflare.com/dns/dnssec/).
