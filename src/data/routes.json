@@ -32,6 +32,25 @@
     "note": "Datos oficiales de plataforma y banco. La disponibilidad final y los campos se confirman al configurar el envío."
   },
   {
+    "origin": "wise",
+    "bank": "galicia",
+    "status": "partial",
+    "instructions": [
+      "En Wise, iniciá un envío desde tu saldo USD y agregá tu propia cuenta de Galicia como destinatario.",
+      "Buscá la opción internacional en USD a Argentina y verificá que el envío sea por SWIFT, sin conversión a pesos.",
+      "Usá tu nombre como figura en Galicia, el número de tu cuenta en USD y el SWIFT GABAARBA. Galicia no requiere IBAN. Si Wise solicita dirección u otros datos, confirmalos con las instrucciones vigentes del banco.",
+      "Antes de enviar, confirmá que Wise habilite esta ruta para tu cuenta, los campos exactos del destinatario, la comisión final y los posibles cargos de intermediarios. No tenemos esos puntos verificados para Wise → Galicia."
+    ],
+    "sources": [
+      "wise",
+      "wiseFields",
+      "galiciaCobro",
+      "galiciaServicios",
+      "galicia"
+    ],
+    "note": "Información parcial: Galicia publica sus coordenadas SWIFT y cómo solicitar la acreditación por App u Online Banking con Token activo. Falta confirmar en Wise la disponibilidad para tu cuenta, los campos exactos para Galicia y el costo final, incluidos posibles intermediarios. Las tarifas del simulador son orientativas."
+  },
+  {
     "origin": "payoneer",
     "bank": "santander",
     "status": "verified",
